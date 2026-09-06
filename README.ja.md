@@ -29,12 +29,12 @@
 
 curses インターフェース:
 
-![スクリーンショット](screen-curses-logo.png)
-![スクリーンショット](screen-curses.png)
+![スクリーンショット](screen-curses-logo-ja.png)
+![スクリーンショット](screen-curses-ja.png)
 
 basic インターフェース:
 
-![スクリーンショット](screen-basic.png)
+![スクリーンショット](screen-basic-ja.png)
 
 ## インストール方法
 
