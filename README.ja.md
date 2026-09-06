@@ -29,12 +29,12 @@
 
 curses インターフェース:
 
-![スクリーンショット](screen-curses-logo.png)
-![スクリーンショット](screen-curses.png)
+![スクリーンショット](https://raw.githubusercontent.com/hannibal414/pq-cli/main/screen-curses-logo-ja.png)
+![スクリーンショット](https://raw.githubusercontent.com/hannibal414/pq-cli/main/screen-curses-ja.png)
 
 basic インターフェース:
 
-![スクリーンショット](screen-basic.png)
+![スクリーンショット](https://raw.githubusercontent.com/hannibal414/pq-cli/main/screen-basic-ja.png)
 
 ## インストール方法
 

@@ -2,7 +2,7 @@
   <img alt="Progress Quest" src="http://progressquest.com/pq.png">
 </p>
 
-*English | [日本語](README.ja.md)*
+*English | [日本語](https://github.com/hannibal414/pq-cli/blob/main/README.ja.md)*
 
 Relive the great adventure… this time in the terminal realm!
 
@@ -28,12 +28,12 @@ copyright are kept in `LICENSE.md`.
 
 Curses interface:
 
-![Screenshot](screen-curses-logo.png)
-![Screenshot](screen-curses.png)
+![Screenshot](https://raw.githubusercontent.com/hannibal414/pq-cli/main/screen-curses-logo.png)
+![Screenshot](https://raw.githubusercontent.com/hannibal414/pq-cli/main/screen-curses.png)
 
 Basic interface:
 
-![Screenshot](screen-basic.png)
+![Screenshot](https://raw.githubusercontent.com/hannibal414/pq-cli/main/screen-basic.png)
 
 ## How to install
 
