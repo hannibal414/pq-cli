@@ -2,6 +2,7 @@ import curses
 import curses.ascii
 import typing as T
 
+from pqcli.i18n import _
 from pqcli.mechanic import generate_name
 from pqcli.ui.curses.event_handler import EventHandler
 from pqcli.ui.curses.util import KEYS_CANCEL, KEYS_CYCLE, KEYS_DOWN, KEYS_UP
@@ -102,13 +103,13 @@ class ChooseCharacterNameView(BaseView):
             return
 
         self._win.erase()
-        self._win.addstr(0, 0, "Choose character name:")
+        self._win.addstr(0, 0, _("Choose character name:"))
         with focus_standout(self._active_widget == 1, self._win):
-            self._win.addstr(6, 0, "[F5   ] Generate random name")
+            self._win.addstr(6, 0, _("[F5   ] Generate random name"))
         with focus_standout(self._active_widget == 2, self._win):
-            self._win.addstr(7, 0, "[F10  ] Continue")
+            self._win.addstr(7, 0, _("[F10  ] Continue"))
         with focus_standout(self._active_widget == 3, self._win):
-            self._win.addstr(8, 0, "[Esc  ] Cancel")
+            self._win.addstr(8, 0, _("[Esc  ] Cancel"))
         self._win.refresh()
 
         self._text_win.erase()

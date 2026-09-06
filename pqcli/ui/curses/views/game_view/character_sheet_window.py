@@ -1,5 +1,6 @@
 import typing as T
 
+from pqcli.i18n import _
 from pqcli.mechanic import Player, StatType
 from pqcli.ui.curses.widgets import Focusable
 
@@ -16,7 +17,7 @@ class CharacterSheetWindow(Focusable, DataTableProgressBarWindow):
             w,
             y,
             x,
-            " Character Sheet ",
+            _(" Character Sheet "),
             align_right=False,
             show_time=True,
         )
@@ -47,10 +48,10 @@ class CharacterSheetWindow(Focusable, DataTableProgressBarWindow):
             return
 
         self._data_table.clear()
-        self._data_table.add("Name", self._player.name)
-        self._data_table.add("Race", self._player.race.name)
-        self._data_table.add("Class", self._player.class_.name)
-        self._data_table.add("Level", str(self._player.level))
+        self._data_table.add(_("Name"), self._player.name)
+        self._data_table.add(_("Race"), self._player.race.name)
+        self._data_table.add(_("Class"), self._player.class_.name)
+        self._data_table.add(_("Level"), str(self._player.level))
         self._data_table.add(" " * 15, "")
         for stat in StatType:
             self._data_table.add(stat.value, str(self._player.stats[stat]))
@@ -60,7 +61,7 @@ class CharacterSheetWindow(Focusable, DataTableProgressBarWindow):
     def _sync_exp(self) -> None:
         self._cur_pos = self._player.exp_bar.position
         self._max_pos = self._player.exp_bar.max_
-        self._progress_title = (
-            f"Experience ({self._max_pos-self._cur_pos:.0f} XP to go)"
+        self._progress_title = _("Experience ({xp} XP to go)").format(
+            xp=f"{self._max_pos - self._cur_pos:.0f}"
         )
         self._render_progress_bar()

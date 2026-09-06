@@ -112,13 +112,13 @@ class GameView(BaseView):
             self._simulation.tick()
 
         elif self._args.cheats and key == ord("T"):
-            for _ in range(100):
+            for _i in range(100):
                 self._simulation.tick()
 
         elif self._args.cheats and key == curses.ascii.DC4:  # ^t
             old = SignalMixin.emit
-            SignalMixin.emit = lambda *_: None
-            for _ in range(10000):
+            SignalMixin.emit = lambda *_args: None
+            for _i in range(10000):
                 self._simulation.tick()
             SignalMixin.emit = old
             for child in self._children:

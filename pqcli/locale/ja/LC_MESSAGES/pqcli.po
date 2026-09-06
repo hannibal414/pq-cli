@@ -1,0 +1,573 @@
+# Japanese translations for pqcli.
+# Copyright (C) 2026 pq-cli contributors
+# This file is distributed under the same license as the pqcli project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pqcli 1.0.4\n"
+"Report-Msgid-Bugs-To: https://github.com/rr-/pq-cli/issues\n"
+"POT-Creation-Date: 2026-09-06 14:56+0900\n"
+"PO-Revision-Date: 2026-09-06 14:38+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: Japanese\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: pqcli/__main__.py:27
+msgid "Use basic user interface (very crude, but uses least CPU)"
+msgstr "シンプルなUIを使う（簡素だがCPU消費が最小）"
+
+#: pqcli/__main__.py:34
+msgid "Use curses user interface (fast, but no colors output)"
+msgstr "curses UIを使う（高速だが色表示なし）"
+
+#: pqcli/__main__.py:41
+msgid "Disable color highlighting in curses interface"
+msgstr "curses UIの色分け表示を無効にする"
+
+#: pqcli/__main__.py:54
+msgid "list saved characters and exit"
+msgstr "保存済みキャラクターを一覧表示して終了する"
+
+#: pqcli/__main__.py:60
+msgid "play chosen character"
+msgstr "指定したキャラクターでプレイする"
+
+#: pqcli/__main__.py:75
+msgid "No saved characters found. Starting first-run character creation."
+msgstr "保存済みキャラクターがありません。初回キャラクター作成を開始します。"
+
+#: pqcli/__main__.py:83
+msgid "No character created. Do you want to try again?"
+msgstr "キャラクターが作成されませんでした。もう一度試しますか？"
+
+#: pqcli/__main__.py:85
+msgid "A character is required for first run."
+msgstr "初回起動にはキャラクターが必要です。"
+
+#: pqcli/__main__.py:102
+msgid "Invalid player. Available players:"
+msgstr "無効なプレイヤーです。選択可能なプレイヤー:"
+
+#: pqcli/lingo.py:81
+msgid "Prologue"
+msgstr "プロローグ"
+
+#: pqcli/lingo.py:82
+#, python-brace-format
+msgid "Act {numeral}"
+msgstr "第{numeral}幕"
+
+#: pqcli/lingo.py:152
+msgid "faithful"
+msgstr "忠実な"
+
+#: pqcli/lingo.py:152
+msgid "noble"
+msgstr "高潔な"
+
+#: pqcli/lingo.py:152
+msgid "loyal"
+msgstr "忠義の"
+
+#: pqcli/lingo.py:152
+msgid "brave"
+msgstr "勇敢な"
+
+#: pqcli/lingo.py:154
+#, python-brace-format
+msgid "Terminate {adjective} {name}?"
+msgstr "{adjective}{name}を消去しますか？"
+
+#: pqcli/mechanic.py:146
+#, python-brace-format
+msgid "Increased {stat} to {value}"
+msgstr "{stat}が{value}に上昇した"
+
+#: pqcli/mechanic.py:182
+#, python-brace-format
+msgid "Commencing quest: {quest}"
+msgstr "クエスト開始: {quest}"
+
+#: pqcli/mechanic.py:218
+#, python-brace-format
+msgid "Spent {gold}"
+msgstr "{gold}を支払った"
+
+#: pqcli/mechanic.py:218
+#, python-brace-format
+msgid "Got paid {gold}"
+msgstr "{gold}を受け取った"
+
+#: pqcli/mechanic.py:227
+#, python-brace-format
+msgid "Lost {item}"
+msgstr "{item}を失った"
+
+#: pqcli/mechanic.py:235
+#, python-brace-format
+msgid "Gained {item}"
+msgstr "{item}を手に入れた"
+
+#: pqcli/mechanic.py:308 pqcli/mechanic.py:318
+#, python-brace-format
+msgid "Learned {spell} at level {level}"
+msgstr "{spell}をレベル{level}で習得した"
+
+#: pqcli/mechanic.py:411
+#, python-brace-format
+msgid "Leveled up to level {level}!"
+msgstr "レベル{level}に上がった！"
+
+#: pqcli/mechanic.py:498
+#, python-brace-format
+msgid "Gained {item} {slot}"
+msgstr "{item}（{slot}）を手に入れた"
+
+#: pqcli/mechanic.py:515
+msgid "Loading"
+msgstr "ロード中"
+
+#: pqcli/mechanic.py:518
+msgid "Experiencing an enigmatic and foreboding night vision"
+msgstr "不可解で不吉な夜の幻視を見ている"
+
+#: pqcli/mechanic.py:523
+msgid "Much is revealed about that wise old bastard you'd underestimated"
+msgstr "見くびっていたあの老賢者について多くが明かされる"
+
+#: pqcli/mechanic.py:530
+msgid "A shocking series of events leaves you alone and bewildered, but resolute"
+msgstr "衝撃的な出来事の連続に、孤独と困惑を抱えながらも決意を固める"
+
+#: pqcli/mechanic.py:537
+msgid ""
+"Drawing upon an unrealized reserve of determination, you set out on a "
+"long and dangerous journey"
+msgstr "眠っていた決意を呼び起こし、長く危険な旅に出る"
+
+#: pqcli/mechanic.py:542 pqcli/mechanic.py:879
+#, python-brace-format
+msgid "Loading {act}"
+msgstr "{act}をロード中"
+
+#: pqcli/mechanic.py:620
+#, python-brace-format
+msgid "Selling {item}"
+msgstr "{item}を売却中"
+
+#: pqcli/mechanic.py:637
+msgid "Heading to market to sell loot"
+msgstr "戦利品を売りに市場へ向かっている"
+
+#: pqcli/mechanic.py:644
+msgid "Negotiating purchase of better equipment"
+msgstr "より良い装備の購入を交渉中"
+
+#: pqcli/mechanic.py:650
+msgid "Heading to the killing fields"
+msgstr "狩場へ向かっている"
+
+#: pqcli/mechanic.py:673
+#, python-brace-format
+msgid "Quest completed: {quest}"
+msgstr "クエスト達成: {quest}"
+
+#: pqcli/mechanic.py:693
+#, python-brace-format
+msgid "Exterminate {monsters}"
+msgstr "{monsters}を殲滅せよ"
+
+#: pqcli/mechanic.py:697
+#, python-brace-format
+msgid "Seek {item}"
+msgstr "{item}を探し出せ"
+
+#: pqcli/mechanic.py:701
+#, python-brace-format
+msgid "Deliver this {item}"
+msgstr "この{item}を届けよ"
+
+#: pqcli/mechanic.py:703
+#, python-brace-format
+msgid "Fetch me {item}"
+msgstr "{item}を持ってこい"
+
+#: pqcli/mechanic.py:708
+#, python-brace-format
+msgid "Placate {monsters}"
+msgstr "{monsters}をなだめよ"
+
+#: pqcli/mechanic.py:727
+msgid "Exhausted, you arrive at a friendly oasis in a hostile land"
+msgstr "疲れ果て、敵地の中の安らげるオアシスにたどり着く"
+
+#: pqcli/mechanic.py:735
+msgid "You greet old friends and meet new allies"
+msgstr "旧友と再会し、新たな仲間と出会う"
+
+#: pqcli/mechanic.py:740
+msgid "You are privy to a council of powerful do-gooders"
+msgstr "有力な善人たちの評議会に加わる"
+
+#: pqcli/mechanic.py:746
+msgid "There is much to be done. You are chosen!"
+msgstr "為すべきことは山積みだ。あなたが選ばれた！"
+
+#: pqcli/mechanic.py:754
+msgid "Your quarry is in sight, but a mighty enemy bars your path!"
+msgstr "獲物は目前、しかし強大な敵が行く手を阻む！"
+
+#: pqcli/mechanic.py:765
+#, python-brace-format
+msgid "A desperate struggle commences with {nemesis}"
+msgstr "{nemesis}との死闘が始まる"
+
+#: pqcli/mechanic.py:780
+#, python-brace-format
+msgid "Locked in grim combat with {nemesis}"
+msgstr "{nemesis}と激しい戦いを繰り広げている"
+
+#: pqcli/mechanic.py:789
+#, python-brace-format
+msgid "{nemesis} seems to have the upper hand"
+msgstr "{nemesis}が優勢に見える"
+
+#: pqcli/mechanic.py:799
+#, python-brace-format
+msgid "You seem to gain the advantage over {nemesis}"
+msgstr "{nemesis}に対して優勢になってきたようだ"
+
+#: pqcli/mechanic.py:810
+#, python-brace-format
+msgid "Victory! {nemesis} is slain! Exhausted, you lose consciousness"
+msgstr "勝利！{nemesis}を討ち取った！力尽きて意識を失う"
+
+#: pqcli/mechanic.py:818
+msgid "You awake in a friendly place, but the road awaits"
+msgstr "安全な場所で目を覚ますが、旅路はまだ続く"
+
+#: pqcli/mechanic.py:828
+#, python-brace-format
+msgid "Oh sweet relief! You've reached the protection of the good {nemesis}"
+msgstr "ああ、なんという安堵！善良なる{nemesis}の庇護にたどり着いた"
+
+#: pqcli/mechanic.py:837
+#, python-brace-format
+msgid "There is rejoicing, and an unnerving encounter with {nemesis} in private"
+msgstr "歓喜に沸くなか、{nemesis}との不穏な密会が待つ"
+
+#: pqcli/mechanic.py:845
+#, python-brace-format
+msgid "You forget your {item} and go back to get it"
+msgstr "{item}を忘れたので取りに戻る"
+
+#: pqcli/mechanic.py:853
+msgid "What's this!? You overhear something shocking!"
+msgstr "なんだと！？衝撃的な話を漏れ聞いてしまった！"
+
+#: pqcli/mechanic.py:858
+#, python-brace-format
+msgid "Could {nemesis} be a dirty double-dealer?"
+msgstr "{nemesis}は汚い裏切り者なのか？"
+
+#: pqcli/mechanic.py:867
+msgid "Who can possibly be trusted with this news!? ... Oh yes, of course"
+msgstr "この知らせを託せる者は誰だ！？……ああ、もちろんあの人だ"
+
+#: pqcli/mechanic.py:1010
+#, python-brace-format
+msgid "Executing {monster}"
+msgstr "{monster}を討伐中"
+
+#: pqcli/ui/basic/__init__.py:45
+msgid "Quitting"
+msgstr "終了しています"
+
+#: pqcli/ui/basic/__init__.py:72
+msgid "Create a new character"
+msgstr "新しいキャラクターを作成"
+
+#: pqcli/ui/basic/__init__.py:73
+msgid "Play as character"
+msgstr "キャラクターでプレイ"
+
+#: pqcli/ui/basic/__init__.py:74
+msgid "Query character info"
+msgstr "キャラクター情報を表示"
+
+#: pqcli/ui/basic/__init__.py:75
+msgid "Delete a character"
+msgstr "キャラクターを削除"
+
+#: pqcli/ui/basic/__init__.py:76
+msgid "Quit"
+msgstr "終了"
+
+#: pqcli/ui/basic/__init__.py:106
+msgid "Name your new character: "
+msgstr "新しいキャラクターの名前: "
+
+#: pqcli/ui/basic/__init__.py:108
+msgid "Cancelled."
+msgstr "キャンセルしました。"
+
+#: pqcli/ui/basic/__init__.py:120
+#, python-brace-format
+msgid "Total: {total}"
+msgstr "合計: {total}"
+
+#: pqcli/ui/basic/__init__.py:121
+msgid "Is this okay?"
+msgstr "これでよろしいですか？"
+
+#: pqcli/ui/basic/__init__.py:129
+msgid "Do you want to play as your new character?"
+msgstr "作成したキャラクターでプレイしますか？"
+
+#: pqcli/ui/basic/__init__.py:135
+#, python-brace-format
+msgid "Playing as {name}"
+msgstr "{name}でプレイ中"
+
+#: pqcli/ui/basic/__init__.py:153
+msgid "--- Character Sheet ---"
+msgstr "--- キャラクターシート ---"
+
+#: pqcli/ui/basic/__init__.py:154
+#, python-brace-format
+msgid "Name: {value}"
+msgstr "名前: {value}"
+
+#: pqcli/ui/basic/__init__.py:155
+#, python-brace-format
+msgid "Race: {value}"
+msgstr "種族: {value}"
+
+#: pqcli/ui/basic/__init__.py:156
+#, python-brace-format
+msgid "Class: {value}"
+msgstr "クラス: {value}"
+
+#: pqcli/ui/basic/__init__.py:157
+#, python-brace-format
+msgid "Level: {value}"
+msgstr "レベル: {value}"
+
+#: pqcli/ui/basic/__init__.py:162
+msgid "--- Spell Book ---"
+msgstr "--- 呪文書 ---"
+
+#: pqcli/ui/basic/__init__.py:164
+msgid "No spells memorized yet."
+msgstr "まだ呪文を覚えていません。"
+
+#: pqcli/ui/basic/__init__.py:169
+msgid "--- Equipment ---"
+msgstr "--- 装備 ---"
+
+#: pqcli/ui/basic/__init__.py:173
+msgid "--- Inventory ---"
+msgstr "--- 所持品 ---"
+
+#: pqcli/ui/basic/__init__.py:174
+#, python-brace-format
+msgid "Gold: {value}"
+msgstr "所持金: {value}"
+
+#: pqcli/ui/basic/__init__.py:178
+msgid "--- Plot ---"
+msgstr "--- 物語 ---"
+
+#: pqcli/ui/basic/__init__.py:180
+#, python-brace-format
+msgid "Current act: {value}"
+msgstr "現在の幕: {value}"
+
+#: pqcli/ui/basic/__init__.py:185
+#, python-brace-format
+msgid "Current quest: {value}"
+msgstr "現在のクエスト: {value}"
+
+#: pqcli/ui/basic/__init__.py:190
+#, python-brace-format
+msgid "Current task: {value}"
+msgstr "現在の行動: {value}"
+
+#: pqcli/ui/basic/__init__.py:205
+msgid "No characters to choose from!"
+msgstr "選択できるキャラクターがいません！"
+
+#: pqcli/ui/basic/__init__.py:210
+msgid "Choose your character"
+msgstr "キャラクターを選択"
+
+#: pqcli/ui/basic/__init__.py:215
+#, python-brace-format
+msgid "{message} [y/n] "
+msgstr "{message} [y/n] "
+
+#: pqcli/ui/basic/__init__.py:228
+#, python-brace-format
+msgid "{title}:"
+msgstr "{title}:"
+
+#: pqcli/ui/basic/__init__.py:236
+msgid "Your choice: "
+msgstr "選択: "
+
+#: pqcli/ui/basic/__init__.py:238
+msgid "Not a number"
+msgstr "数値ではありません"
+
+#: pqcli/ui/basic/__init__.py:242
+#, python-brace-format
+msgid "Expected a number between 1..{max}"
+msgstr "1〜{max}の数値を入力してください"
+
+#: pqcli/ui/curses/__init__.py:160
+msgid "Choose character to delete"
+msgstr "削除するキャラクターを選択"
+
+#: pqcli/ui/curses/__init__.py:174
+msgid "Choose character to play"
+msgstr "プレイするキャラクターを選択"
+
+#: pqcli/ui/curses/views/choose_character_view.py:34
+#, python-brace-format
+msgid "{name} the {race} ({act})"
+msgstr "{race}の{name}（{act}）"
+
+#: pqcli/ui/curses/views/choose_character_view.py:40
+#, python-brace-format
+msgid "Level {level} {class_}"
+msgstr "レベル{level} {class_}"
+
+#: pqcli/ui/curses/views/choose_character_view.py:57
+#: pqcli/ui/curses/views/create_character_view/choose_character_class_view.py:33
+#: pqcli/ui/curses/views/create_character_view/choose_character_race_view.py:31
+msgid "[Q] Cancel"
+msgstr "[Q] キャンセル"
+
+#: pqcli/ui/curses/views/confirm_view.py:22
+msgid "[Y] Yes"
+msgstr "[Y] はい"
+
+#: pqcli/ui/curses/views/confirm_view.py:27
+msgid "[N] No"
+msgstr "[N] いいえ"
+
+#: pqcli/ui/curses/views/roster_view.py:67
+msgid "[C] Create new character"
+msgstr "[C] 新しいキャラクターを作成"
+
+#: pqcli/ui/curses/views/roster_view.py:72
+msgid "[P] Play"
+msgstr "[P] プレイ"
+
+#: pqcli/ui/curses/views/roster_view.py:77
+msgid "[D] Delete character"
+msgstr "[D] キャラクターを削除"
+
+#: pqcli/ui/curses/views/roster_view.py:82
+msgid "[Q] Quit"
+msgstr "[Q] 終了"
+
+#: pqcli/ui/curses/views/create_character_view/choose_character_class_view.py:16
+msgid "Choose character class"
+msgstr "クラスを選択"
+
+#: pqcli/ui/curses/views/create_character_view/choose_character_name_view.py:106
+msgid "Choose character name:"
+msgstr "キャラクター名を入力:"
+
+#: pqcli/ui/curses/views/create_character_view/choose_character_name_view.py:108
+msgid "[F5   ] Generate random name"
+msgstr "[F5   ] ランダムな名前を生成"
+
+#: pqcli/ui/curses/views/create_character_view/choose_character_name_view.py:110
+#: pqcli/ui/curses/views/create_character_view/choose_character_stats_view.py:99
+msgid "[F10  ] Continue"
+msgstr "[F10  ] 次へ"
+
+#: pqcli/ui/curses/views/create_character_view/choose_character_name_view.py:112
+#: pqcli/ui/curses/views/create_character_view/choose_character_stats_view.py:101
+msgid "[Esc  ] Cancel"
+msgstr "[Esc  ] キャンセル"
+
+#: pqcli/ui/curses/views/create_character_view/choose_character_race_view.py:14
+msgid "Choose character race"
+msgstr "種族を選択"
+
+#: pqcli/ui/curses/views/create_character_view/choose_character_stats_view.py:93
+msgid "Roll character stats:"
+msgstr "能力値を振る:"
+
+#: pqcli/ui/curses/views/create_character_view/choose_character_stats_view.py:95
+msgid "[F5   ] Roll"
+msgstr "[F5   ] 振り直す"
+
+#: pqcli/ui/curses/views/create_character_view/choose_character_stats_view.py:97
+msgid "[F6   ] Unroll"
+msgstr "[F6   ] 元に戻す"
+
+#: pqcli/ui/curses/views/game_view/character_sheet_window.py:20
+msgid " Character Sheet "
+msgstr " キャラクターシート "
+
+#: pqcli/ui/curses/views/game_view/character_sheet_window.py:51
+msgid "Name"
+msgstr "名前"
+
+#: pqcli/ui/curses/views/game_view/character_sheet_window.py:52
+msgid "Race"
+msgstr "種族"
+
+#: pqcli/ui/curses/views/game_view/character_sheet_window.py:53
+msgid "Class"
+msgstr "クラス"
+
+#: pqcli/ui/curses/views/game_view/character_sheet_window.py:54
+msgid "Level"
+msgstr "レベル"
+
+#: pqcli/ui/curses/views/game_view/character_sheet_window.py:64
+#, python-brace-format
+msgid "Experience ({xp} XP to go)"
+msgstr "経験値（あと{xp} XP）"
+
+#: pqcli/ui/curses/views/game_view/equipment_window.py:55
+msgid " Equipment "
+msgstr " 装備 "
+
+#: pqcli/ui/curses/views/game_view/inventory_window.py:20
+msgid " Inventory "
+msgstr " 所持品 "
+
+#: pqcli/ui/curses/views/game_view/inventory_window.py:68
+#, python-brace-format
+msgid "Encumbrance ({cur}/{max} cubits)"
+msgstr "積載量（{cur}/{max} キュビト）"
+
+#: pqcli/ui/curses/views/game_view/inventory_window.py:74
+#: pqcli/ui/curses/views/game_view/inventory_window.py:75
+msgid "Gold"
+msgstr "所持金"
+
+#: pqcli/ui/curses/views/game_view/plot_window.py:18
+msgid " Plot Development "
+msgstr " 物語の進行 "
+
+#: pqcli/ui/curses/views/game_view/quest_book_window.py:16
+msgid " Quests "
+msgstr " クエスト "
+
+#: pqcli/ui/curses/views/game_view/spell_book_window.py:64
+msgid " Spell Book "
+msgstr " 呪文書 "
+

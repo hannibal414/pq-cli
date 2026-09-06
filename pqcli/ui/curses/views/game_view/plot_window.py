@@ -1,5 +1,6 @@
 import typing as T
 
+from pqcli.i18n import _
 from pqcli.lingo import act_name
 from pqcli.mechanic import Player
 from pqcli.ui.curses.widgets import Focusable
@@ -14,7 +15,7 @@ class PlotWindow(Focusable, ListBoxProgressBarWindow):
         self, player: Player, parent: T.Any, h: int, w: int, y: int, x: int
     ) -> None:
         super().__init__(
-            parent, h, w, y, x, " Plot Development ", show_time=True
+            parent, h, w, y, x, _(" Plot Development "), show_time=True
         )
         self._on_focus_change += self._render
 

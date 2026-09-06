@@ -78,6 +78,69 @@ For server usage, run first-time setup without a forced slot (`pqcli-init`),
 then run the long-lived detached service (`pqcli`) that loads slot `1` by
 default.
 
+## Languages
+
+The game ships with English (the source language) and Japanese. Pick one with
+the `PQCLI_LANG` environment variable:
+
+```console
+PQCLI_LANG=ja pqcli
+PQCLI_LANG=en pqcli
+```
+
+When `PQCLI_LANG` is unset, the usual gettext environment is consulted
+(`LANGUAGE`, `LC_ALL`, `LC_MESSAGES`, `LANG`). If no catalog matches, the game
+falls back to English.
+
+Only prose is translated — UI labels, task descriptions, quest text and log
+messages. In-game proper nouns (monster, spell, race, class, item and equipment
+names, all defined in `pqcli/config.py`) deliberately stay in English, as does
+the English grammar machinery in `pqcli/lingo.py` that inflects them.
+
+Note that quest and task text is translated when it is *generated*, then stored
+in the save file. Text already recorded in an existing save keeps the language
+it was created in; only newly generated text picks up a language change.
+
+### Working on translations
+
+Translation tooling needs the dev dependencies (`uv sync`).
+
+```console
+# 1. Re-extract msgids from the source into the .pot template
+uv run pybabel extract -F babel.cfg -o pqcli/locale/pqcli.pot \
+    --project=pqcli --version=1.0.4 \
+    --copyright-holder="pq-cli contributors" \
+    --msgid-bugs-address="https://github.com/rr-/pq-cli/issues" .
+
+# 2. Merge the template into the existing catalogs
+uv run pybabel update -i pqcli/locale/pqcli.pot -d pqcli/locale -D pqcli
+
+# 3. Edit pqcli/locale/<lang>/LC_MESSAGES/pqcli.po, then compile to .mo
+uv run pybabel compile -d pqcli/locale -D pqcli --statistics
+```
+
+To start a new language (`de` shown here):
+
+```console
+uv run pybabel init -i pqcli/locale/pqcli.pot -d pqcli/locale -l de -D pqcli
+```
+
+The compiled `.mo` files are what the game loads at runtime, so re-run step 3
+after editing any `.po`. When adding translatable strings to the source, wrap
+them with `_()` from `pqcli.i18n` and prefer a single `.format()` template over
+concatenation, so translators can reorder the parts:
+
+```python
+# good -- one msgid, placeholders can move
+_("Selling {item}").format(item=indefinite(item.name, item.quantity))
+
+# bad -- word order is baked into the code
+_("Selling ") + indefinite(item.name, item.quantity)
+```
+
+Beware that `_` is the gettext function: never use it as a throwaway variable
+name (`for _ in range(...)`) in a module that imports it.
+
 ## Contributing
 
 ```sh

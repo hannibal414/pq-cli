@@ -5,6 +5,7 @@ from pathlib import Path
 
 from xdg_base_dirs import xdg_config_home
 
+from pqcli.i18n import _
 from pqcli.mechanic import Player
 from pqcli.roster import Roster
 from pqcli.ui.basic import BasicUserInterface
@@ -23,21 +24,21 @@ def parse_args() -> argparse.Namespace:
         dest="ui",
         action="store_const",
         const=BasicUserInterface,
-        help="Use basic user interface (very crude, but uses least CPU)",
+        help=_("Use basic user interface (very crude, but uses least CPU)"),
     )
     group.add_argument(
         "--curses",
         dest="ui",
         action="store_const",
         const=CursesUserInterface,
-        help="Use curses user interface (fast, but no colors output)",
+        help=_("Use curses user interface (fast, but no colors output)"),
     )
 
     parser.add_argument(
         "--no-colors",
         dest="colors",
         action="store_false",
-        help="Disable color highlighting in curses interface",
+        help=_("Disable color highlighting in curses interface"),
     )
 
     parser.add_argument(
@@ -50,13 +51,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--list-saves",
         action="store_true",
-        help="list saved characters and exit",
+        help=_("list saved characters and exit"),
     )
     parser.add_argument(
         "--load-save",
         type=int,
         metavar="NUM",
-        help="play chosen character",
+        help=_("play chosen character"),
     )
     return parser.parse_args()
 
@@ -70,14 +71,18 @@ def bootstrap_first_run(roster: Roster, args: argparse.Namespace) -> None:
     if roster.players or args.list_saves or args.load_save:
         return
 
-    print("No saved characters found. Starting first-run character creation.")
+    print(
+        _("No saved characters found. Starting first-run character creation.")
+    )
     ui = BasicUserInterface(roster, None, args)
     while not roster.players:
         player = ui.create_player(auto_play=False)
         if player:
             return
-        if not ui.confirm("No character created. Do you want to try again?"):
-            print("A character is required for first run.", file=sys.stderr)
+        if not ui.confirm(
+            _("No character created. Do you want to try again?")
+        ):
+            print(_("A character is required for first run."), file=sys.stderr)
             raise SystemExit(1)
 
 
@@ -94,7 +99,7 @@ def main() -> None:
         try:
             player = list(roster.players)[args.load_save - 1]
         except IndexError:
-            print("Invalid player. Available players:", file=sys.stderr)
+            print(_("Invalid player. Available players:"), file=sys.stderr)
             list_players(roster, file=sys.stderr)
             exit(1)
 

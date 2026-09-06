@@ -9,6 +9,7 @@ from datetime import datetime, timedelta
 
 from pqcli import lingo
 from pqcli.config import CLASSES, PRIME_STATS, RACES
+from pqcli.i18n import _
 from pqcli.mechanic import Player, Simulation, StatsBuilder, create_player
 from pqcli.roster import Roster
 from pqcli.ui.base import BaseUserInterface
@@ -41,7 +42,7 @@ class BasicUserInterface(BaseUserInterface):
         super().__init__(roster, player, args)
 
         def signal_handler(sig: T.Any, frame: T.Any) -> None:
-            logging.info("Quitting")
+            logging.info(_("Quitting"))
             if self.args.use_saves:
                 self.roster.save()
             sys.exit(0)
@@ -68,11 +69,11 @@ class BasicUserInterface(BaseUserInterface):
         while True:
             choice = self.menu(
                 [
-                    (MainMenu.create, "Create a new character"),
-                    (MainMenu.play, "Play as character"),
-                    (MainMenu.info, "Query character info"),
-                    (MainMenu.delete, "Delete a character"),
-                    (MainMenu.quit, "Quit"),
+                    (MainMenu.create, _("Create a new character")),
+                    (MainMenu.play, _("Play as character")),
+                    (MainMenu.info, _("Query character info")),
+                    (MainMenu.delete, _("Delete a character")),
+                    (MainMenu.quit, _("Quit")),
                 ]
             )
 
@@ -102,9 +103,9 @@ class BasicUserInterface(BaseUserInterface):
                 break
 
     def create_player(self, *, auto_play: bool = True) -> T.Optional[Player]:
-        name = input("Name your new character: ")
+        name = input(_("Name your new character: "))
         if not name:
-            print("Cancelled.")
+            print(_("Cancelled."))
             return None
 
         race = self.menu([(race, race.name) for race in RACES])
@@ -115,8 +116,9 @@ class BasicUserInterface(BaseUserInterface):
             stats = stats_builder.roll()
             for stat in PRIME_STATS:
                 print(f"{stat.value}: {stats[stat]}")
-            print(f"Total: {sum(stats[stat] for stat in PRIME_STATS)}")
-            if self.confirm("Is this okay?"):
+            total = sum(stats[stat] for stat in PRIME_STATS)
+            print(_("Total: {total}").format(total=total))
+            if self.confirm(_("Is this okay?")):
                 break
 
         player = create_player(
@@ -124,13 +126,13 @@ class BasicUserInterface(BaseUserInterface):
         )
         self.roster.players.append(player)
         if auto_play and self.confirm(
-            "Do you want to play as your new character?"
+            _("Do you want to play as your new character?")
         ):
             self.play(player)
         return player
 
     def play(self, player: Player) -> None:
-        print(f"Playing as {player.name}")
+        print(_("Playing as {name}").format(name=player.name))
         simulation = Simulation(player)
         last_tick = datetime.now()
         last_level = 0
@@ -148,36 +150,46 @@ class BasicUserInterface(BaseUserInterface):
                 self.roster.save_periodically()
 
     def print_player_info(self, player: Player) -> None:
-        print("--- Character Sheet ---")
-        print(f"Name: {player.name}")
-        print(f"Race: {player.race.name}")
-        print(f"Class: {player.class_.name}")
-        print(f"Level: {player.level}")
+        print(_("--- Character Sheet ---"))
+        print(_("Name: {value}").format(value=player.name))
+        print(_("Race: {value}").format(value=player.race.name))
+        print(_("Class: {value}").format(value=player.class_.name))
+        print(_("Level: {value}").format(value=player.level))
         print()
         for stat, value in player.stats:
             print(f"{stat.value}: {value}")
         print()
-        print("--- Spell Book ---")
+        print(_("--- Spell Book ---"))
         if not player.spell_book:
-            print("No spells memorized yet.")
+            print(_("No spells memorized yet."))
         else:
             for spell in player.spell_book:
                 print(f"{spell.name} {lingo.to_roman(spell.level)}")
         print()
-        print("--- Equipment ---")
+        print(_("--- Equipment ---"))
         for equipment_type, name in player.equipment:
             print(f"{equipment_type.value}: {name}")
         print()
-        print("--- Inventory ---")
-        print(f"Gold: {player.inventory.gold}")
+        print(_("--- Inventory ---"))
+        print(_("Gold: {value}").format(value=player.inventory.gold))
         for item in player.inventory:
             print(f"{item.name}: {item.quantity}")
         print()
-        print("--- Plot ---")
-        print(f"Current act: {lingo.to_roman(player.quest_book.act)}")
-        print(f"Current quest: {player.quest_book.current_quest or '?'}")
+        print(_("--- Plot ---"))
         print(
-            f"Current task: {player.task.description if player.task else '?'}"
+            _("Current act: {value}").format(
+                value=lingo.to_roman(player.quest_book.act)
+            )
+        )
+        print(
+            _("Current quest: {value}").format(
+                value=player.quest_book.current_quest or "?"
+            )
+        )
+        print(
+            _("Current task: {value}").format(
+                value=player.task.description if player.task else "?"
+            )
         )
 
     def delete_player(self, player: Player) -> None:
@@ -190,17 +202,17 @@ class BasicUserInterface(BaseUserInterface):
 
     def choose_player(self) -> T.Optional[Player]:
         if not self.roster.players:
-            print("No characters to choose from!")
+            print(_("No characters to choose from!"))
             return None
 
         return self.menu(
             [(player, player.name) for player in self.roster.players],
-            title="Choose your character",
+            title=_("Choose your character"),
         )
 
     def confirm(self, message: str) -> bool:
         while True:
-            choice = input(f"{message} [y/n] ")
+            choice = input(_("{message} [y/n] ").format(message=message))
             if choice.lower() in {"y", "yes", "1"}:
                 return True
             if choice.lower() in {"n", "no", "0"}:
@@ -213,19 +225,23 @@ class BasicUserInterface(BaseUserInterface):
     ) -> T.Any:
         print()
         if title:
-            print(f"{title}:")
+            print(_("{title}:").format(title=title))
         for i, item in enumerate(options, 1):
-            _, description = item
+            _value, description = item
             print(f"{i}) {description}")
         print()
 
         while True:
             try:
-                num = int(input("Your choice: "))
+                num = int(input(_("Your choice: ")))
             except ValueError:
-                print("Not a number")
+                print(_("Not a number"))
                 continue
             if num not in range(1, len(options) + 1):
-                print(f"Expected a number between 1..{len(options)}")
+                print(
+                    _("Expected a number between 1..{max}").format(
+                        max=len(options)
+                    )
+                )
                 continue
             return options[num - 1][0]

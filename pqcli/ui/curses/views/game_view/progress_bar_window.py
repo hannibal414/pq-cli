@@ -1,6 +1,7 @@
 import curses
 import typing as T
 
+from pqcli.ui.curses.util import display_width, truncate_to_width
 from pqcli.ui.curses.widgets import (
     DataTable,
     Focusable,
@@ -45,6 +46,14 @@ class ProgressBarWindow(WindowWrapper):
         del self._progress_bar_win
         self._progress_bar_win = None
 
+    def _render_title(self) -> None:
+        if not self._win:
+            return
+        title = truncate_to_width(self._title, self.getmaxyx()[1] - 1)
+        x = max(0, (self.getmaxyx()[1] - display_width(title)) // 2)
+        if title:
+            self._win.addstr(0, x, title)
+
     def _render_progress_bar(self) -> None:
         if not self._progress_bar_win:
             return
@@ -63,18 +72,13 @@ class ProgressBarWindow(WindowWrapper):
                 curses.ACS_LRCORNER,
             )
 
-            text = self._progress_title
-            x = max(0, (self.getmaxyx()[1] - len(text)) // 2)
-            # Determine the number of characters to write
-            nwrite = min(len(text), self._progress_bar_win.getmaxyx()[1])
-            # The amount MUST be greater than zero to avoid linux errors
-            if nwrite > 0:
-                self._progress_bar_win.addnstr(
-                    0,
-                    x,
-                    text,
-                    nwrite,
-                )
+            text = truncate_to_width(
+                self._progress_title,
+                self._progress_bar_win.getmaxyx()[1] - 1,
+            )
+            x = max(0, (self.getmaxyx()[1] - display_width(text)) // 2)
+            if text:
+                self._progress_bar_win.addstr(0, x, text)
         self._progress_bar.set_position(self._cur_pos, self._max_pos)
         self._progress_bar_win.noutrefresh()
 
@@ -107,10 +111,7 @@ class DataTableProgressBarWindow(ProgressBarWindow):
 
         with Focusable.focus_standout(self, self._win):
             self._win.box()
-            x = max(0, (self.getmaxyx()[1] - len(self._title)) // 2)
-            self._win.addnstr(
-                0, x, self._title, min(len(self._title), self.getmaxyx()[1])
-            )
+            self._render_title()
 
         self._win.noutrefresh()
         self._data_table.render()
@@ -145,10 +146,7 @@ class ListBoxProgressBarWindow(ProgressBarWindow):
 
         with Focusable.focus_standout(self, self._win):
             self._win.box()
-            x = max(0, (self.getmaxyx()[1] - len(self._title)) // 2)
-            self._win.addnstr(
-                0, x, self._title, min(len(self._title), self.getmaxyx()[1])
-            )
+            self._render_title()
 
         self._win.noutrefresh()
         self._list_box.render()

@@ -2,6 +2,7 @@ import curses
 import typing as T
 
 from pqcli.ui.curses.colors import COLOR_HIGHLIGHT, has_colors
+from pqcli.ui.curses.util import display_width, truncate_to_width
 
 from .scrollable import Scrollable
 
@@ -56,11 +57,14 @@ class DataTable(Scrollable):
                 if y == self._selected and has_colors():
                     self._pad.attron(curses.color_pair(COLOR_HIGHLIGHT))
                 self._pad.move(y, 0)
-                self._pad.addnstr(row[0], min(len(row[0]), w))
-                col2_x = max(0, w - len(row[1]))
-                if col2_x < w:
+                key = truncate_to_width(row[0], w)
+                if key:
+                    self._pad.addstr(key)
+                value = truncate_to_width(row[1], w)
+                col2_x = max(0, w - display_width(value))
+                if col2_x < w and value:
                     self._pad.move(y, col2_x)
-                    self._pad.addstr(row[1])
+                    self._pad.addstr(value)
                 if y == self._selected and has_colors():
                     self._pad.attroff(curses.color_pair(COLOR_HIGHLIGHT))
         else:
@@ -68,14 +72,15 @@ class DataTable(Scrollable):
             for y, row in enumerate(self._items):
                 if y == self._selected and has_colors():
                     self._pad.attron(curses.color_pair(COLOR_HIGHLIGHT))
-                self._pad.addnstr(y, 0, row[0], min(len(row[0]), w))
-                # Determine the number of characters to write
-                nwrite = min(len(row[1]), w - col2_x)
-                # Ensure we have enough columns, and we are writing more than zero
-                if col2_x < w and nwrite > 0:
-                    self._pad.addnstr(y, col2_x, row[1], nwrite)
+                key = truncate_to_width(row[0], w)
+                if key:
+                    self._pad.addstr(y, 0, key)
+                # Clip the value to the columns left after the key column
+                value = truncate_to_width(row[1], w - col2_x)
+                if col2_x < w and value:
+                    self._pad.addstr(y, col2_x, value)
                 if y == self._selected and has_colors():
                     self._pad.attroff(curses.color_pair(COLOR_HIGHLIGHT))
 
     def _get_col_width(self, x: int) -> int:
-        return max([len(row[0]) for row in self._items] + [0])
+        return max([display_width(row[0]) for row in self._items] + [0])

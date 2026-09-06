@@ -2,6 +2,7 @@ import functools
 import typing as T
 
 from pqcli.config import RACES, Race
+from pqcli.i18n import _
 from pqcli.ui.curses.util import KEYS_CANCEL, Choice
 from pqcli.ui.curses.views.menu_view import MenuView
 
@@ -10,7 +11,7 @@ class ChooseCharacterRaceView(MenuView):
     def __init__(self, screen: T.Any, race: T.Optional[Race] = None) -> None:
         super().__init__(
             screen,
-            "Choose character race",
+            _("Choose character race"),
             RACES.index(race) if race is not None else 0,
         )
 
@@ -27,7 +28,7 @@ class ChooseCharacterRaceView(MenuView):
         self._choices.append(
             Choice(
                 keys=list(KEYS_CANCEL),
-                desc="[Q] Cancel",
+                desc=_("[Q] Cancel"),
                 callback=self.on_cancel,
             )
         )

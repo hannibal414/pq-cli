@@ -2,6 +2,7 @@ import curses
 import typing as T
 
 from pqcli.ui.curses.colors import COLOR_HIGHLIGHT, has_colors
+from pqcli.ui.curses.util import truncate_to_width
 
 from .scrollable import Scrollable
 
@@ -45,6 +46,8 @@ class ListBox(Scrollable):
         for y, item in enumerate(self._items):
             if y == self._selected and has_colors():
                 self._pad.attron(curses.color_pair(COLOR_HIGHLIGHT))
-            self._pad.addnstr(y, 0, item, min(len(item), w))
+            item = truncate_to_width(item, w)
+            if item:
+                self._pad.addstr(y, 0, item)
             if y == self._selected and has_colors():
                 self._pad.attroff(curses.color_pair(COLOR_HIGHLIGHT))

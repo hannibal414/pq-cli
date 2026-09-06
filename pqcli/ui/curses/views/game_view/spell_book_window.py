@@ -1,5 +1,6 @@
 import typing as T
 
+from pqcli.i18n import _
 from pqcli.lingo import to_roman
 from pqcli.mechanic import Player, Spell
 from pqcli.ui.curses.widgets import DataTable, Focusable, WindowWrapper
@@ -60,7 +61,7 @@ class SpellBookWindow(Focusable, WindowWrapper):
 
         with self.focus_standout(self._win):
             self._win.box()
-            text = " Spell Book "
+            text = _(" Spell Book ")
             x = max(0, (self.getmaxyx()[1] - len(text)) // 2)
             self._win.addnstr(0, x, text, min(len(text), self.getmaxyx()[1]))
 

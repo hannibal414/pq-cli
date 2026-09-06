@@ -1,6 +1,7 @@
 import typing as T
 
-from pqcli.mechanic import InventoryItem, Player
+from pqcli.i18n import _
+from pqcli.mechanic import InventoryItem, Player, SellTask
 from pqcli.ui.curses.widgets import Focusable
 
 from .progress_bar_window import DataTableProgressBarWindow
@@ -16,7 +17,7 @@ class InventoryWindow(Focusable, DataTableProgressBarWindow):
             w,
             y,
             x,
-            " Inventory ",
+            _(" Inventory "),
             align_right=True,
             show_time=False,
         )
@@ -64,14 +65,14 @@ class InventoryWindow(Focusable, DataTableProgressBarWindow):
     def _sync_encumbrance(self) -> None:
         self._cur_pos = self._player.inventory.encum_bar.position
         self._max_pos = self._player.inventory.encum_bar.max_
-        self._progress_title = (
-            f"Encumbrance ({self._cur_pos:.0f}/{self._max_pos} cubits)"
+        self._progress_title = _("Encumbrance ({cur}/{max} cubits)").format(
+            cur=f"{self._cur_pos:.0f}", max=self._max_pos
         )
         self._render_progress_bar()
 
     def _sync_gold(self) -> None:
-        self._data_table.set("Gold", str(self._player.inventory.gold))
-        self._data_table.select("Gold")
+        self._data_table.set(_("Gold"), str(self._player.inventory.gold))
+        self._data_table.select(_("Gold"))
         self._render_data_table()
 
     def _sync_items(self) -> None:
@@ -99,8 +100,7 @@ class InventoryWindow(Focusable, DataTableProgressBarWindow):
         self._render_data_table()
 
     def _on_new_task(self) -> None:
-        description = (
-            self._player.task.description if self._player.task else "?"
-        )
-        if description.lower().startswith("sell"):
+        # Check the task type rather than its description: the latter
+        # is translated and would not match an English prefix.
+        if isinstance(self._player.task, SellTask):
             self._data_table.scroll_to_item(0)

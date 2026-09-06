@@ -2,6 +2,7 @@ import datetime
 import typing as T
 
 from pqcli import random
+from pqcli.i18n import _
 
 
 def format_float(num: float) -> str:
@@ -77,8 +78,8 @@ def to_roman(num: int) -> str:
 
 def act_name(act: int) -> str:
     if act == 0:
-        return "Prologue"
-    return f"Act {to_roman(act)}"
+        return _("Prologue")
+    return _("Act {numeral}").format(numeral=to_roman(act))
 
 
 def plural(subject: str) -> str:
@@ -147,5 +148,9 @@ def special(m: int, subject: str) -> str:
 
 
 def terminate_message(player_name: str) -> str:
-    adjective = random.choice(["faithful", "noble", "loyal", "brave"])
-    return f"Terminate {adjective} {player_name}?"
+    adjective = random.choice(
+        [_("faithful"), _("noble"), _("loyal"), _("brave")]
+    )
+    return _("Terminate {adjective} {name}?").format(
+        adjective=adjective, name=player_name
+    )

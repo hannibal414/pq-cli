@@ -2,6 +2,7 @@ import functools
 import typing as T
 
 from pqcli.config import CLASSES, Class
+from pqcli.i18n import _
 from pqcli.ui.curses.util import KEYS_CANCEL, Choice
 from pqcli.ui.curses.views.menu_view import MenuView
 
@@ -12,7 +13,7 @@ class ChooseCharacterClassView(MenuView):
     ) -> None:
         super().__init__(
             screen,
-            "Choose character class",
+            _("Choose character class"),
             CLASSES.index(class_) if class_ is not None else 0,
         )
 
@@ -29,7 +30,7 @@ class ChooseCharacterClassView(MenuView):
         self._choices.append(
             Choice(
                 keys=list(KEYS_CANCEL),
-                desc="[Q] Cancel",
+                desc=_("[Q] Cancel"),
                 callback=self.on_cancel,
             )
         )

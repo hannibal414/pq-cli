@@ -34,6 +34,7 @@ from pqcli.config import (
     Race,
     StatType,
 )
+from pqcli.i18n import _
 from pqcli.lingo import (
     act_name,
     big,
@@ -141,7 +142,11 @@ class Stats(SignalMixin):
 
     def increment(self, stat: StatType, qty: int = 1) -> None:
         self._values[stat] += qty
-        logger.info("Increased %s to %d", stat.value, self[stat])
+        logger.info(
+            _("Increased {stat} to {value}").format(
+                stat=stat.value, value=self[stat]
+            )
+        )
         self.emit("change")
 
 
@@ -174,7 +179,7 @@ class QuestBook(SignalMixin):
         self.emit("start_act", self._act)
 
     def add_quest(self, name: str) -> None:
-        logger.info("Commencing quest: %s", name)
+        logger.info(_("Commencing quest: {quest}").format(quest=name))
         self._quests = self._quests[-100:]
         self._quests.append(name)
 
@@ -207,23 +212,28 @@ class Inventory(SignalMixin):
         return self._items[idx]
 
     def add_gold(self, quantity: int) -> None:
+        gold = indefinite("gold piece", abs(quantity))
         logger.info(
-            "%s %s",
-            "Spent" if quantity < 0 else "Got paid",
-            indefinite("gold piece", abs(quantity)),
+            (
+                _("Spent {gold}") if quantity < 0 else _("Got paid {gold}")
+            ).format(gold=gold)
         )
         self._gold += quantity
         self.emit("gold_change")
 
     def pop(self, index: int) -> None:
         item = self._items[index]
-        logger.info("Lost %s", indefinite(item.name, item.quantity))
+        logger.info(
+            _("Lost {item}").format(item=indefinite(item.name, item.quantity))
+        )
         self._items.pop(index)
         self.sync_encumbrance()
         self.emit("item_del", item)
 
     def add(self, item_name: str, quantity: int) -> None:
-        logger.info("Gained %s", indefinite(item_name, quantity))
+        logger.info(
+            _("Gained {item}").format(item=indefinite(item_name, quantity))
+        )
         for item in self._items:
             if item.name == item_name:
                 item.quantity += quantity
@@ -294,13 +304,21 @@ class SpellBook(SignalMixin):
         for spell in self._spells:
             if spell.name == spell_name:
                 spell.level += level
-                logger.info("Learned %s at level %d", spell_name, spell.level)
+                logger.info(
+                    _("Learned {spell} at level {level}").format(
+                        spell=spell_name, level=spell.level
+                    )
+                )
                 self.emit("change", spell)
                 break
         else:
             spell = Spell(name=spell_name, level=level)
             self._spells.append(spell)
-            logger.info("Learned %s at level %d", spell.name, spell.level)
+            logger.info(
+                _("Learned {spell} at level {level}").format(
+                    spell=spell.name, level=spell.level
+                )
+            )
             self.emit("add", spell)
 
     @property
@@ -390,7 +408,7 @@ class Player(SignalMixin):
 
     def level_up(self) -> None:
         self.level += 1
-        logger.info("Leveled up to level %d!", self.level)
+        logger.info(_("Leveled up to level {level}!").format(level=self.level))
         self.stats.increment(
             StatType.hp_max,
             self.stats[StatType.condition] // 3 + 1 + random.below(4),
@@ -476,7 +494,9 @@ class Player(SignalMixin):
         if plus > 0:
             name = f"+{plus} {name}"
 
-        logger.info("Gained %s %s", name, choice.value)
+        logger.info(
+            _("Gained {item} {slot}").format(item=name, slot=choice.value)
+        )
         self.equipment.put(choice, name)
 
     def win_item(self) -> None:
@@ -492,28 +512,34 @@ class Simulation:
         self.player.elapsed += elapsed
 
         if self.player.task is None:
-            self.player.set_task(RegularTask("Loading", 2000))
+            self.player.set_task(RegularTask(_("Loading"), 2000))
             self.player.queue += [
                 RegularTask(
-                    "Experiencing an enigmatic and foreboding night vision",
+                    _("Experiencing an enigmatic and foreboding night vision"),
                     10000,
                 ),
                 RegularTask(
-                    "Much is revealed about that wise old bastard "
-                    "you'd underestimated",
+                    _(
+                        "Much is revealed about that wise old bastard "
+                        "you'd underestimated"
+                    ),
                     6000,
                 ),
                 RegularTask(
-                    "A shocking series of events leaves you "
-                    "alone and bewildered, but resolute",
+                    _(
+                        "A shocking series of events leaves you "
+                        "alone and bewildered, but resolute"
+                    ),
                     6000,
                 ),
                 RegularTask(
-                    "Drawing upon an unrealized reserve of determination, "
-                    "you set out on a long and dangerous journey",
+                    _(
+                        "Drawing upon an unrealized reserve of determination, "
+                        "you set out on a long and dangerous journey"
+                    ),
                     4000,
                 ),
-                PlotTask(f"Loading {act_name(1)}", 2000),
+                PlotTask(_("Loading {act}").format(act=act_name(1)), 2000),
             ]
             self.player.quest_book.plot_bar.reset(28)
             return
@@ -591,7 +617,9 @@ class Simulation:
                     item = self.player.inventory[0]
                     self.player.set_task(
                         SellTask(
-                            "Selling " + indefinite(item.name, item.quantity),
+                            _("Selling {item}").format(
+                                item=indefinite(item.name, item.quantity)
+                            ),
                             1000,
                         )
                     )
@@ -605,19 +633,21 @@ class Simulation:
                 self.player.set_task(self.player.queue.pop(0))
             elif self.player.inventory.encum_bar.done:
                 self.player.set_task(
-                    HeadingToMarketTask("Heading to market to sell loot", 4000)
+                    HeadingToMarketTask(
+                        _("Heading to market to sell loot"), 4000
+                    )
                 )
             elif not isinstance(old, (KillTask, HeadingToKillingFieldsTask)):
                 if self.player.inventory.gold > self.player.equip_price():
                     self.player.set_task(
                         BuyTask(
-                            "Negotiating purchase of better equipment", 5000
+                            _("Negotiating purchase of better equipment"), 5000
                         )
                     )
                 else:
                     self.player.set_task(
                         HeadingToKillingFieldsTask(
-                            "Heading to the killing fields", 4000
+                            _("Heading to the killing fields"), 4000
                         )
                     )
             else:
@@ -640,7 +670,9 @@ class Simulation:
         self.player.quest_book.quest_bar.reset(50 + random.below_low(1000))
         if self.player.quest_book.current_quest:
             logger.info(
-                "Quest completed: %s", self.player.quest_book.current_quest
+                _("Quest completed: {quest}").format(
+                    quest=self.player.quest_book.current_quest
+                )
             )
             random.choice(
                 [
@@ -658,18 +690,24 @@ class Simulation:
             self.player.quest_book.monster = unnamed_monster(
                 self.player.level, iterations=3
             )
-            caption = "Exterminate " + definite(
-                self.player.quest_book.monster.name, 2
+            caption = _("Exterminate {monsters}").format(
+                monsters=definite(self.player.quest_book.monster.name, 2)
             )
         elif choice == 1:
-            caption = "Seek " + definite(interesting_item(), 1)
+            caption = _("Seek {item}").format(
+                item=definite(interesting_item(), 1)
+            )
         elif choice == 2:
-            caption = "Deliver this " + boring_item()
+            caption = _("Deliver this {item}").format(item=boring_item())
         elif choice == 3:
-            caption = "Fetch me " + indefinite(boring_item(), 1)
+            caption = _("Fetch me {item}").format(
+                item=indefinite(boring_item(), 1)
+            )
         elif choice == 4:
             monster = unnamed_monster(self.player.level, iterations=1)
-            caption = "Placate " + definite(monster.name, 2)
+            caption = _("Placate {monsters}").format(
+                monsters=definite(monster.name, 2)
+            )
         else:
             raise AssertionError
 
@@ -685,28 +723,37 @@ class Simulation:
         if choice == 0:
             enqueue(
                 RegularTask(
-                    "Exhausted, you arrive at a friendly oasis "
-                    "in a hostile land",
+                    _(
+                        "Exhausted, you arrive at a friendly oasis "
+                        "in a hostile land"
+                    ),
                     1000,
                 )
             )
             enqueue(
-                RegularTask("You greet old friends and meet new allies", 2000)
-            )
-            enqueue(
                 RegularTask(
-                    "You are privy to a council of powerful do-gooders", 2000
+                    _("You greet old friends and meet new allies"), 2000
                 )
             )
             enqueue(
-                RegularTask("There is much to be done. You are chosen!", 1000)
+                RegularTask(
+                    _("You are privy to a council of powerful do-gooders"),
+                    2000,
+                )
+            )
+            enqueue(
+                RegularTask(
+                    _("There is much to be done. You are chosen!"), 1000
+                )
             )
 
         elif choice == 1:
             enqueue(
                 RegularTask(
-                    "Your quarry is in sight, "
-                    "but a mighty enemy bars your path!",
+                    _(
+                        "Your quarry is in sight, "
+                        "but a mighty enemy bars your path!"
+                    ),
                     1000,
                 )
             )
@@ -715,7 +762,10 @@ class Simulation:
 
             enqueue(
                 RegularTask(
-                    f"A desperate struggle commences with {nemesis}", 4000
+                    _("A desperate struggle commences with {nemesis}").format(
+                        nemesis=nemesis
+                    ),
+                    4000,
                 )
             )
 
@@ -727,19 +777,27 @@ class Simulation:
                 if s % 3 == 0:
                     enqueue(
                         RegularTask(
-                            f"Locked in grim combat with {nemesis}", 2000
+                            _("Locked in grim combat with {nemesis}").format(
+                                nemesis=nemesis
+                            ),
+                            2000,
                         )
                     )
                 elif s % 3 == 1:
                     enqueue(
                         RegularTask(
-                            f"{nemesis} seems to have the upper hand", 2000
+                            _("{nemesis} seems to have the upper hand").format(
+                                nemesis=nemesis
+                            ),
+                            2000,
                         )
                     )
                 elif s % 3 == 2:
                     enqueue(
                         RegularTask(
-                            f"You seem to gain the advantage over {nemesis}",
+                            _(
+                                "You seem to gain the advantage over {nemesis}"
+                            ).format(nemesis=nemesis),
                             2000,
                         )
                     )
@@ -748,14 +806,17 @@ class Simulation:
 
             enqueue(
                 RegularTask(
-                    f"Victory! {nemesis} is slain! "
-                    "Exhausted, you lose consciousness",
+                    _(
+                        "Victory! {nemesis} is slain! "
+                        "Exhausted, you lose consciousness"
+                    ).format(nemesis=nemesis),
                     3000,
                 )
             )
             enqueue(
                 RegularTask(
-                    "You awake in a friendly place, but the road awaits", 2000
+                    _("You awake in a friendly place, but the road awaits"),
+                    2000,
                 )
             )
 
@@ -763,36 +824,49 @@ class Simulation:
             nemesis = impressive_guy()
             enqueue(
                 RegularTask(
-                    "Oh sweet relief! "
-                    f"You've reached the protection of the good {nemesis}",
+                    _(
+                        "Oh sweet relief! "
+                        "You've reached the protection of the good {nemesis}"
+                    ).format(nemesis=nemesis),
                     2000,
                 )
             )
             enqueue(
                 RegularTask(
-                    "There is rejoicing, "
-                    f"and an unnerving encounter with {nemesis} in private",
+                    _(
+                        "There is rejoicing, "
+                        "and an unnerving encounter with {nemesis} in private"
+                    ).format(nemesis=nemesis),
                     3000,
                 )
             )
             enqueue(
                 RegularTask(
-                    f"You forget your {boring_item()} and go back to get it",
+                    _("You forget your {item} and go back to get it").format(
+                        item=boring_item()
+                    ),
                     2000,
                 )
             )
             enqueue(
                 RegularTask(
-                    "What's this!? You overhear something shocking!", 2000
+                    _("What's this!? You overhear something shocking!"), 2000
                 )
             )
             enqueue(
-                RegularTask(f"Could {nemesis} be a dirty double-dealer?", 2000)
+                RegularTask(
+                    _("Could {nemesis} be a dirty double-dealer?").format(
+                        nemesis=nemesis
+                    ),
+                    2000,
+                )
             )
             enqueue(
                 RegularTask(
-                    "Who can possibly be trusted with this news!? ... "
-                    "Oh yes, of course",
+                    _(
+                        "Who can possibly be trusted with this news!? ... "
+                        "Oh yes, of course"
+                    ),
                     3000,
                 )
             )
@@ -802,7 +876,10 @@ class Simulation:
 
         enqueue(
             PlotTask(
-                f"Loading {act_name(self.player.quest_book.act + 1)}", 1000
+                _("Loading {act}").format(
+                    act=act_name(self.player.quest_book.act + 1)
+                ),
+                1000,
             )
         )
 
@@ -833,7 +910,7 @@ def impressive_guy() -> str:
 
 def unnamed_monster(level: int, iterations: int) -> Monster:
     result = T.cast(Monster, random.choice(MONSTERS))
-    for _ in range(iterations):
+    for _i in range(iterations):
         alternative = T.cast(Monster, random.choice(MONSTERS))
         if abs(level - alternative.level) < abs(level - result.level):
             result = alternative
@@ -849,7 +926,7 @@ def pick_equipment(
     source: T.List[EquipmentPreset], goal: int
 ) -> EquipmentPreset:
     result = T.cast(EquipmentPreset, random.choice(source))
-    for _ in range(5):
+    for _i in range(5):
         alternative = T.cast(EquipmentPreset, random.choice(source))
         if abs(goal - alternative.quality) < abs(goal - result.quality):
             result = alternative
@@ -860,7 +937,7 @@ def monster_task(
     player_level: int, quest_monster: T.Optional[Monster]
 ) -> KillTask:
     level = player_level
-    for _ in range(level):
+    for _i in range(level):
         if random.odds(2, 5):
             level += random.below(2) * 2 - 1
     if level < 1:
@@ -929,7 +1006,11 @@ def monster_task(
         result = indefinite(result, qty)
 
     duration = (2 * 3 * level * 1000) // player_level
-    return KillTask(f"Executing {result}", duration, monster=monster)
+    return KillTask(
+        _("Executing {monster}").format(monster=result),
+        duration,
+        monster=monster,
+    )
 
 
 class StatsBuilder:

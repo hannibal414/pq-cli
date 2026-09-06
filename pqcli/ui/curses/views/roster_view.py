@@ -1,6 +1,7 @@
 import curses
 import typing as T
 
+from pqcli.i18n import _
 from pqcli.ui.curses.colors import COLOR_LOGO, COLOR_LOGO_ALT, has_colors
 from pqcli.ui.curses.event_handler import EventHandler
 from pqcli.ui.curses.util import KEYS_CANCEL, Choice
@@ -63,21 +64,23 @@ class RosterView(BaseView):
         self.choices: T.List[Choice] = [
             Choice(
                 keys=list(map(ord, "cC")),
-                desc="[C] Create new character",
+                desc=_("[C] Create new character"),
                 callback=self.on_create,
             ),
             Choice(
                 keys=list(map(ord, "pP")),
-                desc="[P] Play",
+                desc=_("[P] Play"),
                 callback=self.on_play,
             ),
             Choice(
                 keys=list(map(ord, "dD")),
-                desc="[D] Delete character",
+                desc=_("[D] Delete character"),
                 callback=self.on_delete,
             ),
             Choice(
-                keys=list(KEYS_CANCEL), desc="[Q] Quit", callback=self.on_quit
+                keys=list(KEYS_CANCEL),
+                desc=_("[Q] Quit"),
+                callback=self.on_quit,
             ),
         ]
 

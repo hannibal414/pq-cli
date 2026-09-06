@@ -1,6 +1,7 @@
 import functools
 import typing as T
 
+from pqcli.i18n import _
 from pqcli.lingo import act_name, to_roman
 from pqcli.roster import Roster
 from pqcli.ui.curses.util import KEYS_CANCEL, Choice
@@ -30,10 +31,16 @@ class ChooseCharacterView(MenuView):
 
             label = (
                 f"[{key or '-'}] "
-                f"{player.name} the {player.race.name} "
-                f"({act_name(player.quest_book.act)})\n"
-                f"    Level {player.level} {player.class_.name}\n"
-                f"    {best_equip} / {best_spell_name} / {best_stat_name}"
+                + _("{name} the {race} ({act})").format(
+                    name=player.name,
+                    race=player.race.name,
+                    act=act_name(player.quest_book.act),
+                )
+                + "\n    "
+                + _("Level {level} {class_}").format(
+                    level=player.level, class_=player.class_.name
+                )
+                + f"\n    {best_equip} / {best_spell_name} / {best_stat_name}"
             )
 
             self._choices.append(
@@ -47,7 +54,7 @@ class ChooseCharacterView(MenuView):
         self._choices.append(
             Choice(
                 keys=list(KEYS_CANCEL),
-                desc="[Q] Cancel",
+                desc=_("[Q] Cancel"),
                 callback=self.on_cancel,
             )
         )

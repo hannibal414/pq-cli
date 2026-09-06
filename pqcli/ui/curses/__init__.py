@@ -7,6 +7,7 @@ import typing as T
 
 from pqcli import lingo
 from pqcli.config import Class, Race
+from pqcli.i18n import _
 from pqcli.mechanic import Player, Stats, create_player
 from pqcli.roster import Roster
 from pqcli.ui.base import BaseUserInterface
@@ -156,7 +157,7 @@ class CursesUserInterface(BaseUserInterface):
 
     def _switch_to_delete_char_view(self) -> None:
         view = ChooseCharacterView(
-            self._screen, self.roster, "Choose character to delete"
+            self._screen, self.roster, _("Choose character to delete")
         )
         view.on_cancel += self._switch_to_roster_view
         view.on_confirm += self._switch_to_confirm_delete_char_view
@@ -170,7 +171,7 @@ class CursesUserInterface(BaseUserInterface):
 
     def _switch_to_play_view(self) -> None:
         view = ChooseCharacterView(
-            self._screen, self.roster, "Choose character to play"
+            self._screen, self.roster, _("Choose character to play")
         )
         view.on_cancel += self._switch_to_roster_view
         view.on_confirm += self._switch_to_game_view

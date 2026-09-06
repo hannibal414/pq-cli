@@ -1,5 +1,6 @@
 import typing as T
 
+from pqcli.i18n import _
 from pqcli.ui.curses.event_handler import EventHandler
 from pqcli.ui.curses.util import Choice
 from pqcli.ui.curses.widgets import Menu
@@ -18,12 +19,12 @@ class ConfirmView(BaseView):
         self.choices: T.List[Choice] = [
             Choice(
                 keys=list(map(ord, "yY")),
-                desc="[Y] Yes",
+                desc=_("[Y] Yes"),
                 callback=self.on_confirm,
             ),
             Choice(
                 keys=list(map(ord, "nNqQ\N{ESC}")),
-                desc="[N] No",
+                desc=_("[N] No"),
                 callback=self.on_cancel,
             ),
         ]

@@ -4,6 +4,7 @@ import typing as T
 
 from pqcli.lingo import format_timespan
 from pqcli.ui.curses.colors import COLOR_PROGRESSBAR, has_colors
+from pqcli.ui.curses.util import display_width, truncate_to_width
 from pqcli.ui.curses.widgets.base import WindowWrapper
 
 
@@ -47,8 +48,10 @@ class ProgressBar(WindowWrapper):
         if self.time_left and self._show_time:
             text += f" ({format_timespan(self.time_left)})"
 
-        x = max(0, (self.getmaxyx()[1] - len(text)) // 2)
-        self._win.addnstr(0, x, text, min(len(text), self.getmaxyx()[1] - 1))
+        text = truncate_to_width(text, self.getmaxyx()[1] - 1)
+        x = max(0, (self.getmaxyx()[1] - display_width(text)) // 2)
+        if text:
+            self._win.addstr(0, x, text)
         x = int(cur_pos * self.getmaxyx()[1] // max_pos)
         if x > 0:
             self._win.chgat(

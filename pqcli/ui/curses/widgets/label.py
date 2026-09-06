@@ -1,3 +1,5 @@
+from pqcli.ui.curses.util import truncate_to_width
+
 from .base import WindowWrapper
 
 
@@ -6,5 +8,7 @@ class Label(WindowWrapper):
         if not self._win:
             return
         self._win.erase()
-        self._win.addnstr(text, min(len(text), self.getmaxyx()[1] - 1))
+        text = truncate_to_width(text, self.getmaxyx()[1] - 1)
+        if text:
+            self._win.addstr(text)
         self._win.noutrefresh()

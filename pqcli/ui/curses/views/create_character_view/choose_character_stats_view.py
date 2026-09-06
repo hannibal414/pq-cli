@@ -2,6 +2,7 @@ import curses.ascii
 import typing as T
 
 from pqcli.config import PRIME_STATS
+from pqcli.i18n import _
 from pqcli.mechanic import StatsBuilder
 from pqcli.ui.curses.event_handler import EventHandler
 from pqcli.ui.curses.util import KEYS_CANCEL, KEYS_CYCLE, KEYS_DOWN, KEYS_UP
@@ -89,15 +90,15 @@ class ChooseCharacterStatsView(BaseView):
         stats_h = self._stats_win.getmaxyx()[0]
 
         self._win.erase()
-        self._win.addstr(0, 0, "Roll character stats:")
+        self._win.addstr(0, 0, _("Roll character stats:"))
         with focus_standout(self._active_widget == 0, self._win):
-            self._win.addstr(3 + stats_h + 0, 0, "[F5   ] Roll")
+            self._win.addstr(3 + stats_h + 0, 0, _("[F5   ] Roll"))
         with focus_standout(self._active_widget == 1, self._win):
-            self._win.addstr(3 + stats_h + 1, 0, "[F6   ] Unroll")
+            self._win.addstr(3 + stats_h + 1, 0, _("[F6   ] Unroll"))
         with focus_standout(self._active_widget == 2, self._win):
-            self._win.addstr(3 + stats_h + 2, 0, "[F10  ] Continue")
+            self._win.addstr(3 + stats_h + 2, 0, _("[F10  ] Continue"))
         with focus_standout(self._active_widget == 3, self._win):
-            self._win.addstr(3 + stats_h + 3, 0, "[Esc  ] Cancel")
+            self._win.addstr(3 + stats_h + 3, 0, _("[Esc  ] Cancel"))
         self._win.noutrefresh()
 
         self._stats_win.erase()

@@ -2,7 +2,14 @@ import curses
 import curses.ascii
 import typing as T
 
-from pqcli.ui.curses.util import KEYS_CYCLE, KEYS_DOWN, KEYS_UP, Choice
+from pqcli.ui.curses.util import (
+    KEYS_CYCLE,
+    KEYS_DOWN,
+    KEYS_UP,
+    Choice,
+    display_width,
+    pad_to_width,
+)
 from pqcli.ui.curses.widgets.focusable import focus_standout
 
 from .base import Widget
@@ -26,7 +33,9 @@ class Menu(Widget):
             [choice.desc.splitlines() for choice in choices], []
         )
 
-        w = max(map(len, all_lines)) + 1
+        # Size the pad in terminal columns, not characters: CJK glyphs are
+        # two columns wide and would otherwise overflow the pad.
+        w = max(map(display_width, all_lines)) + 1
         h = len(all_lines) + 1
         self._pad: T.Optional[T.Any] = curses.newpad(h, w)
 
@@ -80,8 +89,8 @@ class Menu(Widget):
             self._pad.move(y, 0)
             with focus_standout(i == self._active_choice, self._pad):
                 lines = choice.desc.splitlines()
-                max_len = max(map(len, lines))
-                lines = [line.ljust(max_len) for line in lines]
+                max_len = max(map(display_width, lines))
+                lines = [pad_to_width(line, max_len) for line in lines]
                 self._pad.addstr("\n".join(lines))
             y += len(choice.desc.splitlines())
 
