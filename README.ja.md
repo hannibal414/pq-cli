@@ -10,6 +10,11 @@
 - オンライン版:              http://progressquest.com/play/
 - オリジナル版:              https://bitbucket.org/grumdrig/pq
 
+このリポジトリは Laura Kurczewska 氏による
+[rr-/pq-cli](https://github.com/rr-/pq-cli) のフォークです。日本語化と、
+地の文だけでなくゲーム全体を翻訳可能にする仕組みを追加しています。
+原作の MIT ライセンスと著作権表示は `LICENSE.md` にそのまま残してあります。
+
 ## 特徴
 
 - ゲームロジックを忠実に移植
@@ -39,7 +44,7 @@ Python 3.10 以降があれば `pip install --user pqcli` を実行するだけ�
 git 版を使いたい場合は、もう少しだけ手順が増えます:
 
 ```console
-$ git clone https://github.com/rr-/pq-cli.git
+$ git clone https://github.com/hannibal414/pq-cli.git
 $ cd pq-cli
 $ pip install --user .
 ```
@@ -122,9 +127,9 @@ msgid が共有する唯一の名前です。表示は描画時にカタログ�
 # 1. ソースから msgid を再抽出して .pot テンプレートを更新する
 uv run pybabel extract -F babel.cfg -k N_ -k Term -k phrase \
     -o pqcli/locale/pqcli.pot \
-    --project=pqcli --version=1.0.4 \
+    --project=pqcli --version=1.1.0 \
     --copyright-holder="pq-cli contributors" \
-    --msgid-bugs-address="https://github.com/rr-/pq-cli/issues" .
+    --msgid-bugs-address="https://github.com/hannibal414/pq-cli/issues" .
 
 # 2. テンプレートを既存のカタログにマージする
 uv run pybabel update -i pqcli/locale/pqcli.pot -d pqcli/locale -D pqcli
@@ -180,7 +185,7 @@ pre-commit の `golden-output` フックが自動で確認します。翻訳作�
 
 ```sh
 # リポジトリをクローン:
-git clone https://github.com/rr-/pq-cli.git
+git clone https://github.com/hannibal414/pq-cli.git
 cd pq-cli
 
 # ローカルの venv に依存関係をインストール:

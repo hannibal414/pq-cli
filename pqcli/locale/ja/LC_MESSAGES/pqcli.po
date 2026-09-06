@@ -1,15 +1,15 @@
 # Japanese translations for pqcli.
 # Copyright (C) 2026 pq-cli contributors
 # This file is distributed under the same license as the pqcli project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hannibal414, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: pqcli 1.0.4\n"
-"Report-Msgid-Bugs-To: https://github.com/rr-/pq-cli/issues\n"
-"POT-Creation-Date: 2026-09-06 16:00+0900\n"
+"Project-Id-Version: pqcli 1.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/hannibal414/pq-cli/issues\n"
+"POT-Creation-Date: 2026-09-06 19:16+0900\n"
 "PO-Revision-Date: 2026-09-06 14:38+0900\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: hannibal414 <207813470+hannibal414@users.noreply.github.com>\n"
 "Language: ja\n"
 "Language-Team: Japanese\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -2790,7 +2790,7 @@ msgid "eggsac"
 msgstr ""
 
 #: pqcli/config.py:613
-#, fuzzy, python-brace-format
+#, fuzzy
 msgid "Rust Monster"
 msgstr "{monster}を討伐中"
 
@@ -3635,52 +3635,52 @@ msgstr "{monsters}をなだめよ"
 msgid "Executing {monster}"
 msgstr "{monster}を討伐中"
 
-#: pqcli/lingo/__init__.py:36
+#: pqcli/lingo/__init__.py:44
 #, python-brace-format
 msgid "~{num}s"
 msgstr ""
 
-#: pqcli/lingo/__init__.py:39
+#: pqcli/lingo/__init__.py:47
 #, python-brace-format
 msgid "~{num}m"
 msgstr ""
 
-#: pqcli/lingo/__init__.py:42
+#: pqcli/lingo/__init__.py:50
 #, python-brace-format
 msgid "~{num}h"
 msgstr ""
 
-#: pqcli/lingo/__init__.py:44
+#: pqcli/lingo/__init__.py:52
 #, python-brace-format
 msgid "~{num}d"
 msgstr ""
 
-#: pqcli/lingo/__init__.py:87
+#: pqcli/lingo/__init__.py:95
 msgid "Prologue"
 msgstr "プロローグ"
 
-#: pqcli/lingo/__init__.py:88
+#: pqcli/lingo/__init__.py:96
 #, python-brace-format
 msgid "Act {numeral}"
 msgstr "第{numeral}幕"
 
-#: pqcli/lingo/__init__.py:95
+#: pqcli/lingo/__init__.py:101
 msgid "faithful"
 msgstr "忠実な"
 
-#: pqcli/lingo/__init__.py:95
+#: pqcli/lingo/__init__.py:101
 msgid "noble"
 msgstr "高潔な"
 
-#: pqcli/lingo/__init__.py:95
+#: pqcli/lingo/__init__.py:101
 msgid "loyal"
 msgstr "忠義の"
 
-#: pqcli/lingo/__init__.py:95
+#: pqcli/lingo/__init__.py:101
 msgid "brave"
 msgstr "勇敢な"
 
-#: pqcli/lingo/__init__.py:97
+#: pqcli/lingo/__init__.py:103
 #, python-brace-format
 msgid "Terminate {adjective} {name}?"
 msgstr "{adjective}{name}を消去しますか？"

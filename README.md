@@ -10,6 +10,11 @@ Relive the great adventure… this time in the terminal realm!
 - Online version:       http://progressquest.com/play/
 - Original version:     https://bitbucket.org/grumdrig/pq
 
+This is a fork of [rr-/pq-cli](https://github.com/rr-/pq-cli) by Laura
+Kurczewska, adding Japanese localization and the machinery that makes the whole
+game — not just its prose — translatable. The original MIT licence and
+copyright are kept in `LICENSE.md`.
+
 ## Features
 
 - Faithful port of the game logic
@@ -38,7 +43,7 @@ good to go! Then type `pqcli` to run the game.
 In case if you want to use the git version, the process is just a bit more complex:
 
 ```console
-$ git clone https://github.com/rr-/pq-cli.git
+$ git clone https://github.com/hannibal414/pq-cli.git
 $ cd pq-cli
 $ pip install --user .
 ```
@@ -120,9 +125,9 @@ Translation tooling needs the dev dependencies (`uv sync`).
 # 1. Re-extract msgids from the source into the .pot template
 uv run pybabel extract -F babel.cfg -k N_ -k Term -k phrase \
     -o pqcli/locale/pqcli.pot \
-    --project=pqcli --version=1.0.4 \
+    --project=pqcli --version=1.1.0 \
     --copyright-holder="pq-cli contributors" \
-    --msgid-bugs-address="https://github.com/rr-/pq-cli/issues" .
+    --msgid-bugs-address="https://github.com/hannibal414/pq-cli/issues" .
 
 # 2. Merge the template into the existing catalogs
 uv run pybabel update -i pqcli/locale/pqcli.pot -d pqcli/locale -D pqcli
@@ -172,7 +177,7 @@ hook stays quiet during translation work and speaks up when code does.
 
 ```sh
 # Clone the repository:
-git clone https://github.com/rr-/pq-cli.git
+git clone https://github.com/hannibal414/pq-cli.git
 cd pq-cli
 
 # Install dependencies into a local venv:

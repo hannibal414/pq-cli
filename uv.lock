@@ -67,12 +67,9 @@ wheels = [
 
 [[package]]
 name = "pqcli"
-version = "1.0.4"
+version = "1.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "pre-commit" },
-    { name = "urwid" },
-    { name = "urwid-readline" },
     { name = "wcwidth" },
     { name = "xdg-base-dirs" },
 ]
@@ -90,9 +87,6 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "pre-commit", specifier = ">=4.5.0" },
-    { name = "urwid", specifier = ">=2.1.2,<3.0.0" },
-    { name = "urwid-readline", specifier = ">=0.13,<1.0.0" },
     { name = "wcwidth", specifier = ">=0.2.5,<1.0.0" },
     { name = "windows-curses", marker = "extra == 'windows'", specifier = ">=2.3.0,<3.0.0" },
     { name = "xdg-base-dirs", specifier = ">=6.0.0,<7.0.0" },
@@ -102,7 +96,7 @@ provides-extras = ["windows"]
 [package.metadata.requires-dev]
 dev = [
     { name = "babel", specifier = ">=2.14.0" },
-    { name = "pre-commit", specifier = ">=2.16.0" },
+    { name = "pre-commit", specifier = ">=4.5.0" },
 ]
 
 [[package]]
@@ -193,28 +187,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/72/94/1a15dd82efb362ac8
 wheels = [
     { url = "https://files.pythonhosted.org/packages/18/67/36e9267722cc04a6b9f15c7f3441c2363321a3ea07da7ae0c0707beb2a9c/typing_extensions-4.15.0-py3-none-any.whl", hash = "sha256:f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548", size = 44614, upload-time = "2025-08-25T13:49:24.86Z" },
 ]
-
-[[package]]
-name = "urwid"
-version = "2.6.16"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "typing-extensions" },
-    { name = "wcwidth" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/98/21/ad23c9e961b2d36d57c63686a6f86768dd945d406323fb58c84f09478530/urwid-2.6.16.tar.gz", hash = "sha256:93ad239939e44c385e64aa00027878b9e5c486d59e855ec8ab5b1e1adcdb32a2", size = 848179, upload-time = "2024-10-15T16:07:24.297Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/54/cb/271a4f5a1bf4208dbdc96d85b9eae744cf4e5e11ac73eda76dc98c8fd2d7/urwid-2.6.16-py3-none-any.whl", hash = "sha256:de14896c6df9eb759ed1fd93e0384a5279e51e0dde8f621e4083f7a8368c0797", size = 297196, upload-time = "2024-10-15T16:07:22.521Z" },
-]
-
-[[package]]
-name = "urwid-readline"
-version = "0.15.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "urwid" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/ad/70/be318554495555eba7d8ff6e489f6f74ddb225b24086ba4af62a82e723fd/urwid_readline-0.15.1.tar.gz", hash = "sha256:9301444b86d58f7d26388506b704f142cefd193888488b4070d3a0fdfcfc0f84", size = 9007, upload-time = "2024-09-22T17:51:55.144Z" }
 
 [[package]]
 name = "virtualenv"

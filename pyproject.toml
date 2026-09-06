@@ -1,8 +1,9 @@
 [project]
 name = "pqcli"
-version = "1.0.4"
-description = "Progress Quest: the CLI edition"
+version = "1.1.0"
+description = "Progress Quest: the CLI edition, with Japanese localization"
 authors = [{ name = "Laura Kurczewska", email = "dash@wind.garden" }]
+maintainers = [{ name = "hannibal414", email = "207813470+hannibal414@users.noreply.github.com" }]
 license = "MIT"
 readme = "README.md"
 requires-python = ">=3.10,<4.0"
@@ -12,26 +13,30 @@ classifiers = [
     "Intended Audience :: End Users/Desktop",
     "License :: OSI Approved :: MIT License",
     "Natural Language :: English",
+    "Natural Language :: Japanese",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
     "Operating System :: POSIX :: Linux",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Games/Entertainment :: Role-Playing",
     "Topic :: Games/Entertainment :: Simulation",
 ]
 
 dependencies = [
     "xdg-base-dirs>=6.0.0,<7.0.0",
-    "urwid>=2.1.2,<3.0.0",
-    "urwid-readline>=0.13,<1.0.0",
     "wcwidth>=0.2.5,<1.0.0",
-    "pre-commit>=4.5.0",
 ]
 
 [project.optional-dependencies]
 windows = ["windows-curses>=2.3.0,<3.0.0"]
 
 [project.urls]
-Repository = "https://github.com/rr-/pq-cli.git"
+Repository = "https://github.com/hannibal414/pq-cli.git"
+"Upstream project" = "https://github.com/rr-/pq-cli"
 
 [project.scripts]
 pqcli = "pqcli.__main__:main"
@@ -40,8 +45,8 @@ pqcli = "pqcli.__main__:main"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.uv]
-dev-dependencies = ["pre-commit>=2.16.0", "babel>=2.14.0"]
+[dependency-groups]
+dev = ["pre-commit>=4.5.0", "babel>=2.14.0"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["pqcli"]
