@@ -1311,7 +1311,7 @@ msgstr ""
 
 #: pqcli/config.py:384 pqcli/config.py:441
 msgid "cookie"
-msgstr ""
+msgstr "クッキー"
 
 #: pqcli/config.py:385
 msgid "pint"
