@@ -2,6 +2,8 @@
   <img alt="Progress Quest" src="http://progressquest.com/pq.png">
 </p>
 
+*English | [日本語](README.ja.md)*
+
 Relive the great adventure… this time in the terminal realm!
 
 - Progress Quest site:  http://progressquest.com/
@@ -30,8 +32,8 @@ Basic interface:
 
 ## How to install
 
-If you have Python 3.7, just run `pip install --user pqcli` and you're good to go!
-Then type `pqcli` to run the game.
+If you have Python 3.10 or newer, just run `pip install --user pqcli` and you're
+good to go! Then type `pqcli` to run the game.
 
 In case if you want to use the git version, the process is just a bit more complex:
 
@@ -145,21 +147,21 @@ name (`for _ in range(...)`) in a module that imports it.
 
 ```sh
 # Clone the repository:
-git clone https://github.com/rr-/pqcli.git
-cd pqcli
+git clone https://github.com/rr-/pq-cli.git
+cd pq-cli
 
-# Install to a local venv:
-poetry install
+# Install dependencies into a local venv:
+uv sync
 
 # Install pre-commit hooks:
-poetry run pre-commit install
+uv run pre-commit install
 
-# Enter the venv:
-poetry shell
+# Run commands inside the venv:
+uv run pqcli
 ```
 
-This project uses [poetry](https://python-poetry.org/) for packaging.
-Install instructions are available at [poetry#installation](https://python-poetry.org/docs/#installation).
+This project uses [uv](https://docs.astral.sh/uv/) for packaging.
+Install instructions are available at [uv installation](https://docs.astral.sh/uv/getting-started/installation/).
 
 ## Troubleshooting
 
