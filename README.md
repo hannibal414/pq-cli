@@ -179,6 +179,9 @@ hook stays quiet during translation work and speaks up when code does.
 
 ## Contributing
 
+Translating needs only a `.po` editor — see [CONTRIBUTING.md](CONTRIBUTING.md).
+To work on the code:
+
 ```sh
 # Clone the repository:
 git clone https://github.com/hannibal414/pq-cli.git

@@ -186,6 +186,9 @@ pre-commit の `golden-output` フックが自動で確認します。翻訳作�
 
 ## 開発への参加
 
+翻訳に必要なのは `.po` エディタだけです。[CONTRIBUTING.ja.md](CONTRIBUTING.ja.md) を参照してください。
+コードを変更する場合:
+
 ```sh
 # リポジトリをクローン:
 git clone https://github.com/hannibal414/pq-cli.git
