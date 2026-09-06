@@ -94,14 +94,23 @@ When `PQCLI_LANG` is unset, the usual gettext environment is consulted
 (`LANGUAGE`, `LC_ALL`, `LC_MESSAGES`, `LANG`). If no catalog matches, the game
 falls back to English.
 
-Only prose is translated — UI labels, task descriptions, quest text and log
-messages. In-game proper nouns (monster, spell, race, class, item and equipment
-names, all defined in `pqcli/config.py`) deliberately stay in English, as does
-the English grammar machinery in `pqcli/lingo.py` that inflects them.
+Everything the game shows is translatable, including the game-data tables in
+`pqcli/config.py` — monster, spell, race, class, item and equipment names. Those
+English strings are *identities*, not display text: they are what the code, the
+save files and the msgids all agree on, and the display layer resolves them
+through the catalog at render time. Translating one therefore means adding a
+msgstr, never editing `pqcli/config.py`.
 
-Note that quest and task text is translated when it is *generated*, then stored
-in the save file. Text already recorded in an existing save keeps the language
-it was created in; only newly generated text picks up a language change.
+Text is stored as a phrase (`pqcli/text.py`) — a msgid plus its parameters —
+rather than as a finished sentence, so a language change reaches text that was
+generated earlier, and translators can reorder the parts of a sentence in the
+catalog. Text written by versions before phrases existed keeps the language it
+was generated in, since the msgid it came from cannot be recovered.
+
+English grammar (articles, plurals, the adjective stack) lives in
+`pqcli/lingo/en.py`. `pqcli/lingo/__init__.py` picks a backend from the active
+catalog and falls back to English, so adding `pqcli/lingo/<lang>.py` is how a
+language gets its own rules.
 
 ### Working on translations
 
@@ -109,7 +118,8 @@ Translation tooling needs the dev dependencies (`uv sync`).
 
 ```console
 # 1. Re-extract msgids from the source into the .pot template
-uv run pybabel extract -F babel.cfg -o pqcli/locale/pqcli.pot \
+uv run pybabel extract -F babel.cfg -k N_ -k Term -k phrase \
+    -o pqcli/locale/pqcli.pot \
     --project=pqcli --version=1.0.4 \
     --copyright-holder="pq-cli contributors" \
     --msgid-bugs-address="https://github.com/rr-/pq-cli/issues" .
@@ -128,7 +138,13 @@ uv run pybabel init -i pqcli/locale/pqcli.pot -d pqcli/locale -l de -D pqcli
 ```
 
 The compiled `.mo` files are what the game loads at runtime, so re-run step 3
-after editing any `.po`. When adding translatable strings to the source, wrap
+after editing any `.po`. The `compile-catalogs` pre-commit hook does this for
+you and fails the commit if the `.mo` was stale.
+
+`-k N_ -k Term -k phrase` is what pulls the game data in: `N_()` marks a string
+in `pqcli/config.py` for extraction without translating it there, `Term()` names
+one of those strings at the point of use, and `phrase()` builds a deferred
+sentence. When adding translatable strings to the source, wrap
 them with `_()` from `pqcli.i18n` and prefer a single `.format()` template over
 concatenation, so translators can reorder the parts:
 
@@ -142,6 +158,15 @@ _("Selling ") + indefinite(item.name, item.quantity)
 
 Beware that `_` is the gettext function: never use it as a throwaway variable
 name (`for _ in range(...)`) in a module that imports it.
+
+### Checking the display did not change
+
+There are no tests, so `tools/golden.py` stands in for one: it runs five seeded
+simulations and dumps every string they display. `--check` diffs that against
+`tools/golden_expected.txt` and fails on any difference; `--update` re-records
+it once you have read the diff and want it. The `golden-output` pre-commit hook
+runs the check for you. Translating does not change the English dump, so the
+hook stays quiet during translation work and speaks up when code does.
 
 ## Contributing
 

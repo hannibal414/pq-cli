@@ -9,3 +9,19 @@ repos:
   rev: 24.4.2
   hooks:
   - id: black
+- repo: local
+  hooks:
+  - id: compile-catalogs
+    name: compile gettext catalogs
+    description: the game loads the .mo files, so a stale one silently ships the old text
+    entry: uv run pybabel compile -d pqcli/locale -D pqcli
+    language: system
+    files: ^pqcli/locale/.*\.(po|pot)$
+    pass_filenames: false
+  - id: golden-output
+    name: golden output unchanged
+    description: catches unintended changes to what the game displays in English
+    entry: uv run python tools/golden.py --check
+    language: system
+    files: ^(pqcli/.*\.py|tools/golden.*)$
+    pass_filenames: false

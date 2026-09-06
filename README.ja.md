@@ -96,16 +96,23 @@ PQCLI_LANG=en pqcli
 （`LANGUAGE`、`LC_ALL`、`LC_MESSAGES`、`LANG`）が参照されます。
 該当するカタログが見つからない場合は英語にフォールバックします。
 
-翻訳対象は地の文のみです（UIラベル、行動の説明文、クエスト文、ログ
-メッセージ）。ゲーム内の固有名詞（モンスター名・呪文名・種族名・
-クラス名・アイテム名・装備名。いずれも `pqcli/config.py` で定義）は
-意図的に英語のまま残してあります。それらを活用する `pqcli/lingo.py` の
-英文法処理も同様です。
+画面に出るものはすべて翻訳できます。`pqcli/config.py` のゲームデータ
+（モンスター名・呪文名・種族名・クラス名・アイテム名・装備名）も対象です。
+そこにある英語文字列は表示用ではなく**識別子**で、コードとセーブファイルと
+msgid が共有する唯一の名前です。表示は描画時にカタログを引いて解決されるので、
+翻訳するときは msgstr を追加するだけで、`pqcli/config.py` を書き換えては
+いけません。
 
-なお、クエスト文や行動の説明文は*生成された時点で*翻訳され、その後
-セーブファイルに保存されます。既存のセーブに記録済みのテキストは
-生成時の言語のまま残り、言語を切り替えても新しく生成される
-テキストにのみ反映されます。
+テキストは完成した文ではなく**フレーズ**（`pqcli/text.py`）、つまり msgid と
+差し込みパラメータの組で保存されます。そのため言語を切り替えると既存の
+セーブに記録済みのテキストにも反映され、翻訳者は `.po` 側で語順を
+入れ替えられます。フレーズ導入以前のバージョンが書いたテキストだけは、
+元の msgid を復元できないため生成時の言語のまま残ります。
+
+英文法（冠詞・複数形・形容詞の前置）は `pqcli/lingo/en.py` にあります。
+`pqcli/lingo/__init__.py` が有効なカタログからバックエンドを選び、無ければ
+英語にフォールバックします。`pqcli/lingo/<言語>.py` を足すのが、その言語に
+固有の文法規則を持たせる方法です。
 
 ### 翻訳の追加・更新
 
@@ -113,7 +120,8 @@ PQCLI_LANG=en pqcli
 
 ```console
 # 1. ソースから msgid を再抽出して .pot テンプレートを更新する
-uv run pybabel extract -F babel.cfg -o pqcli/locale/pqcli.pot \
+uv run pybabel extract -F babel.cfg -k N_ -k Term -k phrase \
+    -o pqcli/locale/pqcli.pot \
     --project=pqcli --version=1.0.4 \
     --copyright-holder="pq-cli contributors" \
     --msgid-bugs-address="https://github.com/rr-/pq-cli/issues" .
@@ -132,7 +140,14 @@ uv run pybabel init -i pqcli/locale/pqcli.pot -d pqcli/locale -l de -D pqcli
 ```
 
 ゲームが実行時に読み込むのはコンパイル済みの `.mo` ファイルです。
-`.po` を編集したら必ず手順3を再実行してください。
+`.po` を編集したら必ず手順3を再実行してください。pre-commit の
+`compile-catalogs` フックが自動で実行し、`.mo` が古いままならコミットを
+失敗させます。
+
+ゲームデータを抽出しているのは `-k N_ -k Term -k phrase` です。`N_()` は
+`pqcli/config.py` の文字列をその場で翻訳せずに抽出対象として印を付け、
+`Term()` は利用箇所でその文字列を指し、`phrase()` は遅延評価される文を
+組み立てます。
 
 ソースに翻訳対象の文字列を追加するときは `pqcli.i18n` の `_()` で
 囲みます。その際、文字列連結ではなく `.format()` を使った1文まるごとの
@@ -150,6 +165,16 @@ _("Selling ") + indefinite(item.name, item.quantity)
 `_` は gettext の関数である点に注意してください。これを import している
 モジュール内で、使い捨ての変数名として `_` を使わないでください
 （`for _ in range(...)` など）。gettext の `_` を上書きしてしまいます。
+
+### 表示が変わっていないことの確認
+
+テストが無いため、`tools/golden.py` がその代わりになります。シードを固定した
+5本のシミュレーションを走らせ、表示される文字列をすべてダンプします。
+`--check` で `tools/golden_expected.txt` と突き合わせ、差分があれば失敗します。
+差分を読んだうえで意図した変更なら `--update` で記録し直してください。
+pre-commit の `golden-output` フックが自動で確認します。翻訳作業では英語の
+ダンプは変わらないので、このフックは静かなままで、コードを変えたときだけ
+反応します。
 
 ## 開発への参加
 

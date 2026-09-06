@@ -22,7 +22,7 @@ class ChooseCharacterClassView(MenuView):
             self._choices.append(
                 Choice(
                     keys=[ord(key)] if key is not None else [],
-                    desc=f"[{key or '-'}] {class_.name}",
+                    desc=f"[{key or '-'}] {_(class_.name)}",
                     callback=functools.partial(self.on_confirm, class_),
                 )
             )

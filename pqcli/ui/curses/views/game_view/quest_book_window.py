@@ -2,6 +2,7 @@ import typing as T
 
 from pqcli.i18n import _
 from pqcli.mechanic import Player
+from pqcli.text import Phrase
 from pqcli.ui.curses.widgets import Focusable
 
 from .progress_bar_window import ListBoxProgressBarWindow
@@ -52,12 +53,10 @@ class QuestBookWindow(Focusable, ListBoxProgressBarWindow):
         self._list_box.select(-1)
         self._render_list_box()
 
-    def _sync_quest_add(self, quest_name: str) -> None:
+    def _sync_quest_add(self, quest_name: Phrase) -> None:
         self._list_box.delete(0, max(0, len(self._list_box) - self.cutoff))
-        prev = self._list_box.get(-1)
-        if prev is not None:
-            self._list_box.set(-1, "[X] " + prev[4:])
-        self._list_box.add("[ ] " + quest_name)
+        self._list_box.mark_done(-1)
+        self._list_box.add(quest_name.render())
         self._list_box.select(-1)
         self._render_list_box()
 

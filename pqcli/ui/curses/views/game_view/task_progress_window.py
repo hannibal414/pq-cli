@@ -41,7 +41,9 @@ class TaskProgressWindow(Focusable, WindowWrapper):
 
     def _sync_task_name(self) -> None:
         self._desc_win.set_text(
-            f"{self._player.task.description}..." if self._player.task else "?"
+            f"{self._player.task.description.render()}..."
+            if self._player.task
+            else "?"
         )
 
     def _sync_position(self) -> None:

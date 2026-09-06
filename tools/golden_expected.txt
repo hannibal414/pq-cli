@@ -1,0 +1,1532 @@
+=== seed alpha
+--- opening tasks
+  Loading
+  Experiencing an enigmatic and foreboding night vision
+  Much is revealed about that wise old bastard you'd underestimated
+  A shocking series of events leaves you alone and bewildered, but resolute
+  Drawing upon an unrealized reserve of determination, you set out on a long and dangerous journey
+  Loading Act I
+  Heading to the killing fields
+  Executing a greater Berserker
+--- all tasks
+  A shocking series of events leaves you alone and bewildered, but resolute
+  Drawing upon an unrealized reserve of determination, you set out on a long and dangerous journey
+  Executing Mr. Bronyon the Dung Elf
+  Executing Mrs. Liexdrok the Panda Man
+  Executing Mrs. Ooxaz the Panda Man
+  Executing Mrs. Vackgrad the Lesser Dwarf
+  Executing Mrs. Whivbrick the Dung Elf
+  Executing Saint Kremuv the Half Halfling
+  Executing Sgt. Lidproov the Demicanadian
+  Executing Sgt. Zepouk the Low Elf
+  Executing Sir Crouvwhob the Crested Dwarf
+  Executing Sir Viekzick the Lesser Dwarf
+  Executing a Bat
+  Executing a Battle-Beagle
+  Executing a Battle-Eel
+  Executing a Battle-Frog
+  Executing a Battle-Kobold
+  Executing a Battle-Pixie
+  Executing a Battle-Rat
+  Executing a Battle-Skeleton
+  Executing a Battle-Spider
+  Executing a Berserker
+  Executing a Billy Goat
+  Executing a Boy Scout
+  Executing a Brown Elf
+  Executing a Bugboar
+  Executing a Camel
+  Executing a Caveman
+  Executing a Cub Scout
+  Executing a Dervish
+  Executing a Dwarf
+  Executing a Girl Scout
+  Executing a Gnome
+  Executing a Goblin
+  Executing a Gray Ooze
+  Executing a Grid Bug
+  Executing a Hobgoblin
+  Executing a Hogbird
+  Executing a Koala
+  Executing a Kobold
+  Executing a Leprechaun
+  Executing a Lizard Man
+  Executing a Manes
+  Executing a Mermaid
+  Executing a Merman
+  Executing a Multicell
+  Executing a Nebbish
+  Executing a Nixie
+  Executing a Nymph
+  Executing a Piercer
+  Executing a Pirate
+  Executing a Pixie
+  Executing a Rat
+  Executing a Rot Grub
+  Executing a Sea Elf
+  Executing a Skeleton
+  Executing a Sprite
+  Executing a Stirge
+  Executing a Stun Worm
+  Executing a Troglodyte
+  Executing a Violet Fungi
+  Executing a Wolf
+  Executing a Yellow Mold
+  Executing a comatose Owlbear
+  Executing a comatose baby Bone Devil
+  Executing a crippled Succubus
+  Executing a crippled Unicorn
+  Executing a cursed Centipede
+  Executing a dead Mummy
+  Executing a dead underage Wyvern
+  Executing a foetal Rice Giant
+  Executing a greater Ant
+  Executing a greater Beagle
+  Executing a greater Berserker
+  Executing a greater Billy Goat
+  Executing a greater Bugbear
+  Executing a greater Bunny
+  Executing a greater Centipede
+  Executing a greater Fly
+  Executing a greater Goblin
+  Executing a greater Hobgoblin
+  Executing a greater Nebbish
+  Executing a greater Orc
+  Executing a greater Ostrich
+  Executing a greater Pirate
+  Executing a greater Sea Elf
+  Executing a greater Spider
+  Executing a greater Swamp Elf
+  Executing a massive Nebbish
+  Executing a passing Eel Man Lowling
+  Executing a passing Talking Pony Robot Monk
+  Executing a preadolescent Blink Dog
+  Executing a preadolescent Pegasus
+  Executing a sick Boogie
+  Executing a sick Bugbear
+  Executing a sick Bugboar
+  Executing a sick Centaur
+  Executing a sick Harpy
+  Executing a sick Hogbird
+  Executing a sick Iron Peasant
+  Executing a sick Mini Giant
+  Executing a sick Poroid
+  Executing a sick Satyr
+  Executing a sick Silkie
+  Executing a sick Wight
+  Executing a sick baby Sand Elemental
+  Executing a teenage Harpy
+  Executing a teenage Hogbird
+  Executing a teenage Man-o-war
+  Executing a teenage Quasit
+  Executing a teenage Shadow
+  Executing a veteran Billy Goat
+  Executing a veteran Rot Grub
+  Executing a veteran Sea Elf
+  Executing a veteran Yellow Mold
+  Executing an Eel
+  Executing an Octopus
+  Executing an Orc
+  Executing an Ostrich
+  Executing an underage Bugboar
+  Executing an underage Eel
+  Executing an underage Ghoul
+  Executing an underage Gray Ooze
+  Executing an underage Green Slime
+  Executing an underage Hogbird
+  Executing an underage Homunculus
+  Executing an underage Man-o-war
+  Executing an underage Multicell
+  Executing an underage Silkie
+  Executing an underage Troglodyte
+  Executing an undernourished Bugboar
+  Executing an undernourished Carrion Crawler
+  Executing an undernourished Dryad
+  Executing an undernourished Eel
+  Executing an undernourished Ghoul
+  Executing an undernourished Green Slime
+  Executing an undernourished Harpy
+  Executing an undernourished Hippogriff
+  Executing an undernourished Hogbird
+  Executing an undernourished Homunculus
+  Executing an undernourished Iron Peasant
+  Executing an undernourished Koala
+  Executing an undernourished Multicell
+  Executing an undernourished Nymph
+  Executing an undernourished Peryton
+  Executing an undernourished Quasit
+  Executing an undernourished Uruk
+  Experiencing an enigmatic and foreboding night vision
+  Heading to market to sell loot
+  Heading to the killing fields
+  Loading
+  Loading Act I
+  Much is revealed about that wise old bastard you'd underestimated
+  Negotiating purchase of better equipment
+  Selling 2 ant antennas
+  Selling 2 beagle collars
+  Selling 2 berserker shirts
+  Selling 2 brown elf tusks
+  Selling 2 dervish robes
+  Selling 2 eel sashimis
+  Selling 2 gnome hats
+  Selling 2 grid bug carapaces
+  Selling 2 hogbird curls
+  Selling 2 kobold penises
+  Selling 2 merman tridents
+  Selling 2 multicell dendrites
+  Selling 2 nixie webbings
+  Selling 2 ostrich beaks
+  Selling 2 sea elf jerkins
+  Selling 2 sprite cans
+  Selling 3 homunculus fluids
+  Selling 3 manes tooths
+  Selling 3 stirge proboscises
+  Selling 6 hogbird curls
+  Selling a Blessed Diadem of Worry
+  Selling a Crafted Candelabra of Punctuality
+  Selling a Crystalline Sphere of Awe
+  Selling a Dual Brocade of Grob
+  Selling a Dual Garnet of Intrusion
+  Selling a Dual Orb of Diamonique
+  Selling a Dual Tome of Efficiency
+  Selling a Precious Hymnal of Extroversion
+  Selling a Precious Orb of Loyalty
+  Selling a Puissant Amethyst of Chaos
+  Selling a Spectral Lens of Hurting
+  Selling a bat wing
+  Selling a beagle collar
+  Selling a berserker shirt
+  Selling a billy goat beard
+  Selling a bone devil hook
+  Selling a boogie slime
+  Selling a brown elf tusk
+  Selling a bugbear skin
+  Selling a bugboar tusk
+  Selling a bunny ear
+  Selling a camel hump
+  Selling a carrion crawler egg
+  Selling a caveman club
+  Selling a centaur rib
+  Selling a centipede leg
+  Selling a cub scout neckerchief
+  Selling a dervish robe
+  Selling a dryad acorn
+  Selling a dwarf drawers
+  Selling a frog leg
+  Selling a ghoul muscle
+  Selling a girl scout cookie
+  Selling a gnome hat
+  Selling a goblin ear
+  Selling a green slime sample
+  Selling a grid bug carapace
+  Selling a harpy mascara
+  Selling a hippogriff egg
+  Selling a hobgoblin patella
+  Selling a hogbird curl
+  Selling a homunculus fluid
+  Selling a koala heart
+  Selling a kobold penis
+  Selling a leprechaun wallet
+  Selling a lizard man tail
+  Selling a man-o-war tentacle
+  Selling a manes tooth
+  Selling a mermaid gills
+  Selling a merman trident
+  Selling a mini giant pompadour
+  Selling a multicell dendrite
+  Selling a mummy gauze
+  Selling a nebbish belly
+  Selling a nixie webbing
+  Selling a nymph hanky
+  Selling a pegasus aileron
+  Selling a piercer tip
+  Selling a pirate booty
+  Selling a pixie dust
+  Selling a poroid node
+  Selling a quasit tail
+  Selling a rat tail
+  Selling a rice giant grain
+  Selling a rot grub eggsac
+  Selling a sand elemental glass
+  Selling a sea elf jerkin
+  Selling a shadow silhouette
+  Selling a silkie fur
+  Selling a skeleton clavicle
+  Selling a spider web
+  Selling a stirge proboscis
+  Selling a stun worm trode
+  Selling a succubus bra
+  Selling a swamp elf lilypad
+  Selling a troglodyte tail
+  Selling a violet fungi spore
+  Selling a wight lung
+  Selling a wolf paw
+  Selling a wyvern wing
+  Selling an One True Phial of Intrusion
+  Selling an Ostentatious Gemstone of Joy
+  Selling an Ostentatious Phial of Worry
+  Selling an Unearthly Sphere of Prurience
+  Selling an ant antenna
+  Selling an eel sashimi
+  Selling an iron peasant chaff
+  Selling an octopus beak
+  Selling an orc snout
+  Selling an ostrich beak
+  Selling an owlbear feather
+  Selling an unicorn blood
+  Selling an uruk boot
+--- quests
+  Seek the Golden Hood
+  Fetch me a hoe
+  Placate the Camels
+  Exterminate the Hogbirds
+--- inventory
+  sea elf jerkin x2 special=False
+  gray ooze gravy x2 special=False
+  bugboar tusk x3 special=False
+  yellow mold spore x2 special=False
+  girl scout cookie x2 special=False
+  satyr hoof x1 special=False
+  peryton antler x1 special=False
+  ghoul muscle x1 special=False
+  rat tail x1 special=False
+  hogbird curl x1 special=False
+  wolf paw x1 special=False
+  blink dog eyelid x1 special=False
+  koala heart x1 special=False
+  boy scout merit badge x1 special=False
+--- equipment
+  Weapon: Sharp Rock
+  Hauberk: -2 Burlap
+  Greaves: +1 Lace
+  Cuisses: Warped Canvas
+  Brassairts: Holey Cracked Chamois
+  Gambeson: -1 Holey Patched Flannel
+  Sollerets: Corroded Flannel
+--- best: Corroded Flannel Sollerets
+--- spells
+  Cone of Annoyance 1
+  Hastiness 1
+--- level=2 gold=20 act=1
+=== seed bravo
+--- opening tasks
+  Loading
+  Experiencing an enigmatic and foreboding night vision
+  Much is revealed about that wise old bastard you'd underestimated
+  A shocking series of events leaves you alone and bewildered, but resolute
+  Drawing upon an unrealized reserve of determination, you set out on a long and dangerous journey
+  Loading Act I
+  Heading to the killing fields
+  Executing an Ostrich
+--- all tasks
+  A shocking series of events leaves you alone and bewildered, but resolute
+  Drawing upon an unrealized reserve of determination, you set out on a long and dangerous journey
+  Executing Mr. Eckgreg the Double Wookiee
+  Executing Mrs. Roodnev the Panda Man
+  Executing Mrs. Traevnop the Panda Man
+  Executing a Bat
+  Executing a Battle-Bat
+  Executing a Battle-Dwarf
+  Executing a Battle-Frog
+  Executing a Battle-Ghoul
+  Executing a Battle-Gnome
+  Executing a Battle-Hobgoblin
+  Executing a Battle-Midge
+  Executing a Battle-Moth
+  Executing a Battle-Nixie
+  Executing a Battle-Nymph
+  Executing a Battle-Spider
+  Executing a Battle-Sylph
+  Executing a Battle-Zombie
+  Executing a Berserker
+  Executing a Billy Goat
+  Executing a Brown Elf
+  Executing a Camel
+  Executing a Caveman
+  Executing a Cub Scout
+  Executing a Dervish
+  Executing a Dryad
+  Executing a Dwarf
+  Executing a Ghoul
+  Executing a Gnome
+  Executing a Goblin
+  Executing a Grid Bug
+  Executing a Hobgoblin
+  Executing a Hogbird
+  Executing a Homunculus
+  Executing a Jumpskin
+  Executing a Kobold
+  Executing a Lemure
+  Executing a Leprechaun
+  Executing a Manes
+  Executing a Mermaid
+  Executing a Merman
+  Executing a Nebbish
+  Executing a Nixie
+  Executing a Pirate
+  Executing a Pixie
+  Executing a Quasit
+  Executing a Rat
+  Executing a Rot Grub
+  Executing a Sea Elf
+  Executing a Sea Hag
+  Executing a Silkie
+  Executing a Skeleton
+  Executing a Sprite
+  Executing a Stirge
+  Executing a Stun Worm
+  Executing a Swamp Elf
+  Executing a Troglodyte
+  Executing a Were-Nebbish
+  Executing a Whippet
+  Executing a Wolf
+  Executing a Yellow Mold
+  Executing a Zombie
+  Executing a comatose Cockatrice
+  Executing a comatose Rust Monster
+  Executing a crippled Hippocampus
+  Executing a crippled Malebranche
+  Executing a crippled Owlbear
+  Executing a crippled Satyr
+  Executing a crippled Yeti
+  Executing a cursed Frog
+  Executing a cursed Wasp
+  Executing a dead underage Gorgon
+  Executing a greater Bat
+  Executing a greater Beagle
+  Executing a greater Brown Elf
+  Executing a greater Bunny
+  Executing a greater Gnome
+  Executing a greater Hobgoblin
+  Executing a greater Leprechaun
+  Executing a greater Midge
+  Executing a greater Moth
+  Executing a greater Pixie
+  Executing a greater Rat
+  Executing a greater Sea Elf
+  Executing a greater Wasp
+  Executing a massive Wasp
+  Executing a passing Crested Dwarf Voodoo Princess
+  Executing a passing Half Orc Slow Poisoner
+  Executing a passing Skraeling Lowling
+  Executing a preadolescent Yeti
+  Executing a sick Carrion Crawler
+  Executing a sick Man-o-war
+  Executing a sick Piercer
+  Executing a sick Poroid
+  Executing a sick Shadow
+  Executing a teenage Boogie
+  Executing a teenage Bugbear
+  Executing a teenage Gray Ooze
+  Executing a teenage Harpy
+  Executing a teenage Jumpskin
+  Executing a teenage Man-o-war
+  Executing a teenage Shadow
+  Executing a teenage Shrieker
+  Executing a teenage Triton
+  Executing a teenage Violet Fungi
+  Executing a veteran Grid Bug
+  Executing an Imp
+  Executing an Iron Peasant
+  Executing an Ogre
+  Executing an Orc
+  Executing an Ostrich
+  Executing an Uruk
+  Executing an enormous Rat
+  Executing an underage Camel
+  Executing an underage Eel
+  Executing an underage Ghoul
+  Executing an underage Gray Ooze
+  Executing an underage Green Slime
+  Executing an underage Hippogriff
+  Executing an underage Hogbird
+  Executing an underage Homunculus
+  Executing an underage Koala
+  Executing an underage Lemure
+  Executing an underage Pegasus
+  Executing an underage Shrieker
+  Executing an underage Silkie
+  Executing an underage Stun Worm
+  Executing an underage Triton
+  Executing an underage Violet Fungi
+  Executing an underage Wolf
+  Executing an undernourished Girl Scout
+  Executing an undernourished Harpy
+  Executing an undernourished Homunculus
+  Executing an undernourished Imp
+  Executing an undernourished Multicell
+  Executing an undernourished Nymph
+  Executing an undernourished Octopus
+  Executing an undernourished Sea Hag
+  Executing an undernourished Shrieker
+  Executing an undernourished Silkie
+  Executing an undernourished Stun Worm
+  Executing an undernourished Triton
+  Executing an undernourished Uruk
+  Executing an undernourished Wolf
+  Executing an undernourished Wolog
+  Executing an undernourished Zombie
+  Experiencing an enigmatic and foreboding night vision
+  Heading to market to sell loot
+  Heading to the killing fields
+  Loading
+  Loading Act I
+  Much is revealed about that wise old bastard you'd underestimated
+  Negotiating purchase of better equipment
+  Selling 2 bat wings
+  Selling 2 berserker shirts
+  Selling 2 dwarf drawerses
+  Selling 2 ghoul muscles
+  Selling 2 hogbird curls
+  Selling 2 orc snouts
+  Selling 2 ostrich beaks
+  Selling 2 rot grub eggsacs
+  Selling 2 sea hag warts
+  Selling 2 silkie furs
+  Selling 2 stun worm trodes
+  Selling 6 bat wings
+  Selling 6 hobgoblin patellas
+  Selling 7 bat wings
+  Selling 8 hobgoblin patellas
+  Selling a Crafted Lens of Practicality
+  Selling a Fearsome Tome of Fealty
+  Selling a Filigreed Spangle of Silence
+  Selling a Golden Amethyst of Chaos
+  Selling a Grandiose Hymnal of Loyalty
+  Selling a Lucky Albatross of the Bone
+  Selling a Proverbial Amethyst of Grob
+  Selling a Spectral Laurel of Chaos
+  Selling a bat wing
+  Selling a beagle collar
+  Selling a berserker shirt
+  Selling a billy goat beard
+  Selling a boogie slime
+  Selling a brown elf tusk
+  Selling a bugbear skin
+  Selling a bunny ear
+  Selling a camel hump
+  Selling a carrion crawler egg
+  Selling a caveman club
+  Selling a cockatrice wattle
+  Selling a cub scout neckerchief
+  Selling a dervish robe
+  Selling a dryad acorn
+  Selling a dwarf drawers
+  Selling a frog leg
+  Selling a ghoul muscle
+  Selling a girl scout cookie
+  Selling a gnome hat
+  Selling a goblin ear
+  Selling a gorgon testicle
+  Selling a gray ooze gravy
+  Selling a green slime sample
+  Selling a grid bug carapace
+  Selling a harpy mascara
+  Selling a hippocampus mane
+  Selling a hippogriff egg
+  Selling a homunculus fluid
+  Selling a jumpskin shin
+  Selling a koala heart
+  Selling a kobold penis
+  Selling a lemure blob
+  Selling a leprechaun wallet
+  Selling a malebranche fork
+  Selling a man-o-war tentacle
+  Selling a manes tooth
+  Selling a mermaid gills
+  Selling a merman trident
+  Selling a midge corpse
+  Selling a moth dust
+  Selling a multicell dendrite
+  Selling a nebbish belly
+  Selling a nixie webbing
+  Selling a nymph hanky
+  Selling a pegasus aileron
+  Selling a piercer tip
+  Selling a pirate booty
+  Selling a pixie dust
+  Selling a poroid node
+  Selling a quasit tail
+  Selling a rat tail
+  Selling a rot grub eggsac
+  Selling a rust monster shavings
+  Selling a sea elf jerkin
+  Selling a sea hag wart
+  Selling a shadow silhouette
+  Selling a shrieker stalk
+  Selling a silkie fur
+  Selling a skeleton clavicle
+  Selling a spider web
+  Selling a sprite can
+  Selling a stirge proboscis
+  Selling a stun worm trode
+  Selling a swamp elf lilypad
+  Selling a triton scale
+  Selling a troglodyte tail
+  Selling a violet fungi spore
+  Selling a wasp stinger
+  Selling a whippet collar
+  Selling a wolf paw
+  Selling a wolog lemma
+  Selling a yellow mold spore
+  Selling a yeti fur
+  Selling a zombie forehead
+  Selling an Astral Tiara of the Bone
+  Selling an eel sashimi
+  Selling an imp tail
+  Selling an octopus beak
+  Selling an ogre talon
+  Selling an ostrich beak
+  Selling an owlbear feather
+  Selling an uruk boot
+--- quests
+  Seek the Enchanted Festoon
+  Exterminate the Bats
+  Exterminate the Hobgoblins
+  Placate the Rice Giants
+--- inventory
+  dwarf drawers x2 special=False
+  rat tail x1 special=False
+  gnome hat x1 special=False
+  wasp stinger x2 special=False
+  iron peasant chaff x1 special=False
+  shrieker stalk x1 special=False
+  wolf paw x1 special=False
+  grid bug carapace x1 special=False
+  jumpskin shin x1 special=False
+  merman trident x1 special=False
+  lemure blob x1 special=False
+  zombie forehead x1 special=False
+  sylph thigh x1 special=False
+  satyr hoof x1 special=False
+  silkie fur x1 special=False
+  camel hump x1 special=False
+  uruk boot x1 special=False
+--- equipment
+  Weapon: -1 Bowie Knife
+  Hauberk: Studded Lace
+  Vambraces: -1 Macrame
+  Sollerets: +1 Lace
+  Gauntlets: Macrame
+--- best: Studded Lace Hauberk
+--- spells
+  Rabbit Punch 1
+--- level=2 gold=11 act=1
+=== seed charlie
+--- opening tasks
+  Loading
+  Experiencing an enigmatic and foreboding night vision
+  Much is revealed about that wise old bastard you'd underestimated
+  A shocking series of events leaves you alone and bewildered, but resolute
+  Drawing upon an unrealized reserve of determination, you set out on a long and dangerous journey
+  Loading Act I
+  Heading to the killing fields
+  Executing an undernourished Homunculus
+--- all tasks
+  A shocking series of events leaves you alone and bewildered, but resolute
+  Drawing upon an unrealized reserve of determination, you set out on a long and dangerous journey
+  Executing Admiral Kreckwhiex the Demicanadian
+  Executing Mr. Rickdrap the Eel Man
+  Executing Mr. Youblov the Lesser Dwarf
+  Executing Mrs. Fregmoz the Enchanted Motorcycle
+  Executing Mrs. Proogjeb the Double Wookiee
+  Executing Ms. Avjiv the Half Orc
+  Executing Sgt. Prunjog the Half Man
+  Executing a Bat
+  Executing a Battle-Beagle
+  Executing a Battle-Centipede
+  Executing a Battle-Dervish
+  Executing a Battle-Fly
+  Executing a Battle-Frog
+  Executing a Battle-Kobold
+  Executing a Battle-Leprechaun
+  Executing a Battle-Midge
+  Executing a Battle-Moth
+  Executing a Battle-Nebbish
+  Executing a Battle-Pirate
+  Executing a Battle-Rat
+  Executing a Battle-Sprite
+  Executing a Battle-Wasp
+  Executing a Berserker
+  Executing a Billy Goat
+  Executing a Bugbear
+  Executing a Caveman
+  Executing a Cub Scout
+  Executing a Dervish
+  Executing a Dryad
+  Executing a Dwarf
+  Executing a Ghoul
+  Executing a Girl Scout
+  Executing a Gnoll
+  Executing a Gnome
+  Executing a Goblin
+  Executing a Gray Ooze
+  Executing a Harpy
+  Executing a Hobgoblin
+  Executing a Homunculus
+  Executing a Koala
+  Executing a Kobold
+  Executing a Lemure
+  Executing a Leprechaun
+  Executing a Mermaid
+  Executing a Merman
+  Executing a Nebbish
+  Executing a Nixie
+  Executing a Nymph
+  Executing a Pirate
+  Executing a Pixie
+  Executing a Rat
+  Executing a Rot Grub
+  Executing a Sea Elf
+  Executing a Shadow
+  Executing a Skeleton
+  Executing a Sprite
+  Executing a Stirge
+  Executing a Swamp Elf
+  Executing a Triton
+  Executing a Violet Fungi
+  Executing a Whippet
+  Executing a Wolf
+  Executing a Yellow Mold
+  Executing a Zombie
+  Executing a comatose teenage Green Dragon
+  Executing a crippled Wight
+  Executing a crippled Yeti
+  Executing a cursed Moth
+  Executing a dead underage Otyugh
+  Executing a foetal Minotaur
+  Executing a foetal Plaid Dragon
+  Executing a greater Ant
+  Executing a greater Bunny
+  Executing a greater Crayfish
+  Executing a greater Frog
+  Executing a greater Ghoul
+  Executing a greater Grid Bug
+  Executing a greater Hobgoblin
+  Executing a greater Nixie
+  Executing a greater Ostrich
+  Executing a greater Rat
+  Executing a greater Spider
+  Executing a greater Zombie
+  Executing a massive Ant
+  Executing a massive Yellow Mold
+  Executing a passing Gyrognome Robot Monk
+  Executing a passing Skraeling Puma Burgular
+  Executing a passing Skraeling Robot Monk
+  Executing a preadolescent Ape
+  Executing a preadolescent Medusa
+  Executing a preadolescent Yeti
+  Executing a sick Boy Scout
+  Executing a sick Bugbear
+  Executing a sick Carrion Crawler
+  Executing a sick Gray Ooze
+  Executing a sick Hogbird
+  Executing a sick Jumpskin
+  Executing a sick Lemure
+  Executing a sick Quasit
+  Executing a sick Silkie
+  Executing a sick Sylph
+  Executing a sick Triton
+  Executing a teenage Boogie
+  Executing a teenage Boy Scout
+  Executing a teenage Doppelganger
+  Executing a teenage Shadow
+  Executing a teenage Wraith
+  Executing a veteran Brown Elf
+  Executing a veteran Cub Scout
+  Executing a veteran Rot Grub
+  Executing a veteran Swamp Elf
+  Executing a veteran Yellow Mold
+  Executing an Imp
+  Executing an Octopus
+  Executing an Orc
+  Executing an Ostrich
+  Executing an underage Boogie
+  Executing an underage Eel
+  Executing an underage Ghoul
+  Executing an underage Girl Scout
+  Executing an underage Harpy
+  Executing an underage Jumpskin
+  Executing an underage Lizard Man
+  Executing an underage Multicell
+  Executing an underage Octopus
+  Executing an underage Quasit
+  Executing an underage Shadow
+  Executing an underage Silkie
+  Executing an underage Stun Worm
+  Executing an underage Troglodyte
+  Executing an underage Wolf
+  Executing an undernourished Ape
+  Executing an undernourished Camel
+  Executing an undernourished Dryad
+  Executing an undernourished Ghoul
+  Executing an undernourished Girl Scout
+  Executing an undernourished Homunculus
+  Executing an undernourished Jumpskin
+  Executing an undernourished Koala
+  Executing an undernourished Man-o-war
+  Executing an undernourished Mini Giant
+  Executing an undernourished Silkie
+  Executing an undernourished Sylph
+  Executing an undernourished Troglodyte
+  Executing an undernourished Uruk
+  Executing an undernourished Wolf
+  Executing an undernourished Zombie
+  Experiencing an enigmatic and foreboding night vision
+  Heading to market to sell loot
+  Heading to the killing fields
+  Loading
+  Loading Act I
+  Much is revealed about that wise old bastard you'd underestimated
+  Negotiating purchase of better equipment
+  Selling 2 ghoul muscles
+  Selling 2 girl scout cookies
+  Selling 2 kobold penises
+  Selling 2 leprechaun wallets
+  Selling 2 multicell dendrites
+  Selling 2 rat tails
+  Selling 2 silkie furs
+  Selling 2 skeleton clavicles
+  Selling 2 sprite cans
+  Selling 2 whippet collars
+  Selling 2 yellow mold spores
+  Selling 3 ghoul muscles
+  Selling 3 ostrich beaks
+  Selling 4 sprite cans
+  Selling 6 leprechaun wallets
+  Selling 7 leprechaun wallets
+  Selling a Blessed Candelabra of Loyalty
+  Selling a Crystalline Cobble of Extroversion
+  Selling a Crystalline Galoon of Prurience
+  Selling a Crystalline Gimlet of Loyalty
+  Selling a Grandiose Ankh of Joy
+  Selling a Legendary Sphere of Sisu
+  Selling a Magnificent Garnet of Extroversion
+  Selling a Magnificent Tiara of Fortune
+  Selling a Precious Phial of Domination
+  Selling a Proverbial Scabbard of the Bone
+  Selling a Puissant Fleece of Dignard
+  Selling a Sacred Ornament of Extroversion
+  Selling a bat wing
+  Selling a beagle collar
+  Selling a berserker shirt
+  Selling a billy goat beard
+  Selling a boogie slime
+  Selling a boy scout merit badge
+  Selling a brown elf tusk
+  Selling a bugbear skin
+  Selling a bunny ear
+  Selling a camel hump
+  Selling a carrion crawler egg
+  Selling a caveman club
+  Selling a crayfish antenna
+  Selling a cub scout neckerchief
+  Selling a dervish robe
+  Selling a doppelganger face
+  Selling a dryad acorn
+  Selling a dwarf drawers
+  Selling a frog leg
+  Selling a ghoul muscle
+  Selling a girl scout cookie
+  Selling a gnoll collar
+  Selling a gnome hat
+  Selling a goblin ear
+  Selling a gray ooze gravy
+  Selling a grid bug carapace
+  Selling a harpy mascara
+  Selling a hobgoblin patella
+  Selling a hogbird curl
+  Selling a homunculus fluid
+  Selling a jumpskin shin
+  Selling a koala heart
+  Selling a kobold penis
+  Selling a lemure blob
+  Selling a leprechaun wallet
+  Selling a lizard man tail
+  Selling a man-o-war tentacle
+  Selling a medusa eye
+  Selling a mermaid gills
+  Selling a merman trident
+  Selling a midge corpse
+  Selling a minotaur map
+  Selling a moth dust
+  Selling a multicell dendrite
+  Selling a nebbish belly
+  Selling a nixie webbing
+  Selling a nymph hanky
+  Selling a pirate booty
+  Selling a pixie dust
+  Selling a plaid dragon sporrin
+  Selling a quasit tail
+  Selling a rat tail
+  Selling a rot grub eggsac
+  Selling a sea elf jerkin
+  Selling a shadow silhouette
+  Selling a silkie fur
+  Selling a skeleton clavicle
+  Selling a spider web
+  Selling a sprite can
+  Selling a stirge proboscis
+  Selling a stun worm trode
+  Selling a swamp elf lilypad
+  Selling a sylph thigh
+  Selling a triton scale
+  Selling a troglodyte tail
+  Selling a violet fungi spore
+  Selling a wasp stinger
+  Selling a whippet collar
+  Selling a wight lung
+  Selling a wolf paw
+  Selling a wraith finger
+  Selling a yellow mold spore
+  Selling a yeti fur
+  Selling a zombie forehead
+  Selling an Arcane Corset of Awe
+  Selling an Austere Sphere of Joy
+  Selling an One True Festoon of Patience
+  Selling an ant antenna
+  Selling an ape ass
+  Selling an eel sashimi
+  Selling an imp tail
+  Selling an octopus beak
+  Selling an orc snout
+  Selling an ostrich beak
+  Selling an otyugh organ
+  Selling an uruk boot
+--- quests
+  Seek the Grandiose Lens
+  Exterminate the Sprites
+  Exterminate the Leprechauns
+  Deliver this carrot
+  Placate the Spiders
+--- inventory
+  centipede leg x1 special=False
+  ostrich beak x1 special=False
+  pirate booty x1 special=False
+  koala heart x1 special=False
+  caveman club x1 special=False
+  wolf paw x1 special=False
+  zombie forehead x1 special=False
+  merman trident x1 special=False
+  jumpskin shin x1 special=False
+  nixie webbing x1 special=False
+  lemure blob x1 special=False
+  harpy mascara x1 special=False
+  mini giant pompadour x1 special=False
+--- equipment
+  Weapon: Sharp Rock
+  Hauberk: -2 Canvas
+  Helm: -1 Macrame
+  Gauntlets: -1 Macrame
+  Brassairts: Lace
+  Shield: -1 Holey Fender
+  Vambraces: -1 Burlap
+--- best: -1 Burlap Vambraces
+--- spells
+  Slime Finger 1
+--- level=2 gold=10 act=1
+=== seed delta
+--- opening tasks
+  Loading
+  Experiencing an enigmatic and foreboding night vision
+  Much is revealed about that wise old bastard you'd underestimated
+  A shocking series of events leaves you alone and bewildered, but resolute
+  Drawing upon an unrealized reserve of determination, you set out on a long and dangerous journey
+  Loading Act I
+  Heading to the killing fields
+  Executing a teenage Man-o-war
+--- all tasks
+  A shocking series of events leaves you alone and bewildered, but resolute
+  Drawing upon an unrealized reserve of determination, you set out on a long and dangerous journey
+  Executing Admiral Drougmoob the Hob-Hobbit
+  Executing Admiral Xubjiez the Gyrognome
+  Executing Captain Trekjick the Talking Pony
+  Executing Chief Xaemshud the Gyrognome
+  Executing Mr. Prabmov the Double Wookiee
+  Executing Mrs. Niemshug the Land Squid
+  Executing Ms. Grizwhig the Double Hobbit
+  Executing a Bat
+  Executing a Battle-Ant
+  Executing a Battle-Bunny
+  Executing a Battle-Caveman
+  Executing a Battle-Crayfish
+  Executing a Battle-Ghoul
+  Executing a Battle-Hobgoblin
+  Executing a Battle-Man-o-war
+  Executing a Battle-Midge
+  Executing a Battle-Nebbish
+  Executing a Battle-Ostrich
+  Executing a Battle-Rat
+  Executing a Battle-Skeleton
+  Executing a Battle-Spider
+  Executing a Battle-Wasp
+  Executing a Berserker
+  Executing a Billy Goat
+  Executing a Brown Elf
+  Executing a Bugboar
+  Executing a Camel
+  Executing a Centaur
+  Executing a Cub Scout
+  Executing a Dervish
+  Executing a Dryad
+  Executing a Dwarf
+  Executing a Girl Scout
+  Executing a Gnoll
+  Executing a Gnome
+  Executing a Goblin
+  Executing a Grid Bug
+  Executing a Hobgoblin
+  Executing a Homunculus
+  Executing a Koala
+  Executing a Kobold
+  Executing a Leprechaun
+  Executing a Lizard Man
+  Executing a Manes
+  Executing a Mermaid
+  Executing a Merman
+  Executing a Nebbish
+  Executing a Nixie
+  Executing a Pirate
+  Executing a Rat
+  Executing a Rot Grub
+  Executing a Sea Elf
+  Executing a Shrieker
+  Executing a Skeleton
+  Executing a Sprite
+  Executing a Stun Worm
+  Executing a Swamp Elf
+  Executing a Sylph
+  Executing a Troglodyte
+  Executing a Whippet
+  Executing a Yellow Mold
+  Executing a Zombie
+  Executing a baby Malebranche
+  Executing a baby Stun Bear
+  Executing a crippled Hippocampus
+  Executing a cursed Dwarf
+  Executing a cursed Grid Bug
+  Executing a dead Minotaur
+  Executing a greater Ant
+  Executing a greater Beagle
+  Executing a greater Billy Goat
+  Executing a greater Brown Elf
+  Executing a greater Centipede
+  Executing a greater Crayfish
+  Executing a greater Cub Scout
+  Executing a greater Fly
+  Executing a greater Frog
+  Executing a greater Nebbish
+  Executing a greater Nixie
+  Executing a greater Orc
+  Executing a greater Ostrich
+  Executing a greater Rat
+  Executing a greater Sea Elf
+  Executing a greater Spider
+  Executing a greater Wasp
+  Executing a massive Mermaid
+  Executing a massive Rat
+  Executing a passing Half Man Tickle-Mimic
+  Executing a passing Will o' the Wisp Battle-Felon
+  Executing a preadolescent Gelatinous Cube
+  Executing a preadolescent Mini Giant
+  Executing a preadolescent Yeti
+  Executing a sick Boogie
+  Executing a sick Boy Scout
+  Executing a sick Bugboar
+  Executing a sick Man-o-war
+  Executing a sick Sylph
+  Executing a sick Unicorn
+  Executing a sick baby Beige Dragon
+  Executing a sick baby Rakshasa
+  Executing a sick foetal Mind Flayer
+  Executing a teenage Boogie
+  Executing a teenage Bugboar
+  Executing a teenage Doppelganger
+  Executing a teenage Gray Ooze
+  Executing a teenage Hippocampus
+  Executing a teenage Hippogriff
+  Executing a teenage Jumpskin
+  Executing a teenage Man-o-war
+  Executing a teenage Piercer
+  Executing a teenage Poroid
+  Executing a teenage Sylph
+  Executing a veteran Rot Grub
+  Executing a veteran Swamp Elf
+  Executing an Eel
+  Executing an Imp
+  Executing an Orc
+  Executing an Ostrich
+  Executing an Uruk
+  Executing an underage Camel
+  Executing an underage Centaur
+  Executing an underage Gelatinous Cube
+  Executing an underage Ghoul
+  Executing an underage Girl Scout
+  Executing an underage Gnoll
+  Executing an underage Gray Ooze
+  Executing an underage Multicell
+  Executing an underage Piercer
+  Executing an underage Uruk
+  Executing an underage Whippet
+  Executing an underage Wolog
+  Executing an underage Zombie
+  Executing an undernourished Camel
+  Executing an undernourished Doppelganger
+  Executing an undernourished Dryad
+  Executing an undernourished Gnoll
+  Executing an undernourished Green Slime
+  Executing an undernourished Hell Hound
+  Executing an undernourished Homunculus
+  Executing an undernourished Koala
+  Executing an undernourished Lizard Man
+  Executing an undernourished Multicell
+  Executing an undernourished Quasit
+  Executing an undernourished Wolf
+  Executing an undernourished Zombie
+  Executing an undernourished foetal Brass Dragon
+  Executing an undernourished foetal Otyugh
+  Experiencing an enigmatic and foreboding night vision
+  Heading to market to sell loot
+  Heading to the killing fields
+  Loading
+  Loading Act I
+  Much is revealed about that wise old bastard you'd underestimated
+  Negotiating purchase of better equipment
+  Selling 2 beagle collars
+  Selling 2 centaur ribs
+  Selling 2 dwarf drawerses
+  Selling 2 hippocampus manes
+  Selling 2 hobgoblin patellas
+  Selling 2 kobold penises
+  Selling 2 nebbish bellies
+  Selling 2 nixie webbings
+  Selling 2 orc snouts
+  Selling 2 ostrich beaks
+  Selling 2 piercer tips
+  Selling 2 pirate booties
+  Selling 2 rat tails
+  Selling 2 skeleton clavicles
+  Selling 2 swamp elf lilypads
+  Selling 2 troglodyte tails
+  Selling 2 zombie foreheads
+  Selling 4 cub scout neckerchieves
+  Selling a Crafted Sceptre of Fortune
+  Selling a Cruciate Amethyst of Diamonique
+  Selling a Deadly Tome of Punctuality
+  Selling a Dual Galoon of Intrusion
+  Selling a Fearsome Galoon of Envy
+  Selling a Fearsome Hood of Loyalty
+  Selling a Filigreed Laurel of Extroversion
+  Selling a Magnificent Galoon of Perspicacity
+  Selling a Precious Candelabra of Punctuality
+  Selling a bat wing
+  Selling a berserker shirt
+  Selling a billy goat beard
+  Selling a boogie slime
+  Selling a boy scout merit badge
+  Selling a brass dragon pole
+  Selling a brown elf tusk
+  Selling a bugboar tusk
+  Selling a bunny ear
+  Selling a camel hump
+  Selling a centaur rib
+  Selling a centipede leg
+  Selling a crayfish antenna
+  Selling a cub scout neckerchief
+  Selling a dervish robe
+  Selling a doppelganger face
+  Selling a dryad acorn
+  Selling a dwarf drawers
+  Selling a frog leg
+  Selling a gelatinous cube jam
+  Selling a ghoul muscle
+  Selling a girl scout cookie
+  Selling a gnoll collar
+  Selling a gnome hat
+  Selling a goblin ear
+  Selling a gray ooze gravy
+  Selling a green slime sample
+  Selling a grid bug carapace
+  Selling a hell hound tongue
+  Selling a hippocampus mane
+  Selling a hippogriff egg
+  Selling a hobgoblin patella
+  Selling a homunculus fluid
+  Selling a jumpskin shin
+  Selling a koala heart
+  Selling a kobold penis
+  Selling a leprechaun wallet
+  Selling a lizard man tail
+  Selling a malebranche fork
+  Selling a man-o-war tentacle
+  Selling a manes tooth
+  Selling a mermaid gills
+  Selling a merman trident
+  Selling a midge corpse
+  Selling a mind flayer tentacle
+  Selling a mini giant pompadour
+  Selling a minotaur map
+  Selling a multicell dendrite
+  Selling a nebbish belly
+  Selling a nixie webbing
+  Selling a pirate booty
+  Selling a poroid node
+  Selling a quasit tail
+  Selling a rakshasa pajamas
+  Selling a rat tail
+  Selling a rot grub eggsac
+  Selling a sea elf jerkin
+  Selling a shrieker stalk
+  Selling a skeleton clavicle
+  Selling a spider web
+  Selling a sprite can
+  Selling a stun bear tooth
+  Selling a stun worm trode
+  Selling a swamp elf lilypad
+  Selling a sylph thigh
+  Selling a troglodyte tail
+  Selling a wasp stinger
+  Selling a whippet collar
+  Selling a wolf paw
+  Selling a wolog lemma
+  Selling a yellow mold spore
+  Selling a yeti fur
+  Selling an Arcane Brooch of Hydragyrum
+  Selling an Astral Diadem of Fealty
+  Selling an Austere Vulpeculum of Prurience
+  Selling an Iron Orb of Joy
+  Selling an One True Candelabra of Hydragyrum
+  Selling an Ormolu Candelabra of Foreshadowing
+  Selling an Ostentatious Hood of Awe
+  Selling an ant antenna
+  Selling an eel sashimi
+  Selling an imp tail
+  Selling an orc snout
+  Selling an ostrich beak
+  Selling an otyugh organ
+  Selling an unicorn blood
+  Selling an uruk boot
+--- quests
+  Fetch me a canoe
+  Placate the Rats
+  Placate the Mimics
+  Fetch me a bandage
+  Deliver this hoe
+  Placate the Koalas
+--- inventory
+  sylph thigh x1 special=False
+  uruk boot x1 special=False
+  caveman club x1 special=False
+  skeleton clavicle x1 special=False
+  berserker shirt x1 special=False
+  Puissant Brooch of Fortune x1 special=True
+  zombie forehead x1 special=False
+  yellow mold spore x1 special=False
+  girl scout cookie x1 special=False
+--- equipment
+  Weapon: +1 Stick
+  Hauberk: -3 Burlap
+  Helm: -1 Macrame
+  Vambraces: Motheaten Canvas
+  Gauntlets: -1 Burlap
+  Sollerets: Lace
+  Cuisses: +1 Lace
+  Brassairts: Macrame
+--- best: Macrame Brassairts
+--- spells
+  Cone of Annoyance 1
+  Invisible Hands 1
+  Rabbit Punch 1
+--- level=2 gold=46 act=1
+=== seed echo
+--- opening tasks
+  Loading
+  Experiencing an enigmatic and foreboding night vision
+  Much is revealed about that wise old bastard you'd underestimated
+  A shocking series of events leaves you alone and bewildered, but resolute
+  Drawing upon an unrealized reserve of determination, you set out on a long and dangerous journey
+  Loading Act I
+  Heading to the killing fields
+  Executing a Sea Elf
+--- all tasks
+  A shocking series of events leaves you alone and bewildered, but resolute
+  Drawing upon an unrealized reserve of determination, you set out on a long and dangerous journey
+  Executing Mrs. Zeckyon the Demicanadian
+  Executing Ms. Uckaet the Double Wookiee
+  Executing Ms. Yoogog the Demicanadian
+  Executing a Bat
+  Executing a Battle-Beagle
+  Executing a Battle-Centipede
+  Executing a Battle-Dryad
+  Executing a Battle-Manes
+  Executing a Battle-Mermaid
+  Executing a Battle-Merman
+  Executing a Battle-Midge
+  Executing a Battle-Nebbish
+  Executing a Battle-Rat
+  Executing a Berserker
+  Executing a Billy Goat
+  Executing a Brown Elf
+  Executing a Camel
+  Executing a Cub Scout
+  Executing a Dervish
+  Executing a Dwarf
+  Executing a Ghoul
+  Executing a Gnoll
+  Executing a Gnome
+  Executing a Goblin
+  Executing a Green Slime
+  Executing a Grid Bug
+  Executing a Hippogriff
+  Executing a Hobgoblin
+  Executing a Homunculus
+  Executing a Kobold
+  Executing a Leprechaun
+  Executing a Man-o-war
+  Executing a Manes
+  Executing a Merman
+  Executing a Multicell
+  Executing a Nebbish
+  Executing a Nixie
+  Executing a Pirate
+  Executing a Pixie
+  Executing a Quasit
+  Executing a Rat
+  Executing a Rot Grub
+  Executing a Sea Elf
+  Executing a Shadow
+  Executing a Silkie
+  Executing a Skeleton
+  Executing a Sprite
+  Executing a Stirge
+  Executing a Stun Worm
+  Executing a Swamp Elf
+  Executing a Triton
+  Executing a Whippet
+  Executing a Wolf
+  Executing a Yellow Mold
+  Executing a Zombie
+  Executing a comatose Erinyes
+  Executing a comatose preadolescent Invisible Stalker
+  Executing a comatose preadolescent Tin Dragon
+  Executing a crippled Manticore
+  Executing a crippled Ogre Mage
+  Executing a crippled Yeti
+  Executing a cursed Merman
+  Executing a foetal Griffon
+  Executing a greater Billy Goat
+  Executing a greater Bunny
+  Executing a greater Centipede
+  Executing a greater Goblin
+  Executing a greater Green Slime
+  Executing a greater Hobgoblin
+  Executing a greater Kobold
+  Executing a greater Manes
+  Executing a greater Mermaid
+  Executing a greater Merman
+  Executing a greater Moth
+  Executing a greater Rat
+  Executing a greater Rot Grub
+  Executing a greater Swamp Elf
+  Executing a greater Wasp
+  Executing a massive Merman
+  Executing a passing Battle-Finch Robot Monk
+  Executing a passing Double Wookiee Mu-Fu Monk
+  Executing a passing Gyrognome Puma Burgular
+  Executing a passing Low Elf Shiv-Knight
+  Executing a passing Skraeling Hunter Strangler
+  Executing a passing Trans-Kobold Vermineer
+  Executing a preadolescent Hippocampus
+  Executing a preadolescent Ogre
+  Executing a sick Boy Scout
+  Executing a sick Gelatinous Cube
+  Executing a sick Harpy
+  Executing a sick Hogbird
+  Executing a sick Iron Peasant
+  Executing a sick Man-o-war
+  Executing a sick Sea Hag
+  Executing a teenage Anhkheg
+  Executing a teenage Boogie
+  Executing a teenage Carrion Crawler
+  Executing a teenage Doppelganger
+  Executing a teenage Gelatinous Cube
+  Executing a teenage Gray Ooze
+  Executing a teenage Man-o-war
+  Executing a teenage Piercer
+  Executing a teenage Sylph
+  Executing a teenage Triton
+  Executing a teenage Violet Fungi
+  Executing a veteran Billy Goat
+  Executing a veteran Sea Elf
+  Executing a veteran Swamp Elf
+  Executing an Imp
+  Executing an Orc
+  Executing an Ostrich
+  Executing an Uruk
+  Executing an underage Camel
+  Executing an underage Caveman
+  Executing an underage Dryad
+  Executing an underage Eel
+  Executing an underage Ghoul
+  Executing an underage Homunculus
+  Executing an underage Iron Peasant
+  Executing an underage Jumpskin
+  Executing an underage Octopus
+  Executing an underage Pegasus
+  Executing an underage Stun Worm
+  Executing an underage Triton
+  Executing an underage Troglodyte
+  Executing an underage Whippet
+  Executing an underage Zombie
+  Executing an undernourished Bugbear
+  Executing an undernourished Carrion Crawler
+  Executing an undernourished Caveman
+  Executing an undernourished Centaur
+  Executing an undernourished Eel
+  Executing an undernourished Harpy
+  Executing an undernourished Imp
+  Executing an undernourished Lemure
+  Executing an undernourished Nymph
+  Executing an undernourished Sea Hag
+  Executing an undernourished Silkie
+  Executing an undernourished Stun Worm
+  Executing an undernourished Sylph
+  Executing an undernourished Troglodyte
+  Executing an undernourished Violet Fungi
+  Executing an undernourished Zombie
+  Experiencing an enigmatic and foreboding night vision
+  Heading to market to sell loot
+  Heading to the killing fields
+  Loading
+  Loading Act I
+  Much is revealed about that wise old bastard you'd underestimated
+  Negotiating purchase of better equipment
+  Selling 2 dervish robes
+  Selling 2 gnome hats
+  Selling 2 manes tooths
+  Selling 2 stun worm trodes
+  Selling 2 triton scales
+  Selling 2 violet fungi spores
+  Selling 2 whippet collars
+  Selling 3 bat wings
+  Selling 3 merman tridents
+  Selling 5 merman tridents
+  Selling 6 merman tridents
+  Selling 9 merman tridents
+  Selling a Benevolent Hood of Grob
+  Selling a Crystalline Lens of Punctuality
+  Selling a Filigreed Gimcrack of Frenzy
+  Selling a Gilded Hymnal of Ra
+  Selling a Gilded Talisman of Dignard
+  Selling a Gleaming Vulpeculum of Nervousness
+  Selling a Legendary Diadem of Dignard
+  Selling a Precious Phial of Frenzy
+  Selling a Reverential Festoon of Electrum
+  Selling a Spectral Galoon of Sisu
+  Selling a bat wing
+  Selling a beagle collar
+  Selling a berserker shirt
+  Selling a billy goat beard
+  Selling a boogie slime
+  Selling a boy scout merit badge
+  Selling a brown elf tusk
+  Selling a bugbear skin
+  Selling a bunny ear
+  Selling a camel hump
+  Selling a carrion crawler egg
+  Selling a caveman club
+  Selling a centaur rib
+  Selling a centipede leg
+  Selling a cub scout neckerchief
+  Selling a dervish robe
+  Selling a doppelganger face
+  Selling a dryad acorn
+  Selling a dwarf drawers
+  Selling a gelatinous cube jam
+  Selling a ghoul muscle
+  Selling a gnoll collar
+  Selling a gnome hat
+  Selling a goblin ear
+  Selling a gray ooze gravy
+  Selling a green slime sample
+  Selling a grid bug carapace
+  Selling a griffon nest
+  Selling a harpy mascara
+  Selling a hippocampus mane
+  Selling a hippogriff egg
+  Selling a hobgoblin patella
+  Selling a hogbird curl
+  Selling a homunculus fluid
+  Selling a jumpskin shin
+  Selling a kobold penis
+  Selling a lemure blob
+  Selling a leprechaun wallet
+  Selling a man-o-war tentacle
+  Selling a manes tooth
+  Selling a manticore spike
+  Selling a mermaid gills
+  Selling a merman trident
+  Selling a midge corpse
+  Selling a moth dust
+  Selling a multicell dendrite
+  Selling a nebbish belly
+  Selling a nixie webbing
+  Selling a nymph hanky
+  Selling a pegasus aileron
+  Selling a piercer tip
+  Selling a pirate booty
+  Selling a pixie dust
+  Selling a quasit tail
+  Selling a rat tail
+  Selling a rot grub eggsac
+  Selling a sea elf jerkin
+  Selling a sea hag wart
+  Selling a shadow silhouette
+  Selling a silkie fur
+  Selling a skeleton clavicle
+  Selling a sprite can
+  Selling a stirge proboscis
+  Selling a stun worm trode
+  Selling a swamp elf lilypad
+  Selling a sylph thigh
+  Selling a triton scale
+  Selling a troglodyte tail
+  Selling a violet fungi spore
+  Selling a wasp stinger
+  Selling a wolf paw
+  Selling a yellow mold spore
+  Selling a yeti fur
+  Selling a zombie forehead
+  Selling an Astral Amethyst of Cruelty
+  Selling an Unearthly Corset of Perspicacity
+  Selling an anhkheg chitin
+  Selling an eel sashimi
+  Selling an erinyes thong
+  Selling an imp tail
+  Selling an iron peasant chaff
+  Selling an octopus beak
+  Selling an ogre mage apparel
+  Selling an ogre talon
+  Selling an orc snout
+  Selling an ostrich beak
+  Selling an uruk boot
+--- quests
+  Placate the Dwarves
+  Exterminate the Mermen
+  Seek the Cruciate Tiara
+--- inventory
+  violet fungi spore x1 special=False
+--- equipment
+  Weapon: Sharp Rock
+  Hauberk: -3 Burlap
+  Gambeson: -1 Motheaten Flannel
+  Sollerets: -1 Macrame
+  Shield: Studded Pie Plate
+  Helm: -2 Corroded Chamois
+  Cuisses: Macrame
+  Greaves: Macrame
+--- best: Studded Pie Plate
+--- spells
+  Rabbit Punch 1
+--- level=2 gold=57 act=1

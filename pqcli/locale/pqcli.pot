@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pqcli 1.0.4\n"
 "Report-Msgid-Bugs-To: https://github.com/rr-/pq-cli/issues\n"
-"POT-Creation-Date: 2026-09-06 14:56+0900\n"
+"POT-Creation-Date: 2026-09-06 16:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,235 +53,3689 @@ msgstr ""
 msgid "Invalid player. Available players:"
 msgstr ""
 
-#: pqcli/lingo.py:81
-msgid "Prologue"
+#: pqcli/config.py:9
+msgid "STR"
 msgstr ""
 
-#: pqcli/lingo.py:82
-#, python-brace-format
-msgid "Act {numeral}"
+#: pqcli/config.py:10
+msgid "CON"
 msgstr ""
 
-#: pqcli/lingo.py:152
-msgid "faithful"
+#: pqcli/config.py:11
+msgid "DEX"
 msgstr ""
 
-#: pqcli/lingo.py:152
-msgid "noble"
+#: pqcli/config.py:12
+msgid "INT"
 msgstr ""
 
-#: pqcli/lingo.py:152
-msgid "loyal"
+#: pqcli/config.py:13
+msgid "WIS"
 msgstr ""
 
-#: pqcli/lingo.py:152
-msgid "brave"
+#: pqcli/config.py:14
+msgid "CHA"
 msgstr ""
 
-#: pqcli/lingo.py:154
-#, python-brace-format
-msgid "Terminate {adjective} {name}?"
+#: pqcli/config.py:15
+msgid "HP Max"
 msgstr ""
 
-#: pqcli/mechanic.py:146
+#: pqcli/config.py:16
+msgid "MP Max"
+msgstr ""
+
+#: pqcli/config.py:20
+msgid "Weapon"
+msgstr ""
+
+#: pqcli/config.py:21
+msgid "Shield"
+msgstr ""
+
+#: pqcli/config.py:22
+msgid "Helm"
+msgstr ""
+
+#: pqcli/config.py:23
+msgid "Hauberk"
+msgstr ""
+
+#: pqcli/config.py:24
+msgid "Brassairts"
+msgstr ""
+
+#: pqcli/config.py:25
+msgid "Vambraces"
+msgstr ""
+
+#: pqcli/config.py:26
+msgid "Gauntlets"
+msgstr ""
+
+#: pqcli/config.py:27
+msgid "Gambeson"
+msgstr ""
+
+#: pqcli/config.py:28
+msgid "Cuisses"
+msgstr ""
+
+#: pqcli/config.py:29
+msgid "Greaves"
+msgstr ""
+
+#: pqcli/config.py:30
+msgid "Sollerets"
+msgstr ""
+
+#: pqcli/config.py:46
+msgid "Slime Finger"
+msgstr ""
+
+#: pqcli/config.py:47
+msgid "Rabbit Punch"
+msgstr ""
+
+#: pqcli/config.py:48
+msgid "Hastiness"
+msgstr ""
+
+#: pqcli/config.py:49
+msgid "Good Move"
+msgstr ""
+
+#: pqcli/config.py:50
+msgid "Sadness"
+msgstr ""
+
+#: pqcli/config.py:51
+msgid "Seasick"
+msgstr ""
+
+#: pqcli/config.py:52
+msgid "Shoelaces"
+msgstr ""
+
+#: pqcli/config.py:53
+msgid "Inoculate"
+msgstr ""
+
+#: pqcli/config.py:54
+msgid "Cone of Annoyance"
+msgstr ""
+
+#: pqcli/config.py:55
+msgid "Magnetic Orb"
+msgstr ""
+
+#: pqcli/config.py:56
+msgid "Invisible Hands"
+msgstr ""
+
+#: pqcli/config.py:57
+msgid "Revolting Cloud"
+msgstr ""
+
+#: pqcli/config.py:58
+msgid "Aqueous Humor"
+msgstr ""
+
+#: pqcli/config.py:59
+msgid "Spectral Miasma"
+msgstr ""
+
+#: pqcli/config.py:60
+msgid "Clever Fellow"
+msgstr ""
+
+#: pqcli/config.py:61
+msgid "Lockjaw"
+msgstr ""
+
+#: pqcli/config.py:62
+msgid "History Lesson"
+msgstr ""
+
+#: pqcli/config.py:63
+msgid "Hydrophobia"
+msgstr ""
+
+#: pqcli/config.py:64
+msgid "Big Sister"
+msgstr ""
+
+#: pqcli/config.py:65
+msgid "Cone of Paste"
+msgstr ""
+
+#: pqcli/config.py:66
+msgid "Mulligan"
+msgstr ""
+
+#: pqcli/config.py:67
+msgid "Nestor's Bright Idea"
+msgstr ""
+
+#: pqcli/config.py:68
+msgid "Holy Batpole"
+msgstr ""
+
+#: pqcli/config.py:69
+msgid "Tumor (Benign)"
+msgstr ""
+
+#: pqcli/config.py:70
+msgid "Braingate"
+msgstr ""
+
+#: pqcli/config.py:71
+msgid "Summon a Bitch"
+msgstr ""
+
+#: pqcli/config.py:72
+msgid "Nonplus"
+msgstr ""
+
+#: pqcli/config.py:73
+msgid "Animate Nightstand"
+msgstr ""
+
+#: pqcli/config.py:74
+msgid "Eye of the Troglodyte"
+msgstr ""
+
+#: pqcli/config.py:75
+msgid "Curse Name"
+msgstr ""
+
+#: pqcli/config.py:76
+msgid "Dropsy"
+msgstr ""
+
+#: pqcli/config.py:77
+msgid "Vitreous Humor"
+msgstr ""
+
+#: pqcli/config.py:78
+msgid "Roger's Grand Illusion"
+msgstr ""
+
+#: pqcli/config.py:79
+msgid "Covet"
+msgstr ""
+
+#: pqcli/config.py:80
+msgid "Black Idaho"
+msgstr ""
+
+#: pqcli/config.py:81
+msgid "Astral Miasma"
+msgstr ""
+
+#: pqcli/config.py:82
+msgid "Spectral Oyster"
+msgstr ""
+
+#: pqcli/config.py:83
+msgid "Acrid Hands"
+msgstr ""
+
+#: pqcli/config.py:84
+msgid "Angioplasty"
+msgstr ""
+
+#: pqcli/config.py:85
+msgid "Grognor's Big Day Off"
+msgstr ""
+
+#: pqcli/config.py:86
+msgid "Tumor (Malignant)"
+msgstr ""
+
+#: pqcli/config.py:87
+msgid "Animate Tunic"
+msgstr ""
+
+#: pqcli/config.py:88
+msgid "Ursine Armor"
+msgstr ""
+
+#: pqcli/config.py:89
+msgid "Holy Roller"
+msgstr ""
+
+#: pqcli/config.py:90
+msgid "Tonsillectomy"
+msgstr ""
+
+#: pqcli/config.py:91
+msgid "Curse Family"
+msgstr ""
+
+#: pqcli/config.py:92
+msgid "Infinite Confusion"
+msgstr ""
+
+#: pqcli/config.py:103
+msgid "Polished"
+msgstr ""
+
+#: pqcli/config.py:104
+msgid "Serrated"
+msgstr ""
+
+#: pqcli/config.py:105
+msgid "Heavy"
+msgstr ""
+
+#: pqcli/config.py:106
+msgid "Pronged"
+msgstr ""
+
+#: pqcli/config.py:107
+msgid "Steely"
+msgstr ""
+
+#: pqcli/config.py:108
+msgid "Vicious"
+msgstr ""
+
+#: pqcli/config.py:109
+msgid "Venomed"
+msgstr ""
+
+#: pqcli/config.py:110
+msgid "Stabbity"
+msgstr ""
+
+#: pqcli/config.py:111
+msgid "Dancing"
+msgstr ""
+
+#: pqcli/config.py:112
+msgid "Invisible"
+msgstr ""
+
+#: pqcli/config.py:113
+msgid "Vorpal"
+msgstr ""
+
+#: pqcli/config.py:117
+msgid "Studded"
+msgstr ""
+
+#: pqcli/config.py:118
+msgid "Banded"
+msgstr ""
+
+#: pqcli/config.py:119 pqcli/config.py:290
+msgid "Gilded"
+msgstr ""
+
+#: pqcli/config.py:120
+msgid "Festooned"
+msgstr ""
+
+#: pqcli/config.py:121
+msgid "Holy"
+msgstr ""
+
+#: pqcli/config.py:122
+msgid "Cambric"
+msgstr ""
+
+#: pqcli/config.py:123
+msgid "Fine"
+msgstr ""
+
+#: pqcli/config.py:124
+msgid "Impressive"
+msgstr ""
+
+#: pqcli/config.py:125
+msgid "Custom"
+msgstr ""
+
+#: pqcli/config.py:129
+msgid "Dull"
+msgstr ""
+
+#: pqcli/config.py:130
+msgid "Tarnished"
+msgstr ""
+
+#: pqcli/config.py:131 pqcli/config.py:145
+msgid "Rusty"
+msgstr ""
+
+#: pqcli/config.py:132
+msgid "Padded"
+msgstr ""
+
+#: pqcli/config.py:133
+msgid "Bent"
+msgstr ""
+
+#: pqcli/config.py:134
+msgid "Mini"
+msgstr ""
+
+#: pqcli/config.py:135
+msgid "Rubber"
+msgstr ""
+
+#: pqcli/config.py:136
+msgid "Nerf"
+msgstr ""
+
+#: pqcli/config.py:137
+msgid "Unbalanced"
+msgstr ""
+
+#: pqcli/config.py:141
+msgid "Holey"
+msgstr ""
+
+#: pqcli/config.py:142
+msgid "Patched"
+msgstr ""
+
+#: pqcli/config.py:143
+msgid "Threadbare"
+msgstr ""
+
+#: pqcli/config.py:144
+msgid "Faded"
+msgstr ""
+
+#: pqcli/config.py:146
+msgid "Motheaten"
+msgstr ""
+
+#: pqcli/config.py:147
+msgid "Mildewed"
+msgstr ""
+
+#: pqcli/config.py:148
+msgid "Torn"
+msgstr ""
+
+#: pqcli/config.py:149
+msgid "Dented"
+msgstr ""
+
+#: pqcli/config.py:150
+msgid "Cursed"
+msgstr ""
+
+#: pqcli/config.py:151
+msgid "Plastic"
+msgstr ""
+
+#: pqcli/config.py:152
+msgid "Cracked"
+msgstr ""
+
+#: pqcli/config.py:153
+msgid "Warped"
+msgstr ""
+
+#: pqcli/config.py:154
+msgid "Corroded"
+msgstr ""
+
+#: pqcli/config.py:165
+msgid "Parasol"
+msgstr ""
+
+#: pqcli/config.py:166
+msgid "Pie Plate"
+msgstr ""
+
+#: pqcli/config.py:167
+msgid "Garbage Can Lid"
+msgstr ""
+
+#: pqcli/config.py:168
+msgid "Buckler"
+msgstr ""
+
+#: pqcli/config.py:169
+msgid "Plexiglass"
+msgstr ""
+
+#: pqcli/config.py:170
+msgid "Fender"
+msgstr ""
+
+#: pqcli/config.py:171
+msgid "Round Shield"
+msgstr ""
+
+#: pqcli/config.py:172
+msgid "Carapace"
+msgstr ""
+
+#: pqcli/config.py:173
+msgid "Scutum"
+msgstr ""
+
+#: pqcli/config.py:174
+msgid "Propugner"
+msgstr ""
+
+#: pqcli/config.py:175
+msgid "Kite Shield"
+msgstr ""
+
+#: pqcli/config.py:176
+msgid "Pavise"
+msgstr ""
+
+#: pqcli/config.py:177
+msgid "Tower Shield"
+msgstr ""
+
+#: pqcli/config.py:178
+msgid "Baroque Shield"
+msgstr ""
+
+#: pqcli/config.py:179
+msgid "Aegis"
+msgstr ""
+
+#: pqcli/config.py:180
+msgid "Magnetic Field"
+msgstr ""
+
+#: pqcli/config.py:184
+msgid "Lace"
+msgstr ""
+
+#: pqcli/config.py:185
+msgid "Macrame"
+msgstr ""
+
+#: pqcli/config.py:186 pqcli/mechanic.py:279
+msgid "Burlap"
+msgstr ""
+
+#: pqcli/config.py:187
+msgid "Canvas"
+msgstr ""
+
+#: pqcli/config.py:188
+msgid "Flannel"
+msgstr ""
+
+#: pqcli/config.py:189
+msgid "Chamois"
+msgstr ""
+
+#: pqcli/config.py:190
+msgid "Pleathers"
+msgstr ""
+
+#: pqcli/config.py:191
+msgid "Leathers"
+msgstr ""
+
+#: pqcli/config.py:192
+msgid "Bearskin"
+msgstr ""
+
+#: pqcli/config.py:193
+msgid "Ringmail"
+msgstr ""
+
+#: pqcli/config.py:194
+msgid "Scale Mail"
+msgstr ""
+
+#: pqcli/config.py:195
+msgid "Chainmail"
+msgstr ""
+
+#: pqcli/config.py:196
+msgid "Splint Mail"
+msgstr ""
+
+#: pqcli/config.py:197
+msgid "Platemail"
+msgstr ""
+
+#: pqcli/config.py:198
+msgid "ABS"
+msgstr ""
+
+#: pqcli/config.py:199
+msgid "Kevlar"
+msgstr ""
+
+#: pqcli/config.py:200
+msgid "Titanium"
+msgstr ""
+
+#: pqcli/config.py:201
+msgid "Mithril Mail"
+msgstr ""
+
+#: pqcli/config.py:202
+msgid "Diamond Mail"
+msgstr ""
+
+#: pqcli/config.py:203
+msgid "Plasma"
+msgstr ""
+
+#: pqcli/config.py:207
+msgid "Stick"
+msgstr ""
+
+#: pqcli/config.py:208
+msgid "Broken Bottle"
+msgstr ""
+
+#: pqcli/config.py:209
+msgid "Shiv"
+msgstr ""
+
+#: pqcli/config.py:210
+msgid "Sprig"
+msgstr ""
+
+#: pqcli/config.py:211
+msgid "Oxgoad"
+msgstr ""
+
+#: pqcli/config.py:212
+msgid "Eelspear"
+msgstr ""
+
+#: pqcli/config.py:213
+msgid "Bowie Knife"
+msgstr ""
+
+#: pqcli/config.py:214
+msgid "Claw Hammer"
+msgstr ""
+
+#: pqcli/config.py:215
+msgid "Handpeen"
+msgstr ""
+
+#: pqcli/config.py:216
+msgid "Andiron"
+msgstr ""
+
+#: pqcli/config.py:217
+msgid "Hatchet"
+msgstr ""
+
+#: pqcli/config.py:218
+msgid "Tomahawk"
+msgstr ""
+
+#: pqcli/config.py:219
+msgid "Hackbarm"
+msgstr ""
+
+#: pqcli/config.py:220
+msgid "Crowbar"
+msgstr ""
+
+#: pqcli/config.py:221
+msgid "Mace"
+msgstr ""
+
+#: pqcli/config.py:222
+msgid "Battleadze"
+msgstr ""
+
+#: pqcli/config.py:223
+msgid "Leafmace"
+msgstr ""
+
+#: pqcli/config.py:224
+msgid "Shortsword"
+msgstr ""
+
+#: pqcli/config.py:225
+msgid "Longiron"
+msgstr ""
+
+#: pqcli/config.py:226
+msgid "Poachard"
+msgstr ""
+
+#: pqcli/config.py:227
+msgid "Baselard"
+msgstr ""
+
+#: pqcli/config.py:228
+msgid "Whinyard"
+msgstr ""
+
+#: pqcli/config.py:229
+msgid "Blunderbuss"
+msgstr ""
+
+#: pqcli/config.py:230
+msgid "Longsword"
+msgstr ""
+
+#: pqcli/config.py:231
+msgid "Crankbow"
+msgstr ""
+
+#: pqcli/config.py:232
+msgid "Blibo"
+msgstr ""
+
+#: pqcli/config.py:233
+msgid "Broadsword"
+msgstr ""
+
+#: pqcli/config.py:234
+msgid "Kreen"
+msgstr ""
+
+#: pqcli/config.py:235
+msgid "Warhammer"
+msgstr ""
+
+#: pqcli/config.py:236
+msgid "Morning Star"
+msgstr ""
+
+#: pqcli/config.py:237
+msgid "Pole-adze"
+msgstr ""
+
+#: pqcli/config.py:238
+msgid "Spontoon"
+msgstr ""
+
+#: pqcli/config.py:239
+msgid "Bastard Sword"
+msgstr ""
+
+#: pqcli/config.py:240
+msgid "Peen-arm"
+msgstr ""
+
+#: pqcli/config.py:241
+msgid "Culverin"
+msgstr ""
+
+#: pqcli/config.py:242
+msgid "Lance"
+msgstr ""
+
+#: pqcli/config.py:243
+msgid "Halberd"
+msgstr ""
+
+#: pqcli/config.py:244
+msgid "Poleax"
+msgstr ""
+
+#: pqcli/config.py:245
+msgid "Bandyclef"
+msgstr ""
+
+#: pqcli/config.py:249
+msgid "Diadem"
+msgstr ""
+
+#: pqcli/config.py:250
+msgid "Festoon"
+msgstr ""
+
+#: pqcli/config.py:251
+msgid "Gemstone"
+msgstr ""
+
+#: pqcli/config.py:252
+msgid "Phial"
+msgstr ""
+
+#: pqcli/config.py:253
+msgid "Tiara"
+msgstr ""
+
+#: pqcli/config.py:254
+msgid "Scabbard"
+msgstr ""
+
+#: pqcli/config.py:255
+msgid "Arrow"
+msgstr ""
+
+#: pqcli/config.py:256
+msgid "Lens"
+msgstr ""
+
+#: pqcli/config.py:257
+msgid "Lamp"
+msgstr ""
+
+#: pqcli/config.py:258
+msgid "Hymnal"
+msgstr ""
+
+#: pqcli/config.py:259
+msgid "Fleece"
+msgstr ""
+
+#: pqcli/config.py:260
+msgid "Laurel"
+msgstr ""
+
+#: pqcli/config.py:261
+msgid "Brooch"
+msgstr ""
+
+#: pqcli/config.py:262
+msgid "Gimlet"
+msgstr ""
+
+#: pqcli/config.py:263
+msgid "Cobble"
+msgstr ""
+
+#: pqcli/config.py:264
+msgid "Albatross"
+msgstr ""
+
+#: pqcli/config.py:265
+msgid "Brazier"
+msgstr ""
+
+#: pqcli/config.py:266
+msgid "Bandolier"
+msgstr ""
+
+#: pqcli/config.py:267
+msgid "Tome"
+msgstr ""
+
+#: pqcli/config.py:268
+msgid "Garnet"
+msgstr ""
+
+#: pqcli/config.py:269
+msgid "Amethyst"
+msgstr ""
+
+#: pqcli/config.py:270
+msgid "Candelabra"
+msgstr ""
+
+#: pqcli/config.py:271
+msgid "Corset"
+msgstr ""
+
+#: pqcli/config.py:272
+msgid "Sphere"
+msgstr ""
+
+#: pqcli/config.py:273
+msgid "Sceptre"
+msgstr ""
+
+#: pqcli/config.py:274
+msgid "Ankh"
+msgstr ""
+
+#: pqcli/config.py:275
+msgid "Talisman"
+msgstr ""
+
+#: pqcli/config.py:276
+msgid "Orb"
+msgstr ""
+
+#: pqcli/config.py:277
+msgid "Gammel"
+msgstr ""
+
+#: pqcli/config.py:278
+msgid "Ornament"
+msgstr ""
+
+#: pqcli/config.py:279
+msgid "Brocade"
+msgstr ""
+
+#: pqcli/config.py:280
+msgid "Galoon"
+msgstr ""
+
+#: pqcli/config.py:281
+msgid "Bijou"
+msgstr ""
+
+#: pqcli/config.py:282
+msgid "Spangle"
+msgstr ""
+
+#: pqcli/config.py:283
+msgid "Gimcrack"
+msgstr ""
+
+#: pqcli/config.py:284
+msgid "Hood"
+msgstr ""
+
+#: pqcli/config.py:285
+msgid "Vulpeculum"
+msgstr ""
+
+#: pqcli/config.py:289
+msgid "Golden"
+msgstr ""
+
+#: pqcli/config.py:291
+msgid "Spectral"
+msgstr ""
+
+#: pqcli/config.py:292
+msgid "Astral"
+msgstr ""
+
+#: pqcli/config.py:293
+msgid "Garlanded"
+msgstr ""
+
+#: pqcli/config.py:294
+msgid "Precious"
+msgstr ""
+
+#: pqcli/config.py:295
+msgid "Crafted"
+msgstr ""
+
+#: pqcli/config.py:296
+msgid "Dual"
+msgstr ""
+
+#: pqcli/config.py:297
+msgid "Filigreed"
+msgstr ""
+
+#: pqcli/config.py:298
+msgid "Cruciate"
+msgstr ""
+
+#: pqcli/config.py:299
+msgid "Arcane"
+msgstr ""
+
+#: pqcli/config.py:300
+msgid "Blessed"
+msgstr ""
+
+#: pqcli/config.py:301
+msgid "Reverential"
+msgstr ""
+
+#: pqcli/config.py:302
+msgid "Lucky"
+msgstr ""
+
+#: pqcli/config.py:303
+msgid "Enchanted"
+msgstr ""
+
+#: pqcli/config.py:304
+msgid "Gleaming"
+msgstr ""
+
+#: pqcli/config.py:305
+msgid "Grandiose"
+msgstr ""
+
+#: pqcli/config.py:306
+msgid "Sacred"
+msgstr ""
+
+#: pqcli/config.py:307
+msgid "Legendary"
+msgstr ""
+
+#: pqcli/config.py:308
+msgid "Mythic"
+msgstr ""
+
+#: pqcli/config.py:309
+msgid "Crystalline"
+msgstr ""
+
+#: pqcli/config.py:310
+msgid "Austere"
+msgstr ""
+
+#: pqcli/config.py:311
+msgid "Ostentatious"
+msgstr ""
+
+#: pqcli/config.py:312
+msgid "One True"
+msgstr ""
+
+#: pqcli/config.py:313
+msgid "Proverbial"
+msgstr ""
+
+#: pqcli/config.py:314
+msgid "Fearsome"
+msgstr ""
+
+#: pqcli/config.py:315
+msgid "Deadly"
+msgstr ""
+
+#: pqcli/config.py:316
+msgid "Benevolent"
+msgstr ""
+
+#: pqcli/config.py:317
+msgid "Unearthly"
+msgstr ""
+
+#: pqcli/config.py:318
+msgid "Magnificent"
+msgstr ""
+
+#: pqcli/config.py:319
+msgid "Iron"
+msgstr ""
+
+#: pqcli/config.py:320
+msgid "Ormolu"
+msgstr ""
+
+#: pqcli/config.py:321
+msgid "Puissant"
+msgstr ""
+
+#: pqcli/config.py:325
+msgid "Foreboding"
+msgstr ""
+
+#: pqcli/config.py:326
+msgid "Foreshadowing"
+msgstr ""
+
+#: pqcli/config.py:327
+msgid "Nervousness"
+msgstr ""
+
+#: pqcli/config.py:328
+msgid "Happiness"
+msgstr ""
+
+#: pqcli/config.py:329
+msgid "Torpor"
+msgstr ""
+
+#: pqcli/config.py:330
+msgid "Danger"
+msgstr ""
+
+#: pqcli/config.py:331
+msgid "Craft"
+msgstr ""
+
+#: pqcli/config.py:332
+msgid "Silence"
+msgstr ""
+
+#: pqcli/config.py:333
+msgid "Invisibility"
+msgstr ""
+
+#: pqcli/config.py:334
+msgid "Rapidity"
+msgstr ""
+
+#: pqcli/config.py:335
+msgid "Pleasure"
+msgstr ""
+
+#: pqcli/config.py:336
+msgid "Practicality"
+msgstr ""
+
+#: pqcli/config.py:337
+msgid "Hurting"
+msgstr ""
+
+#: pqcli/config.py:338
+msgid "Joy"
+msgstr ""
+
+#: pqcli/config.py:339
+msgid "Petulance"
+msgstr ""
+
+#: pqcli/config.py:340
+msgid "Intrusion"
+msgstr ""
+
+#: pqcli/config.py:341
+msgid "Chaos"
+msgstr ""
+
+#: pqcli/config.py:342
+msgid "Suffering"
+msgstr ""
+
+#: pqcli/config.py:343
+msgid "Extroversion"
+msgstr ""
+
+#: pqcli/config.py:344
+msgid "Frenzy"
+msgstr ""
+
+#: pqcli/config.py:345
+msgid "Sisu"
+msgstr ""
+
+#: pqcli/config.py:346
+msgid "Solitude"
+msgstr ""
+
+#: pqcli/config.py:347
+msgid "Punctuality"
+msgstr ""
+
+#: pqcli/config.py:348
+msgid "Efficiency"
+msgstr ""
+
+#: pqcli/config.py:349
+msgid "Comfort"
+msgstr ""
+
+#: pqcli/config.py:350
+msgid "Patience"
+msgstr ""
+
+#: pqcli/config.py:351
+msgid "Internment"
+msgstr ""
+
+#: pqcli/config.py:352
+msgid "Incarceration"
+msgstr ""
+
+#: pqcli/config.py:353
+msgid "Misapprehension"
+msgstr ""
+
+#: pqcli/config.py:354
+msgid "Loyalty"
+msgstr ""
+
+#: pqcli/config.py:355
+msgid "Envy"
+msgstr ""
+
+#: pqcli/config.py:356
+msgid "Acrimony"
+msgstr ""
+
+#: pqcli/config.py:357
+msgid "Worry"
+msgstr ""
+
+#: pqcli/config.py:358
+msgid "Fear"
+msgstr ""
+
+#: pqcli/config.py:359
+msgid "Awe"
+msgstr ""
+
+#: pqcli/config.py:360
+msgid "Guile"
+msgstr ""
+
+#: pqcli/config.py:361
+msgid "Prurience"
+msgstr ""
+
+#: pqcli/config.py:362
+msgid "Fortune"
+msgstr ""
+
+#: pqcli/config.py:363
+msgid "Perspicacity"
+msgstr ""
+
+#: pqcli/config.py:364
+msgid "Domination"
+msgstr ""
+
+#: pqcli/config.py:365
+msgid "Submission"
+msgstr ""
+
+#: pqcli/config.py:366
+msgid "Fealty"
+msgstr ""
+
+#: pqcli/config.py:367
+msgid "Hunger"
+msgstr ""
+
+#: pqcli/config.py:368
+msgid "Despair"
+msgstr ""
+
+#: pqcli/config.py:369
+msgid "Cruelty"
+msgstr ""
+
+#: pqcli/config.py:370
+msgid "Grob"
+msgstr ""
+
+#: pqcli/config.py:371
+msgid "Dignard"
+msgstr ""
+
+#: pqcli/config.py:372
+msgid "Ra"
+msgstr ""
+
+#: pqcli/config.py:373
+msgid "the Bone"
+msgstr ""
+
+#: pqcli/config.py:374
+msgid "Diamonique"
+msgstr ""
+
+#: pqcli/config.py:375
+msgid "Electrum"
+msgstr ""
+
+#: pqcli/config.py:376
+msgid "Hydragyrum"
+msgstr ""
+
+#: pqcli/config.py:380
+msgid "nail"
+msgstr ""
+
+#: pqcli/config.py:381
+msgid "lunchpail"
+msgstr ""
+
+#: pqcli/config.py:382
+msgid "sock"
+msgstr ""
+
+#: pqcli/config.py:383
+msgid "I.O.U."
+msgstr ""
+
+#: pqcli/config.py:384 pqcli/config.py:441
+msgid "cookie"
+msgstr ""
+
+#: pqcli/config.py:385
+msgid "pint"
+msgstr ""
+
+#: pqcli/config.py:386
+msgid "toothpick"
+msgstr ""
+
+#: pqcli/config.py:387 pqcli/config.py:421
+msgid "writ"
+msgstr ""
+
+#: pqcli/config.py:388
+msgid "newspaper"
+msgstr ""
+
+#: pqcli/config.py:389
+msgid "letter"
+msgstr ""
+
+#: pqcli/config.py:390
+msgid "plank"
+msgstr ""
+
+#: pqcli/config.py:391 pqcli/config.py:541
+msgid "hat"
+msgstr ""
+
+#: pqcli/config.py:392 pqcli/config.py:448 pqcli/config.py:558
+msgid "egg"
+msgstr ""
+
+#: pqcli/config.py:393
+msgid "coin"
+msgstr ""
+
+#: pqcli/config.py:394
+msgid "needle"
+msgstr ""
+
+#: pqcli/config.py:395
+msgid "bucket"
+msgstr ""
+
+#: pqcli/config.py:396
+msgid "ladder"
+msgstr ""
+
+#: pqcli/config.py:397
+msgid "chicken"
+msgstr ""
+
+#: pqcli/config.py:398
+msgid "twig"
+msgstr ""
+
+#: pqcli/config.py:399
+msgid "dirtclod"
+msgstr ""
+
+#: pqcli/config.py:400
+msgid "counterpane"
+msgstr ""
+
+#: pqcli/config.py:401
+msgid "vest"
+msgstr ""
+
+#: pqcli/config.py:402
+msgid "teratoma"
+msgstr ""
+
+#: pqcli/config.py:403
+msgid "bunny"
+msgstr ""
+
+#: pqcli/config.py:404
+msgid "rock"
+msgstr ""
+
+#: pqcli/config.py:405 pqcli/config.py:496
+msgid "pole"
+msgstr ""
+
+#: pqcli/config.py:406
+msgid "carrot"
+msgstr ""
+
+#: pqcli/config.py:407
+msgid "canoe"
+msgstr ""
+
+#: pqcli/config.py:408
+msgid "inkwell"
+msgstr ""
+
+#: pqcli/config.py:409
+msgid "hoe"
+msgstr ""
+
+#: pqcli/config.py:410
+msgid "bandage"
+msgstr ""
+
+#: pqcli/config.py:411
+msgid "trowel"
+msgstr ""
+
+#: pqcli/config.py:412
+msgid "towel"
+msgstr ""
+
+#: pqcli/config.py:413
+msgid "planter box"
+msgstr ""
+
+#: pqcli/config.py:414
+msgid "anvil"
+msgstr ""
+
+#: pqcli/config.py:415
+msgid "axle"
+msgstr ""
+
+#: pqcli/config.py:416
+msgid "tuppence"
+msgstr ""
+
+#: pqcli/config.py:417
+msgid "casket"
+msgstr ""
+
+#: pqcli/config.py:418
+msgid "nosegay"
+msgstr ""
+
+#: pqcli/config.py:419
+msgid "trinket"
+msgstr ""
+
+#: pqcli/config.py:420
+msgid "credenza"
+msgstr ""
+
+#: pqcli/config.py:433
+msgid "Anhkheg"
+msgstr ""
+
+#: pqcli/config.py:433
+msgid "chitin"
+msgstr ""
+
+#: pqcli/config.py:434
+msgid "Ant"
+msgstr ""
+
+#: pqcli/config.py:434 pqcli/config.py:454
+msgid "antenna"
+msgstr ""
+
+#: pqcli/config.py:435
+msgid "Ape"
+msgstr ""
+
+#: pqcli/config.py:435
+msgid "ass"
+msgstr ""
+
+#: pqcli/config.py:436
+msgid "Baluchitherium"
+msgstr ""
+
+#: pqcli/config.py:436 pqcli/config.py:542 pqcli/config.py:649
+msgid "ear"
+msgstr ""
+
+#: pqcli/config.py:437
+msgid "Beholder"
+msgstr ""
+
+#: pqcli/config.py:437
+msgid "eyestalk"
+msgstr ""
+
+#: pqcli/config.py:438
+msgid "Black Pudding"
+msgstr ""
+
+#: pqcli/config.py:438
+msgid "saliva"
+msgstr ""
+
+#: pqcli/config.py:439
+msgid "Blink Dog"
+msgstr ""
+
+#: pqcli/config.py:439
+msgid "eyelid"
+msgstr ""
+
+#: pqcli/config.py:440
+msgid "Cub Scout"
+msgstr ""
+
+#: pqcli/config.py:440
+msgid "neckerchief"
+msgstr ""
+
+#: pqcli/config.py:441
+msgid "Girl Scout"
+msgstr ""
+
+#: pqcli/config.py:442
+msgid "Boy Scout"
+msgstr ""
+
+#: pqcli/config.py:442 pqcli/config.py:443
+msgid "merit badge"
+msgstr ""
+
+#: pqcli/config.py:443
+msgid "Eagle Scout"
+msgstr ""
+
+#: pqcli/config.py:444
+msgid "Bugbear"
+msgstr ""
+
+#: pqcli/config.py:444
+msgid "skin"
+msgstr ""
+
+#: pqcli/config.py:445
+msgid "Bugboar"
+msgstr ""
+
+#: pqcli/config.py:445 pqcli/config.py:463 pqcli/config.py:518
+#: pqcli/config.py:573
+msgid "tusk"
+msgstr ""
+
+#: pqcli/config.py:446
+msgid "Boogie"
+msgstr ""
+
+#: pqcli/config.py:446
+msgid "slime"
+msgstr ""
+
+#: pqcli/config.py:447
+msgid "Camel"
+msgstr ""
+
+#: pqcli/config.py:447
+msgid "hump"
+msgstr ""
+
+#: pqcli/config.py:448
+msgid "Carrion Crawler"
+msgstr ""
+
+#: pqcli/config.py:449
+msgid "Catoblepas"
+msgstr ""
+
+#: pqcli/config.py:449 pqcli/config.py:460 pqcli/config.py:481
+msgid "neck"
+msgstr ""
+
+#: pqcli/config.py:450
+msgid "Centaur"
+msgstr ""
+
+#: pqcli/config.py:450
+msgid "rib"
+msgstr ""
+
+#: pqcli/config.py:451
+msgid "Centipede"
+msgstr ""
+
+#: pqcli/config.py:451 pqcli/config.py:461 pqcli/config.py:521
+msgid "leg"
+msgstr ""
+
+#: pqcli/config.py:452
+msgid "Cockatrice"
+msgstr ""
+
+#: pqcli/config.py:452
+msgid "wattle"
+msgstr ""
+
+#: pqcli/config.py:453
+msgid "Couatl"
+msgstr ""
+
+#: pqcli/config.py:453 pqcli/config.py:610 pqcli/config.py:643
+#: pqcli/config.py:655
+msgid "wing"
+msgstr ""
+
+#: pqcli/config.py:454
+msgid "Crayfish"
+msgstr ""
+
+#: pqcli/config.py:455
+msgid "Demogorgon"
+msgstr ""
+
+#: pqcli/config.py:455 pqcli/config.py:583 pqcli/config.py:604
+msgid "tentacle"
+msgstr ""
+
+#: pqcli/config.py:456
+msgid "Jubilex"
+msgstr ""
+
+#: pqcli/config.py:456
+msgid "gel"
+msgstr ""
+
+#: pqcli/config.py:457
+msgid "Manes"
+msgstr ""
+
+#: pqcli/config.py:457 pqcli/config.py:506 pqcli/config.py:627
+msgid "tooth"
+msgstr ""
+
+#: pqcli/config.py:458
+msgid "Orcus"
+msgstr ""
+
+#: pqcli/config.py:458
+msgid "wand"
+msgstr ""
+
+#: pqcli/config.py:459
+msgid "Succubus"
+msgstr ""
+
+#: pqcli/config.py:459
+msgid "bra"
+msgstr ""
+
+#: pqcli/config.py:460
+msgid "Vrock"
+msgstr ""
+
+#: pqcli/config.py:461
+msgid "Hezrou"
+msgstr ""
+
+#: pqcli/config.py:462
+msgid "Glabrezu"
+msgstr ""
+
+#: pqcli/config.py:462 pqcli/config.py:540 pqcli/config.py:651
+#: pqcli/config.py:658
+msgid "collar"
+msgstr ""
+
+#: pqcli/config.py:463
+msgid "Nalfeshnee"
+msgstr ""
+
+#: pqcli/config.py:464
+msgid "Marilith"
+msgstr ""
+
+#: pqcli/config.py:464 pqcli/config.py:482
+msgid "arm"
+msgstr ""
+
+#: pqcli/config.py:465
+msgid "Balor"
+msgstr ""
+
+#: pqcli/config.py:465
+msgid "whip"
+msgstr ""
+
+#: pqcli/config.py:466
+msgid "Yeenoghu"
+msgstr ""
+
+#: pqcli/config.py:466
+msgid "flail"
+msgstr ""
+
+#: pqcli/config.py:467
+msgid "Asmodeus"
+msgstr ""
+
+#: pqcli/config.py:467
+msgid "leathers"
+msgstr ""
+
+#: pqcli/config.py:468
+msgid "Baalzebul"
+msgstr ""
+
+#: pqcli/config.py:468
+msgid "pants"
+msgstr ""
+
+#: pqcli/config.py:469
+msgid "Barbed Devil"
+msgstr ""
+
+#: pqcli/config.py:469
+msgid "flame"
+msgstr ""
+
+#: pqcli/config.py:470
+msgid "Bone Devil"
+msgstr ""
+
+#: pqcli/config.py:470
+msgid "hook"
+msgstr ""
+
+#: pqcli/config.py:471
+msgid "Dispater"
+msgstr ""
+
+#: pqcli/config.py:471
+msgid "matches"
+msgstr ""
+
+#: pqcli/config.py:472
+msgid "Erinyes"
+msgstr ""
+
+#: pqcli/config.py:472
+msgid "thong"
+msgstr ""
+
+#: pqcli/config.py:473
+msgid "Geryon"
+msgstr ""
+
+#: pqcli/config.py:473
+msgid "cornucopia"
+msgstr ""
+
+#: pqcli/config.py:474
+msgid "Malebranche"
+msgstr ""
+
+#: pqcli/config.py:474
+msgid "fork"
+msgstr ""
+
+#: pqcli/config.py:475
+msgid "Ice Devil"
+msgstr ""
+
+#: pqcli/config.py:475
+msgid "snow"
+msgstr ""
+
+#: pqcli/config.py:476
+msgid "Lemure"
+msgstr ""
+
+#: pqcli/config.py:476
+msgid "blob"
+msgstr ""
+
+#: pqcli/config.py:477
+msgid "Pit Fiend"
+msgstr ""
+
+#: pqcli/config.py:477
+msgid "seed"
+msgstr ""
+
+#: pqcli/config.py:478
+msgid "Ankylosaurus"
+msgstr ""
+
+#: pqcli/config.py:478 pqcli/config.py:562 pqcli/config.py:570
+#: pqcli/config.py:606 pqcli/config.py:608 pqcli/config.py:629
+#: pqcli/config.py:635 pqcli/config.py:648
+msgid "tail"
+msgstr ""
+
+#: pqcli/config.py:479
+msgid "Brontosaurus"
+msgstr ""
+
+#: pqcli/config.py:479
+msgid "brain"
+msgstr ""
+
+#: pqcli/config.py:480
+msgid "Diplodocus"
+msgstr ""
+
+#: pqcli/config.py:480
+msgid "fin"
+msgstr ""
+
+#: pqcli/config.py:481
+msgid "Elasmosaurus"
+msgstr ""
+
+#: pqcli/config.py:482
+msgid "Gorgosaurus"
+msgstr ""
+
+#: pqcli/config.py:483
+msgid "Iguanadon"
+msgstr ""
+
+#: pqcli/config.py:483
+msgid "thumb"
+msgstr ""
+
+#: pqcli/config.py:484
+msgid "Megalosaurus"
+msgstr ""
+
+#: pqcli/config.py:484 pqcli/config.py:644
+msgid "jaw"
+msgstr ""
+
+#: pqcli/config.py:485
+msgid "Monoclonius"
+msgstr ""
+
+#: pqcli/config.py:485 pqcli/config.py:488
+msgid "horn"
+msgstr ""
+
+#: pqcli/config.py:486
+msgid "Pentasaurus"
+msgstr ""
+
+#: pqcli/config.py:486
+msgid "head"
+msgstr ""
+
+#: pqcli/config.py:487
+msgid "Stegosaurus"
+msgstr ""
+
+#: pqcli/config.py:487
+msgid "plate"
+msgstr ""
+
+#: pqcli/config.py:488
+msgid "Triceratops"
+msgstr ""
+
+#: pqcli/config.py:489
+msgid "Tyrannosaurus Rex"
+msgstr ""
+
+#: pqcli/config.py:489
+msgid "forearm"
+msgstr ""
+
+#: pqcli/config.py:490
+msgid "Djinn"
+msgstr ""
+
+#: pqcli/config.py:490
+msgid "lamp"
+msgstr ""
+
+#: pqcli/config.py:491
+msgid "Doppelganger"
+msgstr ""
+
+#: pqcli/config.py:491
+msgid "face"
+msgstr ""
+
+#: pqcli/config.py:492
+msgid "Black Dragon"
+msgstr ""
+
+#: pqcli/config.py:493
+msgid "Plaid Dragon"
+msgstr ""
+
+#: pqcli/config.py:493
+msgid "sporrin"
+msgstr ""
+
+#: pqcli/config.py:494
+msgid "Blue Dragon"
+msgstr ""
+
+#: pqcli/config.py:495
+msgid "Beige Dragon"
+msgstr ""
+
+#: pqcli/config.py:496
+msgid "Brass Dragon"
+msgstr ""
+
+#: pqcli/config.py:497
+msgid "Tin Dragon"
+msgstr ""
+
+#: pqcli/config.py:498
+msgid "Bronze Dragon"
+msgstr ""
+
+#: pqcli/config.py:498
+msgid "medal"
+msgstr ""
+
+#: pqcli/config.py:499
+msgid "Chromatic Dragon"
+msgstr ""
+
+#: pqcli/config.py:499 pqcli/config.py:634
+msgid "scale"
+msgstr ""
+
+#: pqcli/config.py:500
+msgid "Copper Dragon"
+msgstr ""
+
+#: pqcli/config.py:500
+msgid "loafer"
+msgstr ""
+
+#: pqcli/config.py:501
+msgid "Gold Dragon"
+msgstr ""
+
+#: pqcli/config.py:501
+msgid "filling"
+msgstr ""
+
+#: pqcli/config.py:502
+msgid "Green Dragon"
+msgstr ""
+
+#: pqcli/config.py:503
+msgid "Platinum Dragon"
+msgstr ""
+
+#: pqcli/config.py:504
+msgid "Red Dragon"
+msgstr ""
+
+#: pqcli/config.py:504
+msgid "cocktail"
+msgstr ""
+
+#: pqcli/config.py:505
+msgid "Silver Dragon"
+msgstr ""
+
+#: pqcli/config.py:506
+msgid "White Dragon"
+msgstr ""
+
+#: pqcli/config.py:507
+msgid "Dragon Turtle"
+msgstr ""
+
+#: pqcli/config.py:507
+msgid "shell"
+msgstr ""
+
+#: pqcli/config.py:508
+msgid "Dryad"
+msgstr ""
+
+#: pqcli/config.py:508 pqcli/config.py:633
+msgid "acorn"
+msgstr ""
+
+#: pqcli/config.py:509
+msgid "Dwarf"
+msgstr ""
+
+#: pqcli/config.py:509
+msgid "drawers"
+msgstr ""
+
+#: pqcli/config.py:510
+msgid "Eel"
+msgstr ""
+
+#: pqcli/config.py:510
+msgid "sashimi"
+msgstr ""
+
+#: pqcli/config.py:511
+msgid "Efreet"
+msgstr ""
+
+#: pqcli/config.py:511
+msgid "cinder"
+msgstr ""
+
+#: pqcli/config.py:512
+msgid "Sand Elemental"
+msgstr ""
+
+#: pqcli/config.py:512
+msgid "glass"
+msgstr ""
+
+#: pqcli/config.py:513
+msgid "Bacon Elemental"
+msgstr ""
+
+#: pqcli/config.py:513
+msgid "bit"
+msgstr ""
+
+#: pqcli/config.py:514
+msgid "Porn Elemental"
+msgstr ""
+
+#: pqcli/config.py:514
+msgid "lube"
+msgstr ""
+
+#: pqcli/config.py:515
+msgid "Cheese Elemental"
+msgstr ""
+
+#: pqcli/config.py:515
+msgid "curd"
+msgstr ""
+
+#: pqcli/config.py:516
+msgid "Hair Elemental"
+msgstr ""
+
+#: pqcli/config.py:516
+msgid "follicle"
+msgstr ""
+
+#: pqcli/config.py:517
+msgid "Swamp Elf"
+msgstr ""
+
+#: pqcli/config.py:517
+msgid "lilypad"
+msgstr ""
+
+#: pqcli/config.py:518
+msgid "Brown Elf"
+msgstr ""
+
+#: pqcli/config.py:519
+msgid "Sea Elf"
+msgstr ""
+
+#: pqcli/config.py:519
+msgid "jerkin"
+msgstr ""
+
+#: pqcli/config.py:520
+msgid "Ettin"
+msgstr ""
+
+#: pqcli/config.py:520 pqcli/config.py:616 pqcli/config.py:645
+msgid "fur"
+msgstr ""
+
+#: pqcli/config.py:521
+msgid "Frog"
+msgstr ""
+
+#: pqcli/config.py:522
+msgid "Violet Fungi"
+msgstr ""
+
+#: pqcli/config.py:522 pqcli/config.py:585
+msgid "spore"
+msgstr ""
+
+#: pqcli/config.py:523
+msgid "Gargoyle"
+msgstr ""
+
+#: pqcli/config.py:523
+msgid "gravel"
+msgstr ""
+
+#: pqcli/config.py:524
+msgid "Gelatinous Cube"
+msgstr ""
+
+#: pqcli/config.py:524
+msgid "jam"
+msgstr ""
+
+#: pqcli/config.py:525
+msgid "Ghast"
+msgstr ""
+
+#: pqcli/config.py:525
+msgid "vomit"
+msgstr ""
+
+#: pqcli/config.py:526
+msgid "Ghost"
+msgstr ""
+
+#: pqcli/config.py:527
+msgid "Ghoul"
+msgstr ""
+
+#: pqcli/config.py:527
+msgid "muscle"
+msgstr ""
+
+#: pqcli/config.py:528
+msgid "Humidity Giant"
+msgstr ""
+
+#: pqcli/config.py:528
+msgid "drops"
+msgstr ""
+
+#: pqcli/config.py:529
+msgid "Beef Giant"
+msgstr ""
+
+#: pqcli/config.py:529
+msgid "steak"
+msgstr ""
+
+#: pqcli/config.py:530
+msgid "Quartz Giant"
+msgstr ""
+
+#: pqcli/config.py:530
+msgid "crystal"
+msgstr ""
+
+#: pqcli/config.py:531
+msgid "Porcelain Giant"
+msgstr ""
+
+#: pqcli/config.py:531
+msgid "fixture"
+msgstr ""
+
+#: pqcli/config.py:532
+msgid "Rice Giant"
+msgstr ""
+
+#: pqcli/config.py:532
+msgid "grain"
+msgstr ""
+
+#: pqcli/config.py:533
+msgid "Cloud Giant"
+msgstr ""
+
+#: pqcli/config.py:533
+msgid "condensation"
+msgstr ""
+
+#: pqcli/config.py:534
+msgid "Fire Giant"
+msgstr ""
+
+#: pqcli/config.py:534
+msgid "cigarettes"
+msgstr ""
+
+#: pqcli/config.py:535
+msgid "Frost Giant"
+msgstr ""
+
+#: pqcli/config.py:535
+msgid "snowman"
+msgstr ""
+
+#: pqcli/config.py:536
+msgid "Hill Giant"
+msgstr ""
+
+#: pqcli/config.py:536 pqcli/config.py:652
+msgid "corpse"
+msgstr ""
+
+#: pqcli/config.py:537
+msgid "Stone Giant"
+msgstr ""
+
+#: pqcli/config.py:537
+msgid "hatchling"
+msgstr ""
+
+#: pqcli/config.py:538
+msgid "Storm Giant"
+msgstr ""
+
+#: pqcli/config.py:538
+msgid "barometer"
+msgstr ""
+
+#: pqcli/config.py:539
+msgid "Mini Giant"
+msgstr ""
+
+#: pqcli/config.py:539
+msgid "pompadour"
+msgstr ""
+
+#: pqcli/config.py:540
+msgid "Gnoll"
+msgstr ""
+
+#: pqcli/config.py:541
+msgid "Gnome"
+msgstr ""
+
+#: pqcli/config.py:542
+msgid "Goblin"
+msgstr ""
+
+#: pqcli/config.py:543
+msgid "Grid Bug"
+msgstr ""
+
+#: pqcli/config.py:543
+msgid "carapace"
+msgstr ""
+
+#: pqcli/config.py:544
+msgid "Jellyrock"
+msgstr ""
+
+#: pqcli/config.py:544
+msgid "seedling"
+msgstr ""
+
+#: pqcli/config.py:545
+msgid "Beer Golem"
+msgstr ""
+
+#: pqcli/config.py:545
+msgid "foam"
+msgstr ""
+
+#: pqcli/config.py:546
+msgid "Oxygen Golem"
+msgstr ""
+
+#: pqcli/config.py:546
+msgid "platelet"
+msgstr ""
+
+#: pqcli/config.py:547
+msgid "Cardboard Golem"
+msgstr ""
+
+#: pqcli/config.py:547
+msgid "recycling"
+msgstr ""
+
+#: pqcli/config.py:548
+msgid "Rubber Golem"
+msgstr ""
+
+#: pqcli/config.py:548
+msgid "ball"
+msgstr ""
+
+#: pqcli/config.py:549
+msgid "Leather Golem"
+msgstr ""
+
+#: pqcli/config.py:549
+msgid "fob"
+msgstr ""
+
+#: pqcli/config.py:550
+msgid "Gorgon"
+msgstr ""
+
+#: pqcli/config.py:550
+msgid "testicle"
+msgstr ""
+
+#: pqcli/config.py:551
+msgid "Gray Ooze"
+msgstr ""
+
+#: pqcli/config.py:551
+msgid "gravy"
+msgstr ""
+
+#: pqcli/config.py:552
+msgid "Green Slime"
+msgstr ""
+
+#: pqcli/config.py:552
+msgid "sample"
+msgstr ""
+
+#: pqcli/config.py:553
+msgid "Griffon"
+msgstr ""
+
+#: pqcli/config.py:553
+msgid "nest"
+msgstr ""
+
+#: pqcli/config.py:554
+msgid "Banshee"
+msgstr ""
+
+#: pqcli/config.py:554
+msgid "larynx"
+msgstr ""
+
+#: pqcli/config.py:555
+msgid "Harpy"
+msgstr ""
+
+#: pqcli/config.py:555
+msgid "mascara"
+msgstr ""
+
+#: pqcli/config.py:556
+msgid "Hell Hound"
+msgstr ""
+
+#: pqcli/config.py:556
+msgid "tongue"
+msgstr ""
+
+#: pqcli/config.py:557
+msgid "Hippocampus"
+msgstr ""
+
+#: pqcli/config.py:557
+msgid "mane"
+msgstr ""
+
+#: pqcli/config.py:558
+msgid "Hippogriff"
+msgstr ""
+
+#: pqcli/config.py:559
+msgid "Hobgoblin"
+msgstr ""
+
+#: pqcli/config.py:559
+msgid "patella"
+msgstr ""
+
+#: pqcli/config.py:560
+msgid "Homunculus"
+msgstr ""
+
+#: pqcli/config.py:560
+msgid "fluid"
+msgstr ""
+
+#: pqcli/config.py:561
+msgid "Hydra"
+msgstr ""
+
+#: pqcli/config.py:561
+msgid "gyrum"
+msgstr ""
+
+#: pqcli/config.py:562
+msgid "Imp"
+msgstr ""
+
+#: pqcli/config.py:563
+msgid "Invisible Stalker"
+msgstr ""
+
+#: pqcli/config.py:564
+msgid "Iron Peasant"
+msgstr ""
+
+#: pqcli/config.py:564
+msgid "chaff"
+msgstr ""
+
+#: pqcli/config.py:565
+msgid "Jumpskin"
+msgstr ""
+
+#: pqcli/config.py:565
+msgid "shin"
+msgstr ""
+
+#: pqcli/config.py:566
+msgid "Kobold"
+msgstr ""
+
+#: pqcli/config.py:566
+msgid "penis"
+msgstr ""
+
+#: pqcli/config.py:567
+msgid "Leprechaun"
+msgstr ""
+
+#: pqcli/config.py:567
+msgid "wallet"
+msgstr ""
+
+#: pqcli/config.py:568
+msgid "Leucrotta"
+msgstr ""
+
+#: pqcli/config.py:568 pqcli/config.py:614 pqcli/config.py:619
+msgid "hoof"
+msgstr ""
+
+#: pqcli/config.py:569
+msgid "Lich"
+msgstr ""
+
+#: pqcli/config.py:569
+msgid "crown"
+msgstr ""
+
+#: pqcli/config.py:570
+msgid "Lizard Man"
+msgstr ""
+
+#: pqcli/config.py:571
+msgid "Lurker"
+msgstr ""
+
+#: pqcli/config.py:571
+msgid "sac"
+msgstr ""
+
+#: pqcli/config.py:572
+msgid "Manticore"
+msgstr ""
+
+#: pqcli/config.py:572
+msgid "spike"
+msgstr ""
+
+#: pqcli/config.py:573
+msgid "Mastodon"
+msgstr ""
+
+#: pqcli/config.py:574
+msgid "Medusa"
+msgstr ""
+
+#: pqcli/config.py:574
+msgid "eye"
+msgstr ""
+
+#: pqcli/config.py:575
+msgid "Multicell"
+msgstr ""
+
+#: pqcli/config.py:575
+msgid "dendrite"
+msgstr ""
+
+#: pqcli/config.py:576
+msgid "Pirate"
+msgstr ""
+
+#: pqcli/config.py:576
+msgid "booty"
+msgstr ""
+
+#: pqcli/config.py:577
+msgid "Berserker"
+msgstr ""
+
+#: pqcli/config.py:577
+msgid "shirt"
+msgstr ""
+
+#: pqcli/config.py:578
+msgid "Caveman"
+msgstr ""
+
+#: pqcli/config.py:578
+msgid "club"
+msgstr ""
+
+#: pqcli/config.py:579
+msgid "Dervish"
+msgstr ""
+
+#: pqcli/config.py:579
+msgid "robe"
+msgstr ""
+
+#: pqcli/config.py:580
+msgid "Merman"
+msgstr ""
+
+#: pqcli/config.py:580
+msgid "trident"
+msgstr ""
+
+#: pqcli/config.py:581
+msgid "Mermaid"
+msgstr ""
+
+#: pqcli/config.py:581
+msgid "gills"
+msgstr ""
+
+#: pqcli/config.py:582
+msgid "Mimic"
+msgstr ""
+
+#: pqcli/config.py:582
+msgid "hinge"
+msgstr ""
+
+#: pqcli/config.py:583
+msgid "Mind Flayer"
+msgstr ""
+
+#: pqcli/config.py:584
+msgid "Minotaur"
+msgstr ""
+
+#: pqcli/config.py:584
+msgid "map"
+msgstr ""
+
+#: pqcli/config.py:585
+msgid "Yellow Mold"
+msgstr ""
+
+#: pqcli/config.py:586
+msgid "Morkoth"
+msgstr ""
+
+#: pqcli/config.py:586
+msgid "teeth"
+msgstr ""
+
+#: pqcli/config.py:587
+msgid "Mummy"
+msgstr ""
+
+#: pqcli/config.py:587
+msgid "gauze"
+msgstr ""
+
+#: pqcli/config.py:588
+msgid "Naga"
+msgstr ""
+
+#: pqcli/config.py:588
+msgid "rattle"
+msgstr ""
+
+#: pqcli/config.py:589
+msgid "Nebbish"
+msgstr ""
+
+#: pqcli/config.py:589
+msgid "belly"
+msgstr ""
+
+#: pqcli/config.py:590
+msgid "Neo-Otyugh"
+msgstr ""
+
+#: pqcli/config.py:590
+msgid "organ "
+msgstr ""
+
+#: pqcli/config.py:591
+msgid "Nixie"
+msgstr ""
+
+#: pqcli/config.py:591
+msgid "webbing"
+msgstr ""
+
+#: pqcli/config.py:592
+msgid "Nymph"
+msgstr ""
+
+#: pqcli/config.py:592
+msgid "hanky"
+msgstr ""
+
+#: pqcli/config.py:593
+msgid "Ochre Jelly"
+msgstr ""
+
+#: pqcli/config.py:593
+msgid "nucleus"
+msgstr ""
+
+#: pqcli/config.py:594
+msgid "Octopus"
+msgstr ""
+
+#: pqcli/config.py:594 pqcli/config.py:653
+msgid "beak"
+msgstr ""
+
+#: pqcli/config.py:595
+msgid "Ogre"
+msgstr ""
+
+#: pqcli/config.py:595
+msgid "talon"
+msgstr ""
+
+#: pqcli/config.py:596
+msgid "Ogre Mage"
+msgstr ""
+
+#: pqcli/config.py:596
+msgid "apparel"
+msgstr ""
+
+#: pqcli/config.py:597
+msgid "Orc"
+msgstr ""
+
+#: pqcli/config.py:597
+msgid "snout"
+msgstr ""
+
+#: pqcli/config.py:598
+msgid "Otyugh"
+msgstr ""
+
+#: pqcli/config.py:598
+msgid "organ"
+msgstr ""
+
+#: pqcli/config.py:599
+msgid "Owlbear"
+msgstr ""
+
+#: pqcli/config.py:599
+msgid "feather"
+msgstr ""
+
+#: pqcli/config.py:600
+msgid "Pegasus"
+msgstr ""
+
+#: pqcli/config.py:600
+msgid "aileron"
+msgstr ""
+
+#: pqcli/config.py:601
+msgid "Peryton"
+msgstr ""
+
+#: pqcli/config.py:601
+msgid "antler"
+msgstr ""
+
+#: pqcli/config.py:602
+msgid "Piercer"
+msgstr ""
+
+#: pqcli/config.py:602
+msgid "tip"
+msgstr ""
+
+#: pqcli/config.py:603
+msgid "Pixie"
+msgstr ""
+
+#: pqcli/config.py:603 pqcli/config.py:650
+msgid "dust"
+msgstr ""
+
+#: pqcli/config.py:604
+msgid "Man-o-war"
+msgstr ""
+
+#: pqcli/config.py:605
+msgid "Purple Worm"
+msgstr ""
+
+#: pqcli/config.py:605
+msgid "dung"
+msgstr ""
+
+#: pqcli/config.py:606
+msgid "Quasit"
+msgstr ""
+
+#: pqcli/config.py:607
+msgid "Rakshasa"
+msgstr ""
+
+#: pqcli/config.py:607
+msgid "pajamas"
+msgstr ""
+
+#: pqcli/config.py:608 pqcli/config.py:648
+msgid "Rat"
+msgstr ""
+
+#: pqcli/config.py:609
+msgid "Remorhaz"
+msgstr ""
+
+#: pqcli/config.py:609
+msgid "protrusion"
+msgstr ""
+
+#: pqcli/config.py:610
+msgid "Roc"
+msgstr ""
+
+#: pqcli/config.py:611
+msgid "Roper"
+msgstr ""
+
+#: pqcli/config.py:611
+msgid "twine"
+msgstr ""
+
+#: pqcli/config.py:612
+msgid "Rot Grub"
+msgstr ""
+
+#: pqcli/config.py:612
+msgid "eggsac"
+msgstr ""
+
+#: pqcli/config.py:613
+msgid "Rust Monster"
+msgstr ""
+
+#: pqcli/config.py:613
+msgid "shavings"
+msgstr ""
+
+#: pqcli/config.py:614
+msgid "Satyr"
+msgstr ""
+
+#: pqcli/config.py:615
+msgid "Sea Hag"
+msgstr ""
+
+#: pqcli/config.py:615
+msgid "wart"
+msgstr ""
+
+#: pqcli/config.py:616
+msgid "Silkie"
+msgstr ""
+
+#: pqcli/config.py:617
+msgid "Shadow"
+msgstr ""
+
+#: pqcli/config.py:617
+msgid "silhouette"
+msgstr ""
+
+#: pqcli/config.py:618
+msgid "Shambling Mound"
+msgstr ""
+
+#: pqcli/config.py:618
+msgid "mulch"
+msgstr ""
+
+#: pqcli/config.py:619
+msgid "Shedu"
+msgstr ""
+
+#: pqcli/config.py:620
+msgid "Shrieker"
+msgstr ""
+
+#: pqcli/config.py:620
+msgid "stalk"
+msgstr ""
+
+#: pqcli/config.py:621
+msgid "Skeleton"
+msgstr ""
+
+#: pqcli/config.py:621
+msgid "clavicle"
+msgstr ""
+
+#: pqcli/config.py:622
+msgid "Spectre"
+msgstr ""
+
+#: pqcli/config.py:622
+msgid "vestige"
+msgstr ""
+
+#: pqcli/config.py:623
+msgid "Sphinx"
+msgstr ""
+
+#: pqcli/config.py:623 pqcli/config.py:657
+msgid "paw"
+msgstr ""
+
+#: pqcli/config.py:624
+msgid "Spider"
+msgstr ""
+
+#: pqcli/config.py:624
+msgid "web"
+msgstr ""
+
+#: pqcli/config.py:625
+msgid "Sprite"
+msgstr ""
+
+#: pqcli/config.py:625
+msgid "can"
+msgstr ""
+
+#: pqcli/config.py:626
+msgid "Stirge"
+msgstr ""
+
+#: pqcli/config.py:626
+msgid "proboscis"
+msgstr ""
+
+#: pqcli/config.py:627
+msgid "Stun Bear"
+msgstr ""
+
+#: pqcli/config.py:628
+msgid "Stun Worm"
+msgstr ""
+
+#: pqcli/config.py:628
+msgid "trode"
+msgstr ""
+
+#: pqcli/config.py:629
+msgid "Su-monster"
+msgstr ""
+
+#: pqcli/config.py:630
+msgid "Sylph"
+msgstr ""
+
+#: pqcli/config.py:630
+msgid "thigh"
+msgstr ""
+
+#: pqcli/config.py:631
+msgid "Titan"
+msgstr ""
+
+#: pqcli/config.py:631
+msgid "sandal"
+msgstr ""
+
+#: pqcli/config.py:632
+msgid "Trapper"
+msgstr ""
+
+#: pqcli/config.py:632
+msgid "shag"
+msgstr ""
+
+#: pqcli/config.py:633
+msgid "Treant"
+msgstr ""
+
+#: pqcli/config.py:634
+msgid "Triton"
+msgstr ""
+
+#: pqcli/config.py:635
+msgid "Troglodyte"
+msgstr ""
+
+#: pqcli/config.py:636
+msgid "Troll"
+msgstr ""
+
+#: pqcli/config.py:636
+msgid "hide"
+msgstr ""
+
+#: pqcli/config.py:637
+msgid "Umber Hulk"
+msgstr ""
+
+#: pqcli/config.py:637
+msgid "claw"
+msgstr ""
+
+#: pqcli/config.py:638
+msgid "Unicorn"
+msgstr ""
+
+#: pqcli/config.py:638
+msgid "blood"
+msgstr ""
+
+#: pqcli/config.py:639
+msgid "Vampire"
+msgstr ""
+
+#: pqcli/config.py:639
+msgid "pancreas"
+msgstr ""
+
+#: pqcli/config.py:640
+msgid "Wight"
+msgstr ""
+
+#: pqcli/config.py:640
+msgid "lung"
+msgstr ""
+
+#: pqcli/config.py:641
+msgid "Will-o'-the-Wisp"
+msgstr ""
+
+#: pqcli/config.py:641
+msgid "wisp"
+msgstr ""
+
+#: pqcli/config.py:642
+msgid "Wraith"
+msgstr ""
+
+#: pqcli/config.py:642
+msgid "finger"
+msgstr ""
+
+#: pqcli/config.py:643
+msgid "Wyvern"
+msgstr ""
+
+#: pqcli/config.py:644
+msgid "Xorn"
+msgstr ""
+
+#: pqcli/config.py:645
+msgid "Yeti"
+msgstr ""
+
+#: pqcli/config.py:646
+msgid "Zombie"
+msgstr ""
+
+#: pqcli/config.py:646
+msgid "forehead"
+msgstr ""
+
+#: pqcli/config.py:647
+msgid "Wasp"
+msgstr ""
+
+#: pqcli/config.py:647
+msgid "stinger"
+msgstr ""
+
+#: pqcli/config.py:649
+msgid "Bunny"
+msgstr ""
+
+#: pqcli/config.py:650
+msgid "Moth"
+msgstr ""
+
+#: pqcli/config.py:651
+msgid "Beagle"
+msgstr ""
+
+#: pqcli/config.py:652
+msgid "Midge"
+msgstr ""
+
+#: pqcli/config.py:653
+msgid "Ostrich"
+msgstr ""
+
+#: pqcli/config.py:654
+msgid "Billy Goat"
+msgstr ""
+
+#: pqcli/config.py:654
+msgid "beard"
+msgstr ""
+
+#: pqcli/config.py:655
+msgid "Bat"
+msgstr ""
+
+#: pqcli/config.py:656
+msgid "Koala"
+msgstr ""
+
+#: pqcli/config.py:656
+msgid "heart"
+msgstr ""
+
+#: pqcli/config.py:657
+msgid "Wolf"
+msgstr ""
+
+#: pqcli/config.py:658
+msgid "Whippet"
+msgstr ""
+
+#: pqcli/config.py:659
+msgid "Uruk"
+msgstr ""
+
+#: pqcli/config.py:659
+msgid "boot"
+msgstr ""
+
+#: pqcli/config.py:660
+msgid "Poroid"
+msgstr ""
+
+#: pqcli/config.py:660
+msgid "node"
+msgstr ""
+
+#: pqcli/config.py:661
+msgid "Moakum"
+msgstr ""
+
+#: pqcli/config.py:661
+msgid "frenum"
+msgstr ""
+
+#: pqcli/config.py:662
+msgid "Fly"
+msgstr ""
+
+#: pqcli/config.py:663
+msgid "Hogbird"
+msgstr ""
+
+#: pqcli/config.py:663
+msgid "curl"
+msgstr ""
+
+#: pqcli/config.py:664
+msgid "Wolog"
+msgstr ""
+
+#: pqcli/config.py:664
+msgid "lemma"
+msgstr ""
+
+#: pqcli/config.py:675
+msgid "Half Orc"
+msgstr ""
+
+#: pqcli/config.py:676
+msgid "Half Man"
+msgstr ""
+
+#: pqcli/config.py:677
+msgid "Half Halfling"
+msgstr ""
+
+#: pqcli/config.py:678
+msgid "Double Hobbit"
+msgstr ""
+
+#: pqcli/config.py:679
+msgid "Hob-Hobbit"
+msgstr ""
+
+#: pqcli/config.py:680
+msgid "Low Elf"
+msgstr ""
+
+#: pqcli/config.py:681
+msgid "Dung Elf"
+msgstr ""
+
+#: pqcli/config.py:682
+msgid "Talking Pony"
+msgstr ""
+
+#: pqcli/config.py:683
+msgid "Gyrognome"
+msgstr ""
+
+#: pqcli/config.py:684
+msgid "Lesser Dwarf"
+msgstr ""
+
+#: pqcli/config.py:685
+msgid "Crested Dwarf"
+msgstr ""
+
+#: pqcli/config.py:686
+msgid "Eel Man"
+msgstr ""
+
+#: pqcli/config.py:687
+msgid "Panda Man"
+msgstr ""
+
+#: pqcli/config.py:688
+msgid "Trans-Kobold"
+msgstr ""
+
+#: pqcli/config.py:689
+msgid "Enchanted Motorcycle"
+msgstr ""
+
+#: pqcli/config.py:690
+msgid "Will o' the Wisp"
+msgstr ""
+
+#: pqcli/config.py:691
+msgid "Battle-Finch"
+msgstr ""
+
+#: pqcli/config.py:692
+msgid "Double Wookiee"
+msgstr ""
+
+#: pqcli/config.py:693
+msgid "Skraeling"
+msgstr ""
+
+#: pqcli/config.py:694
+msgid "Demicanadian"
+msgstr ""
+
+#: pqcli/config.py:695
+msgid "Land Squid"
+msgstr ""
+
+#: pqcli/config.py:706
+msgid "Ur-Paladin"
+msgstr ""
+
+#: pqcli/config.py:707
+msgid "Voodoo Princess"
+msgstr ""
+
+#: pqcli/config.py:708
+msgid "Robot Monk"
+msgstr ""
+
+#: pqcli/config.py:709
+msgid "Mu-Fu Monk"
+msgstr ""
+
+#: pqcli/config.py:710
+msgid "Mage Illusioner"
+msgstr ""
+
+#: pqcli/config.py:711
+msgid "Shiv-Knight"
+msgstr ""
+
+#: pqcli/config.py:712
+msgid "Inner Mason"
+msgstr ""
+
+#: pqcli/config.py:713
+msgid "Fighter/Organist"
+msgstr ""
+
+#: pqcli/config.py:714
+msgid "Puma Burgular"
+msgstr ""
+
+#: pqcli/config.py:715
+msgid "Runeloremaster"
+msgstr ""
+
+#: pqcli/config.py:716
+msgid "Hunter Strangler"
+msgstr ""
+
+#: pqcli/config.py:717
+msgid "Battle-Felon"
+msgstr ""
+
+#: pqcli/config.py:718
+msgid "Tickle-Mimic"
+msgstr ""
+
+#: pqcli/config.py:719
+msgid "Slow Poisoner"
+msgstr ""
+
+#: pqcli/config.py:720
+msgid "Bastard Lunatic"
+msgstr ""
+
+#: pqcli/config.py:721
+msgid "Lowling"
+msgstr ""
+
+#: pqcli/config.py:722
+msgid "Birdrider"
+msgstr ""
+
+#: pqcli/config.py:723
+msgid "Vermineer"
+msgstr ""
+
+#: pqcli/config.py:727
+msgid "Mr."
+msgstr ""
+
+#: pqcli/config.py:728
+msgid "Mrs."
+msgstr ""
+
+#: pqcli/config.py:729
+msgid "Sir"
+msgstr ""
+
+#: pqcli/config.py:730
+msgid "Sgt."
+msgstr ""
+
+#: pqcli/config.py:731
+msgid "Ms."
+msgstr ""
+
+#: pqcli/config.py:732
+msgid "Captain"
+msgstr ""
+
+#: pqcli/config.py:733 pqcli/config.py:747
+msgid "Chief"
+msgstr ""
+
+#: pqcli/config.py:734
+msgid "Admiral"
+msgstr ""
+
+#: pqcli/config.py:735
+msgid "Saint"
+msgstr ""
+
+#: pqcli/config.py:739
+msgid "King"
+msgstr ""
+
+#: pqcli/config.py:740
+msgid "Queen"
+msgstr ""
+
+#: pqcli/config.py:741
+msgid "Lord"
+msgstr ""
+
+#: pqcli/config.py:742
+msgid "Lady"
+msgstr ""
+
+#: pqcli/config.py:743
+msgid "Viceroy"
+msgstr ""
+
+#: pqcli/config.py:744
+msgid "Mayor"
+msgstr ""
+
+#: pqcli/config.py:745
+msgid "Prince"
+msgstr ""
+
+#: pqcli/config.py:746
+msgid "Princess"
+msgstr ""
+
+#: pqcli/config.py:748
+msgid "Boss"
+msgstr ""
+
+#: pqcli/config.py:749
+msgid "Archbishop"
+msgstr ""
+
+#: pqcli/mechanic.py:148
 #, python-brace-format
 msgid "Increased {stat} to {value}"
 msgstr ""
 
-#: pqcli/mechanic.py:182
+#: pqcli/mechanic.py:184
 #, python-brace-format
 msgid "Commencing quest: {quest}"
 msgstr ""
 
-#: pqcli/mechanic.py:218
+#: pqcli/mechanic.py:220
+msgid "gold piece"
+msgstr ""
+
+#: pqcli/mechanic.py:223
 #, python-brace-format
 msgid "Spent {gold}"
 msgstr ""
 
-#: pqcli/mechanic.py:218
+#: pqcli/mechanic.py:223
 #, python-brace-format
 msgid "Got paid {gold}"
 msgstr ""
 
-#: pqcli/mechanic.py:227
+#: pqcli/mechanic.py:232
 #, python-brace-format
 msgid "Lost {item}"
 msgstr ""
 
-#: pqcli/mechanic.py:235
+#: pqcli/mechanic.py:248
 #, python-brace-format
 msgid "Gained {item}"
 msgstr ""
 
-#: pqcli/mechanic.py:308 pqcli/mechanic.py:318
+#: pqcli/mechanic.py:277
+msgid "Sharp Rock"
+msgstr ""
+
+#: pqcli/mechanic.py:279 pqcli/mechanic.py:550
+#, python-brace-format
+msgid "{plus} {item}"
+msgstr ""
+
+#: pqcli/mechanic.py:298
+#, python-brace-format
+msgid "{item} {slot}"
+msgstr ""
+
+#: pqcli/mechanic.py:331 pqcli/mechanic.py:341
 #, python-brace-format
 msgid "Learned {spell} at level {level}"
 msgstr ""
 
-#: pqcli/mechanic.py:411
+#: pqcli/mechanic.py:464
 #, python-brace-format
 msgid "Leveled up to level {level}!"
 msgstr ""
 
-#: pqcli/mechanic.py:498
+#: pqcli/mechanic.py:544
+#, python-brace-format
+msgid "{modifier} {item}"
+msgstr ""
+
+#: pqcli/mechanic.py:552
+#, python-brace-format
+msgid "+{plus} {item}"
+msgstr ""
+
+#: pqcli/mechanic.py:555
 #, python-brace-format
 msgid "Gained {item} {slot}"
 msgstr ""
 
-#: pqcli/mechanic.py:515
+#: pqcli/mechanic.py:574
 msgid "Loading"
 msgstr ""
 
-#: pqcli/mechanic.py:518
+#: pqcli/mechanic.py:578
 msgid "Experiencing an enigmatic and foreboding night vision"
 msgstr ""
 
-#: pqcli/mechanic.py:523
+#: pqcli/mechanic.py:584
 msgid "Much is revealed about that wise old bastard you'd underestimated"
 msgstr ""
 
-#: pqcli/mechanic.py:530
+#: pqcli/mechanic.py:591
 msgid "A shocking series of events leaves you alone and bewildered, but resolute"
 msgstr ""
 
-#: pqcli/mechanic.py:537
+#: pqcli/mechanic.py:598
 msgid ""
 "Drawing upon an unrealized reserve of determination, you set out on a "
 "long and dangerous journey"
 msgstr ""
 
-#: pqcli/mechanic.py:542 pqcli/mechanic.py:879
+#: pqcli/mechanic.py:603 pqcli/mechanic.py:962
 #, python-brace-format
 msgid "Loading {act}"
 msgstr ""
 
-#: pqcli/mechanic.py:620
+#: pqcli/mechanic.py:656
+#, python-brace-format
+msgid "{monster} {part}"
+msgstr ""
+
+#: pqcli/mechanic.py:684
 #, python-brace-format
 msgid "Selling {item}"
 msgstr ""
 
-#: pqcli/mechanic.py:637
+#: pqcli/mechanic.py:701
 msgid "Heading to market to sell loot"
 msgstr ""
 
-#: pqcli/mechanic.py:644
+#: pqcli/mechanic.py:708
 msgid "Negotiating purchase of better equipment"
 msgstr ""
 
-#: pqcli/mechanic.py:650
+#: pqcli/mechanic.py:715
 msgid "Heading to the killing fields"
 msgstr ""
 
-#: pqcli/mechanic.py:673
+#: pqcli/mechanic.py:738
 #, python-brace-format
 msgid "Quest completed: {quest}"
 msgstr ""
 
-#: pqcli/mechanic.py:693
+#: pqcli/mechanic.py:759
 #, python-brace-format
 msgid "Exterminate {monsters}"
 msgstr ""
 
-#: pqcli/mechanic.py:697
+#: pqcli/mechanic.py:766
 #, python-brace-format
 msgid "Seek {item}"
 msgstr ""
 
-#: pqcli/mechanic.py:701
+#: pqcli/mechanic.py:769
 #, python-brace-format
 msgid "Deliver this {item}"
 msgstr ""
 
-#: pqcli/mechanic.py:703
+#: pqcli/mechanic.py:772
 #, python-brace-format
 msgid "Fetch me {item}"
 msgstr ""
 
-#: pqcli/mechanic.py:708
+#: pqcli/mechanic.py:777
 #, python-brace-format
 msgid "Placate {monsters}"
 msgstr ""
 
-#: pqcli/mechanic.py:727
+#: pqcli/mechanic.py:795
 msgid "Exhausted, you arrive at a friendly oasis in a hostile land"
 msgstr ""
 
-#: pqcli/mechanic.py:735
+#: pqcli/mechanic.py:803
 msgid "You greet old friends and meet new allies"
 msgstr ""
 
-#: pqcli/mechanic.py:740
+#: pqcli/mechanic.py:809
 msgid "You are privy to a council of powerful do-gooders"
 msgstr ""
 
-#: pqcli/mechanic.py:746
+#: pqcli/mechanic.py:816
 msgid "There is much to be done. You are chosen!"
 msgstr ""
 
-#: pqcli/mechanic.py:754
+#: pqcli/mechanic.py:824
 msgid "Your quarry is in sight, but a mighty enemy bars your path!"
 msgstr ""
 
-#: pqcli/mechanic.py:765
+#: pqcli/mechanic.py:836
 #, python-brace-format
 msgid "A desperate struggle commences with {nemesis}"
 msgstr ""
 
-#: pqcli/mechanic.py:780
+#: pqcli/mechanic.py:852
 #, python-brace-format
 msgid "Locked in grim combat with {nemesis}"
 msgstr ""
 
-#: pqcli/mechanic.py:789
+#: pqcli/mechanic.py:862
 #, python-brace-format
 msgid "{nemesis} seems to have the upper hand"
 msgstr ""
 
-#: pqcli/mechanic.py:799
+#: pqcli/mechanic.py:872
 #, python-brace-format
 msgid "You seem to gain the advantage over {nemesis}"
 msgstr ""
 
-#: pqcli/mechanic.py:810
+#: pqcli/mechanic.py:884
 #, python-brace-format
 msgid "Victory! {nemesis} is slain! Exhausted, you lose consciousness"
 msgstr ""
 
-#: pqcli/mechanic.py:818
+#: pqcli/mechanic.py:894
 msgid "You awake in a friendly place, but the road awaits"
 msgstr ""
 
-#: pqcli/mechanic.py:828
+#: pqcli/mechanic.py:905
 #, python-brace-format
 msgid "Oh sweet relief! You've reached the protection of the good {nemesis}"
 msgstr ""
 
-#: pqcli/mechanic.py:837
+#: pqcli/mechanic.py:915
 #, python-brace-format
 msgid "There is rejoicing, and an unnerving encounter with {nemesis} in private"
 msgstr ""
 
-#: pqcli/mechanic.py:845
+#: pqcli/mechanic.py:925
 #, python-brace-format
 msgid "You forget your {item} and go back to get it"
 msgstr ""
 
-#: pqcli/mechanic.py:853
+#: pqcli/mechanic.py:933
 msgid "What's this!? You overhear something shocking!"
 msgstr ""
 
-#: pqcli/mechanic.py:858
+#: pqcli/mechanic.py:940
 #, python-brace-format
 msgid "Could {nemesis} be a dirty double-dealer?"
 msgstr ""
 
-#: pqcli/mechanic.py:867
+#: pqcli/mechanic.py:949
 msgid "Who can possibly be trusted with this news!? ... Oh yes, of course"
 msgstr ""
 
-#: pqcli/mechanic.py:1010
+#: pqcli/mechanic.py:972
+#, python-brace-format
+msgid "{item} of {of}"
+msgstr ""
+
+#: pqcli/mechanic.py:980
+#, python-brace-format
+msgid "{attribute} {item}"
+msgstr ""
+
+#: pqcli/mechanic.py:994
+#, python-brace-format
+msgid "{title} of the {race}"
+msgstr ""
+
+#: pqcli/mechanic.py:998
+#, python-brace-format
+msgid "{title} of {name}"
+msgstr ""
+
+#: pqcli/mechanic.py:1013
+#, python-brace-format
+msgid "{name} the {monster}"
+msgstr ""
+
+#: pqcli/mechanic.py:1048
+#, python-brace-format
+msgid "passing {race} {class_}"
+msgstr ""
+
+#: pqcli/mechanic.py:1054
+#, python-brace-format
+msgid "{title} {name} the {race}"
+msgstr ""
+
+#: pqcli/mechanic.py:1081
+#, python-brace-format
+msgid "imaginary {monster}"
+msgstr ""
+
+#: pqcli/mechanic.py:1091
+#, python-brace-format
+msgid "messianic {monster}"
+msgstr ""
+
+#: pqcli/mechanic.py:1108
 #, python-brace-format
 msgid "Executing {monster}"
+msgstr ""
+
+#: pqcli/lingo/__init__.py:36
+#, python-brace-format
+msgid "~{num}s"
+msgstr ""
+
+#: pqcli/lingo/__init__.py:39
+#, python-brace-format
+msgid "~{num}m"
+msgstr ""
+
+#: pqcli/lingo/__init__.py:42
+#, python-brace-format
+msgid "~{num}h"
+msgstr ""
+
+#: pqcli/lingo/__init__.py:44
+#, python-brace-format
+msgid "~{num}d"
+msgstr ""
+
+#: pqcli/lingo/__init__.py:87
+msgid "Prologue"
+msgstr ""
+
+#: pqcli/lingo/__init__.py:88
+#, python-brace-format
+msgid "Act {numeral}"
+msgstr ""
+
+#: pqcli/lingo/__init__.py:95
+msgid "faithful"
+msgstr ""
+
+#: pqcli/lingo/__init__.py:95
+msgid "noble"
+msgstr ""
+
+#: pqcli/lingo/__init__.py:95
+msgid "loyal"
+msgstr ""
+
+#: pqcli/lingo/__init__.py:95
+msgid "brave"
+msgstr ""
+
+#: pqcli/lingo/__init__.py:97
+#, python-brace-format
+msgid "Terminate {adjective} {name}?"
+msgstr ""
+
+#: pqcli/lingo/en.py:16
+msgid "dead"
+msgstr ""
+
+#: pqcli/lingo/en.py:17
+msgid "comatose"
+msgstr ""
+
+#: pqcli/lingo/en.py:18
+msgid "crippled"
+msgstr ""
+
+#: pqcli/lingo/en.py:19
+msgid "sick"
+msgstr ""
+
+#: pqcli/lingo/en.py:20
+msgid "undernourished"
+msgstr ""
+
+#: pqcli/lingo/en.py:24
+msgid "foetal"
+msgstr ""
+
+#: pqcli/lingo/en.py:25
+msgid "baby"
+msgstr ""
+
+#: pqcli/lingo/en.py:26
+msgid "preadolescent"
+msgstr ""
+
+#: pqcli/lingo/en.py:27
+msgid "teenage"
+msgstr ""
+
+#: pqcli/lingo/en.py:28
+msgid "underage"
+msgstr ""
+
+#: pqcli/lingo/en.py:32
+msgid "greater"
+msgstr ""
+
+#: pqcli/lingo/en.py:33
+msgid "massive"
+msgstr ""
+
+#: pqcli/lingo/en.py:34
+msgid "enormous"
+msgstr ""
+
+#: pqcli/lingo/en.py:35
+msgid "giant"
+msgstr ""
+
+#: pqcli/lingo/en.py:36
+msgid "titanic"
+msgstr ""
+
+#: pqcli/lingo/en.py:40
+msgid "veteran"
+msgstr ""
+
+#: pqcli/lingo/en.py:41
+msgid "cursed"
+msgstr ""
+
+#: pqcli/lingo/en.py:42
+msgid "warrior"
+msgstr ""
+
+#: pqcli/lingo/en.py:43
+msgid "undead"
+msgstr ""
+
+#: pqcli/lingo/en.py:44
+msgid "demon"
+msgstr ""
+
+#: pqcli/lingo/en.py:48
+msgid "Battle-"
+msgstr ""
+
+#: pqcli/lingo/en.py:49
+msgid "cursed "
+msgstr ""
+
+#: pqcli/lingo/en.py:50
+msgid "Were-"
+msgstr ""
+
+#: pqcli/lingo/en.py:51
+msgid "undead "
+msgstr ""
+
+#: pqcli/lingo/en.py:52
+msgid "demon "
+msgstr ""
+
+#: pqcli/lingo/en.py:93
+#, python-brace-format
+msgid "{qty} {subject}"
+msgstr ""
+
+#: pqcli/lingo/en.py:102
+#, python-brace-format
+msgid "the {subject}"
+msgstr ""
+
+#: pqcli/lingo/en.py:112
+#, python-brace-format
+msgid "{adjective} {subject}{adjective}{subject}"
 msgstr ""
 
 #: pqcli/ui/basic/__init__.py:45
@@ -393,38 +3847,38 @@ msgstr ""
 msgid "Current quest: {value}"
 msgstr ""
 
-#: pqcli/ui/basic/__init__.py:190
+#: pqcli/ui/basic/__init__.py:194
 #, python-brace-format
 msgid "Current task: {value}"
 msgstr ""
 
-#: pqcli/ui/basic/__init__.py:205
+#: pqcli/ui/basic/__init__.py:211
 msgid "No characters to choose from!"
 msgstr ""
 
-#: pqcli/ui/basic/__init__.py:210
+#: pqcli/ui/basic/__init__.py:216
 msgid "Choose your character"
 msgstr ""
 
-#: pqcli/ui/basic/__init__.py:215
+#: pqcli/ui/basic/__init__.py:221
 #, python-brace-format
 msgid "{message} [y/n] "
 msgstr ""
 
-#: pqcli/ui/basic/__init__.py:228
+#: pqcli/ui/basic/__init__.py:234
 #, python-brace-format
 msgid "{title}:"
 msgstr ""
 
-#: pqcli/ui/basic/__init__.py:236
+#: pqcli/ui/basic/__init__.py:242
 msgid "Your choice: "
 msgstr ""
 
-#: pqcli/ui/basic/__init__.py:238
+#: pqcli/ui/basic/__init__.py:244
 msgid "Not a number"
 msgstr ""
 
-#: pqcli/ui/basic/__init__.py:242
+#: pqcli/ui/basic/__init__.py:248
 #, python-brace-format
 msgid "Expected a number between 1..{max}"
 msgstr ""
@@ -437,17 +3891,17 @@ msgstr ""
 msgid "Choose character to play"
 msgstr ""
 
-#: pqcli/ui/curses/views/choose_character_view.py:34
+#: pqcli/ui/curses/views/choose_character_view.py:38
 #, python-brace-format
 msgid "{name} the {race} ({act})"
 msgstr ""
 
-#: pqcli/ui/curses/views/choose_character_view.py:40
+#: pqcli/ui/curses/views/choose_character_view.py:44
 #, python-brace-format
 msgid "Level {level} {class_}"
 msgstr ""
 
-#: pqcli/ui/curses/views/choose_character_view.py:57
+#: pqcli/ui/curses/views/choose_character_view.py:61
 #: pqcli/ui/curses/views/create_character_view/choose_character_class_view.py:33
 #: pqcli/ui/curses/views/create_character_view/choose_character_race_view.py:31
 msgid "[Q] Cancel"
@@ -540,7 +3994,7 @@ msgstr ""
 msgid "Experience ({xp} XP to go)"
 msgstr ""
 
-#: pqcli/ui/curses/views/game_view/equipment_window.py:55
+#: pqcli/ui/curses/views/game_view/equipment_window.py:63
 msgid " Equipment "
 msgstr ""
 
@@ -562,11 +4016,11 @@ msgstr ""
 msgid " Plot Development "
 msgstr ""
 
-#: pqcli/ui/curses/views/game_view/quest_book_window.py:16
+#: pqcli/ui/curses/views/game_view/quest_book_window.py:17
 msgid " Quests "
 msgstr ""
 
-#: pqcli/ui/curses/views/game_view/spell_book_window.py:64
+#: pqcli/ui/curses/views/game_view/spell_book_window.py:65
 msgid " Spell Book "
 msgstr ""
 

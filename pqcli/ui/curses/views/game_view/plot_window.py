@@ -57,10 +57,8 @@ class PlotWindow(Focusable, ListBoxProgressBarWindow):
 
     def _sync_act_add(self, act_number: int) -> None:
         self._list_box.delete(0, max(0, len(self._list_box) - self.cutoff))
-        prev = self._list_box.get(-1)
-        if prev is not None:
-            self._list_box.set(-1, "[X] " + prev[4:])
-        self._list_box.add("[ ] " + act_name(act_number))
+        self._list_box.mark_done(-1)
+        self._list_box.add(act_name(act_number).render())
         self._list_box.select(-1)
         self._render_list_box()
 

@@ -49,12 +49,12 @@ class CharacterSheetWindow(Focusable, DataTableProgressBarWindow):
 
         self._data_table.clear()
         self._data_table.add(_("Name"), self._player.name)
-        self._data_table.add(_("Race"), self._player.race.name)
-        self._data_table.add(_("Class"), self._player.class_.name)
+        self._data_table.add(_("Race"), _(self._player.race.name))
+        self._data_table.add(_("Class"), _(self._player.class_.name))
         self._data_table.add(_("Level"), str(self._player.level))
         self._data_table.add(" " * 15, "")
         for stat in StatType:
-            self._data_table.add(stat.value, str(self._player.stats[stat]))
+            self._data_table.add(_(stat.value), str(self._player.stats[stat]))
 
         self._render_data_table()
 

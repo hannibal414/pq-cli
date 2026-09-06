@@ -104,7 +104,7 @@ class ChooseCharacterStatsView(BaseView):
         self._stats_win.erase()
         for y, stat in enumerate(PRIME_STATS):
             self._stats_win.addstr(
-                y + 1, 1, f"{stat.value}: {self._stats[stat]}"
+                y + 1, 1, f"{_(stat.value)}: {self._stats[stat]}"
             )
         self._stats_win.box()
         self._stats_win.noutrefresh()

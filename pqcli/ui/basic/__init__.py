@@ -108,14 +108,14 @@ class BasicUserInterface(BaseUserInterface):
             print(_("Cancelled."))
             return None
 
-        race = self.menu([(race, race.name) for race in RACES])
-        class_ = self.menu([(class_, class_.name) for class_ in CLASSES])
+        race = self.menu([(race, _(race.name)) for race in RACES])
+        class_ = self.menu([(class_, _(class_.name)) for class_ in CLASSES])
 
         stats_builder = StatsBuilder()
         while True:
             stats = stats_builder.roll()
             for stat in PRIME_STATS:
-                print(f"{stat.value}: {stats[stat]}")
+                print(f"{_(stat.value)}: {stats[stat]}")
             total = sum(stats[stat] for stat in PRIME_STATS)
             print(_("Total: {total}").format(total=total))
             if self.confirm(_("Is this okay?")):
@@ -152,28 +152,28 @@ class BasicUserInterface(BaseUserInterface):
     def print_player_info(self, player: Player) -> None:
         print(_("--- Character Sheet ---"))
         print(_("Name: {value}").format(value=player.name))
-        print(_("Race: {value}").format(value=player.race.name))
-        print(_("Class: {value}").format(value=player.class_.name))
+        print(_("Race: {value}").format(value=_(player.race.name)))
+        print(_("Class: {value}").format(value=_(player.class_.name)))
         print(_("Level: {value}").format(value=player.level))
         print()
         for stat, value in player.stats:
-            print(f"{stat.value}: {value}")
+            print(f"{_(stat.value)}: {value}")
         print()
         print(_("--- Spell Book ---"))
         if not player.spell_book:
             print(_("No spells memorized yet."))
         else:
             for spell in player.spell_book:
-                print(f"{spell.name} {lingo.to_roman(spell.level)}")
+                print(f"{_(spell.name)} {lingo.to_roman(spell.level)}")
         print()
         print(_("--- Equipment ---"))
         for equipment_type, name in player.equipment:
-            print(f"{equipment_type.value}: {name}")
+            print(f"{_(equipment_type.value)}: {name.render()}")
         print()
         print(_("--- Inventory ---"))
         print(_("Gold: {value}").format(value=player.inventory.gold))
         for item in player.inventory:
-            print(f"{item.name}: {item.quantity}")
+            print(f"{item.name.render()}: {item.quantity}")
         print()
         print(_("--- Plot ---"))
         print(
@@ -183,12 +183,18 @@ class BasicUserInterface(BaseUserInterface):
         )
         print(
             _("Current quest: {value}").format(
-                value=player.quest_book.current_quest or "?"
+                value=(
+                    quest.render()
+                    if (quest := player.quest_book.current_quest)
+                    else "?"
+                )
             )
         )
         print(
             _("Current task: {value}").format(
-                value=player.task.description if player.task else "?"
+                value=(
+                    player.task.description.render() if player.task else "?"
+                )
             )
         )
 

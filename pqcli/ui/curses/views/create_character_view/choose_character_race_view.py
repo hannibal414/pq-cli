@@ -20,7 +20,7 @@ class ChooseCharacterRaceView(MenuView):
             self._choices.append(
                 Choice(
                     keys=[ord(key)] if key is not None else [],
-                    desc=f"[{key or '-'}] {race.name}",
+                    desc=f"[{key or '-'}] {_(race.name)}",
                     callback=functools.partial(self.on_confirm, race),
                 )
             )
