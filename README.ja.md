@@ -146,8 +146,11 @@ uv run pybabel init -i pqcli/locale/pqcli.pot -d pqcli/locale -l de -D pqcli
 
 ゲームが実行時に読み込むのはコンパイル済みの `.mo` ファイルです。
 `.po` を編集したら必ず手順3を再実行してください。pre-commit の
-`compile-catalogs` フックが自動で実行し、`.mo` が古いままならコミットを
-失敗させます。
+`compile-catalogs` フックが `.po` の変更時に自動で実行します。
+
+`.mo` はビルド生成物で git 管理外です。`hatch_build.py` が wheel と sdist に
+コンパイルして格納します。そのため翻訳の pull request には編集した `.po` だけが
+含まれ、バイナリは入らず、レビュー中に古くなるものもありません。
 
 ゲームデータを抽出しているのは `-k N_ -k Term -k phrase` です。`N_()` は
 `pqcli/config.py` の文字列をその場で翻訳せずに抽出対象として印を付け、
@@ -193,6 +196,10 @@ uv sync
 
 # pre-commit フックをインストール:
 uv run pre-commit install
+
+# カタログを一度コンパイルする（英語以外で起動するために必要。
+# 以降はフックが最新に保ちます）:
+uv run pybabel compile -d pqcli/locale -D pqcli
 
 # コマンドを venv 内で実行:
 uv run pqcli

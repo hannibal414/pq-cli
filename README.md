@@ -144,7 +144,11 @@ uv run pybabel init -i pqcli/locale/pqcli.pot -d pqcli/locale -l de -D pqcli
 
 The compiled `.mo` files are what the game loads at runtime, so re-run step 3
 after editing any `.po`. The `compile-catalogs` pre-commit hook does this for
-you and fails the commit if the `.mo` was stale.
+you whenever a `.po` changes.
+
+`.mo` files are build output and are not in git: `hatch_build.py` compiles them
+into the wheel and sdist. A translation pull request therefore carries only the
+`.po` you edited — no binary, and nothing to go stale in review.
 
 `-k N_ -k Term -k phrase` is what pulls the game data in: `N_()` marks a string
 in `pqcli/config.py` for extraction without translating it there, `Term()` names
@@ -185,6 +189,10 @@ uv sync
 
 # Install pre-commit hooks:
 uv run pre-commit install
+
+# Compile the catalogs once, so the game can run in a language other than
+# English (the hooks keep them current from here on):
+uv run pybabel compile -d pqcli/locale -D pqcli
 
 # Run commands inside the venv:
 uv run pqcli

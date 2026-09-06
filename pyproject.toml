@@ -42,11 +42,14 @@ Repository = "https://github.com/hannibal414/pq-cli.git"
 pqcli = "pqcli.__main__:main"
 
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "babel>=2.14.0"]
 build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = ["pre-commit>=4.5.0", "babel>=2.14.0"]
+
+[tool.hatch.build.hooks.custom]
+path = "hatch_build.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["pqcli"]

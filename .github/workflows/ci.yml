@@ -17,6 +17,20 @@ jobs:
       - run: uv sync
       # isort, black, the compiled catalogs and the golden dump, in one pass.
       - run: uv run pre-commit run --all-files --show-diff-on-failure
+      # .mo files are not in git, so prove the build hook still puts them in
+      # the distribution -- otherwise a release would silently ship no
+      # translations at all.
+      - run: rm -f pqcli/locale/*/LC_MESSAGES/*.mo && uv build
+      - name: the built wheel carries the compiled catalogs
+        run: |
+          python -c "
+          import glob, zipfile, sys
+          wheel = sorted(glob.glob('dist/*.whl'))[-1]
+          names = zipfile.ZipFile(wheel).namelist()
+          found = [n for n in names if n.endswith('.mo')]
+          print('catalogs in wheel:', found)
+          sys.exit(0 if found else 1)
+          "
 
   supported-pythons:
     name: python ${{ matrix.python }}
