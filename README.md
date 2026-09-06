@@ -37,8 +37,12 @@ Basic interface:
 
 ## How to install
 
-If you have Python 3.10 or newer, just run `pip install --user pqcli` and you're
-good to go! Then type `pqcli` to run the game.
+If you have Python 3.10 or newer, just run `pip install --user pqcli-ja` and
+you're good to go! Then type `pqcli` to run the game.
+
+This is the Japanese edition, published to PyPI as `pqcli-ja`. The original
+English-only game is a separate package named `pqcli`; both install a command
+called `pqcli`, so install only one of them in a given environment.
 
 In case if you want to use the git version, the process is just a bit more complex:
 
